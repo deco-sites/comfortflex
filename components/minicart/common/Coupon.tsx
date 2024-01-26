@@ -37,13 +37,13 @@ function Coupon({ coupon, onAddCoupon }: Props) {
           >
             <input
               name="coupon"
-              class="border border-black rounded-none outline-none w-32 text-xs p-2 join-item placeholder:text-gray-700 placeholder:uppercase"
+              class="border border-brand rounded-3xl outline-none w-32 text-xs p-2 join-item placeholder:text-gray-700 placeholder:uppercase"
               type="text"
               value={coupon ?? ""}
               placeholder={"Insira o cupom"}
             />
             <button
-              class="border border-black bg-black rounded-none outline-none text-white text-xs uppercase p-2 join-item"
+              class="border border-brand bg-brand rounded-3xl outline-none text-white text-xs uppercase p-2 join-item"
               type="submit"
               htmlFor="coupon"
               loading={loading}

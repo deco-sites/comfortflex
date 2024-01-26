@@ -42,7 +42,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
             return (
               <li class="px-4 py-3">
                 <a class="hover:underline" href={node.url}>
-                  <span class="text-[13.5px] uppercase font-semibold">{name}</span>
+                  <span class="text-[13.5px] uppercase font-semibold text-brand">{name}</span>
                 </a>
   
                 <ul class={name.search(/tamanho/i) !== -1 ? "flex gap-2 mt-4 flex-wrap" : "flex flex-col gap-1 mt-4"}>
@@ -59,7 +59,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
                   
                     return (
                       <li>
-                        <a class={name.search(/tamanho/i) !== -1 ? "flex items-center justify-center rounded-full w-10 h-10 border-solid border-black bg-black text-white" : "hover:underline"} href={leaf.url}>
+                        <a class={name.search(/tamanho/i) !== -1 ? "flex items-center justify-center rounded-full bg-brand  w-10 h-10 text-white" : "hover:underline"} href={leaf.url}>
                           <span class={name.search(/tamanho/i) !== -1 ? "text-xs" : "text-[13.5px]"}>{leaf.name}</span>
                         </a>
                       </li>
@@ -87,7 +87,7 @@ function Menu({ items }: Props) {
       </ul>
 
       <ul class="flex flex-col divide-y">
-        <li class="bg-black">
+        <li class="bg-brand">
           <a
             class="flex items-center gap-3 p-4 text-white fill-white"
             href="/wishlist"
@@ -98,7 +98,7 @@ function Menu({ items }: Props) {
             <span class="text-sm uppercase">Favoritos</span>
           </a>
         </li>
-        <li class="bg-black">
+        <li class="bg-brand">
           <a
             class="flex items-center gap-3 p-4 text-white"
             href="https://www.deco.cx"

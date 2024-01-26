@@ -95,7 +95,7 @@ function SellerCard({
                             )}
                         </span>
                     </div>
-                    <span class="text-xs text-[#919191]">Em até {formatShippingEstimate(shippingEstimate)}</span>
+                    <span class="text-xs text-[#fbf7ff]">Em até {formatShippingEstimate(shippingEstimate)}</span>
                 </div>
                 <AddToCartButtonVTEX
                     url={url || ""}
@@ -181,7 +181,7 @@ export default function SellersSelector(product: Product) {
     const methods = orderMethods(filteredSimulations);
     
     return (
-        <ul class="flex flex-col gap-4 p-4 mt-4 bg-black text-white">
+        <ul class="flex flex-col gap-4 p-4 mt-4 bg-brand text-white rounded-3xl">
             <span class="block uppercase">Outras ofertas de vendedores Ramarim</span>
             {
                 loading.value ?

@@ -36,12 +36,12 @@ function Sort({ sortOptions }: Props) {
   const sort = useSort();
 
   return (
-    <div class="border border-solid border-black">
+    <div style="border: 1px solid #BC81FF" class="rounded-3xl">
       <select
         id="sort"
         name="sort"
         onInput={applySort}
-        class="w-min cursor-pointer outline-none uppercase p-3 sm:py-2 sm:px-5 mr-3 sm:mr-4 text-black rounded-none text-xs sm:text-sm"
+        class="w-min cursor-pointer outline-none uppercase p-3 sm:py-2 sm:px-5 mr-3 sm:mr-4 text-black rounded-3xl text-xs sm:text-sm"
       >
         {sortOptions.map(({ value, label }) => ({
           value,

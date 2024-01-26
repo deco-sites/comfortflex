@@ -171,31 +171,31 @@ export default function OurStores() {
     return (
         <div class="container py-8">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full pb-8 mb-8 border-b border-[#d1d1d1] gap-3 sm:gap-0">
-                <h1 class="uppercase text-base text-black">Onde Encontrar</h1>
-                <div class="join">
-                    <button class={`py-2 px-3 rounded-none border border-black text-sm font-light uppercase ${tabs === 1 ? "bg-white text-black" : "bg-black text-white"}`} onClick={() => setTabs(1)}>Lojas Físicas</button>
-                    <button class={`py-2 px-3 rounded-none border border-black text-sm font-light uppercase ${tabs === 2 ? "bg-white text-black" : "bg-black text-white"}`} onClick={() => setTabs(2)}>Lojas Virtuais</button>
+                <h1 class="uppercase text-base text-brand">Onde Encontrar</h1>
+                <div class="join rounded-3xl border border-brand">
+                    <button class={`py-2 px-3 text-sm font-light uppercase  ${tabs === 1 ? "bg-white text-brand" : "bg-brand text-white rounded-3xl"}`} onClick={() => setTabs(1)}>Lojas Físicas</button>
+                    <button class={`py-2 px-3 text-sm font-light uppercase  ${tabs === 2 ? "bg-white text-brand" : "bg-brand text-white rounded-3xl"}`} onClick={() => setTabs(2)}>Lojas Virtuais</button>
                 </div>
             </div>
             <div class={tabs === 1 ? "block" : "hidden"}>
                 <div>
-                    <h2 class="text-base font-semibold text-black mb-2">Lojas Físicas</h2>
-                    <p class="text-sm font-light text-[#919191]">Informe uma localização (por exemplo: cep, endereço, cidade ou uf) para encontrar lojas próximas a você.</p>
-                    <form class="py-5 join" onSubmit={submitHandler}>
-                        <input class="border border-black py-2 px-3 rounded-none" type="text" />
-                        <button class="border border-black bg-black text-white py-2 px-3 rounded-none uppercase font-extralight text-sm" type="submit">Pesquisar</button>
+                    <h2 class="text-base font-semibold text-gray-400 mb-2">Lojas Físicas</h2>
+                    <p class="text-sm font-light text-gray-400">Informe uma localização (por exemplo: cep, endereço, cidade ou uf) para encontrar lojas próximas a você.</p>
+                    <form class="join rounded-3xl border border-brand" onSubmit={submitHandler}>
+                        <input class="py-2 px-3 rounded-3xl outline-none" type="text" />
+                        <button class="bg-brand text-white py-2 px-3 rounded-3xl uppercase font-extralight text-sm" type="submit">Pesquisar</button>
                     </form>
                 </div>
                 <div id="map" style={{ height: "500px" }}></div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mt-5">
                     {
                         stores.map(store => (
-                            <div class="block border border-[#d1d1d1] p-5">
-                                <h2 class="uppercase text-base text-black font-semibold mb-2">{store.name}</h2>
-                                <p class="block text-sm mb-1 text-[#919191]">{store.address}</p>
-                                <p class="block text-sm mb-1 text-[#919191]">CEP {store.cep.replace(/(\d{5})?(\d{3})/, "$1-$2")}</p>
-                                <p class="block text-sm mb-2 text-[#919191]">{store.city} - {store.UF}</p>
-                                <div class="block text-sm text-black font-medium">
+                            <div class="block border border-brand p-5">
+                                <h2 class="uppercase text-base text-brand font-semibold mb-2">{store.name}</h2>
+                                <p class="block text-sm mb-1 text-brand">{store.address}</p>
+                                <p class="block text-sm mb-1 text-brand">CEP {store.cep.replace(/(\d{5})?(\d{3})/, "$1-$2")}</p>
+                                <p class="block text-sm mb-2 text-brand">{store.city} - {store.UF}</p>
+                                <div class="block text-sm text-brand font-medium">
                                     <Icon id="Phone" size={16} strokeWidth={2} class="inline-block mr-2" />
                                     {store.phone}
                                 </div>

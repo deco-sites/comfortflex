@@ -1,8 +1,6 @@
 {
   "imports": {
     "deco-sites/comfortflex/": "./",
-
-    "deco-sites/comfortflex/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.24.2/",
     "$store/": "./",
     "deco/": "https://denopkg.com/deco-cx/deco@1.52.4/",
@@ -20,7 +18,7 @@
     "preact-markdown": "https://esm.sh/react-markdown@7.1.2?alias=react:preact/compat"
   },
   "tasks": {
-    "start": "deno task bundle && deno run -A --unstable --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
+    "start": "deno task bundle && deno run -A --unstable-kv --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
@@ -55,6 +53,7 @@
   "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "experimentalDecorators": true
   }
 }

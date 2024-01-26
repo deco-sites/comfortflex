@@ -7,14 +7,14 @@ const InstallmentBenefit = () => {
     <div className={`flex gap-2 p-5 order-1`}>
       <div className="flex items-center">
         <Image
-          src={asset("./image/credit_card.png")}
+          src={asset("./image/card.svg")}
           alt={"Até 6x sem juros"}
           className="max-w-full max-h-full object-cover"
         />
       </div>
-      <div className="flex-auto flex flex-col gap-1">
-        <div className="text-base md:text-lg font-semibold text-black uppercase">ATÉ 6X</div>
-        <p className="text-xs text-black uppercase">SEM JUROS!</p>
+      <div style="color:#BC81FF;" className="flex-auto flex flex-col gap-1">
+        <div className="text-base md:text-lg font-semibold uppercase">ATÉ 6X</div>
+        <p className="text-xs uppercase">SEM JUROS!</p>
       </div>
     </div>
   )
@@ -22,17 +22,17 @@ const InstallmentBenefit = () => {
 
 const DevolutionBenefit = () => {
   return (
-    <div className={`flex gap-2 p-5 order-last md:order-2`}>
+    <div style="color:#BC81FF;" className={`flex gap-2 p-5 order-last md:order-2`}>
       <div className="flex items-center">
         <Image
-          src={asset("./image/box.png")}
+          src={asset("./image/box.svg")}
           alt={"Primeira devolução é por nossa conta"}
           className="max-w-full max-h-full object-cover"
         />
       </div>
-      <div className="flex-auto flex flex-col gap-1">
-        <div className="text-base md:text-lg font-semibold text-black uppercase">1° DEVOLUÇÃO</div>
-        <p className="text-xs text-black uppercase">É POR NOSSA CONTA!</p>
+      <div style="color:#BC81FF;" className="flex-auto flex flex-col gap-1">
+        <div className="text-base md:text-lg font-semibold  uppercase">1° DEVOLUÇÃO</div>
+        <p className="text-xs  uppercase">É POR NOSSA CONTA!</p>
       </div>
     </div>
   )
@@ -40,17 +40,18 @@ const DevolutionBenefit = () => {
 
 const MarketplaceBenefit = () => {
   return (
-    <div className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5 border border-solid border-black hover:border-white order-3 hover:bg-black text-black hover:text-white`}>
+    <div style="border: 1px solid #BC81FF; color:#BC81FF; border-radius:23px;"
+      className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3 hover:text-white`}>
       <div className="flex items-center">
         <Image
-          src={asset("./image/store.png")}
+          src={asset("./image/store.svg")}
           alt={"VENDA NA RAMARIM, FAÇA PARTE DO NOSSO MARKETPLACE!"}
-          className="max-w-full max-h-full object-cover group-hover:invert"
+          className="max-w-full max-h-full object-cover"
         />
       </div>
       <div className="flex-auto flex flex-col gap-1 ">
-        <div className="text-base md:text-lg font-semibold uppercase hover:text-white">VENDA NA RAMARIM</div>
-        <p className="text-xs uppercase hover:text-white">FAÇA PARTE DO NOSSO MARKETPLACE!</p>
+        <div className="text-base md:text-lg font-semibold uppercase">VENDA NA COMFORTFLEX</div>
+        <p className="text-xs uppercase">FAÇA PARTE DO NOSSO MARKETPLACE!</p>
       </div>
     </div>
   )
@@ -58,17 +59,18 @@ const MarketplaceBenefit = () => {
 
 const StoreBenefit = () => {
   return (
-    <div className={`group flex gap-2 py-[1.3rem] px-[1.1rem] lg:p-5 border border-solid border-black hover:border-white order-4 hover:bg-black text-black hover:text-white`}>
+    <div style="border: 1px solid #BC81FF; color:#BC81FF; border-radius:23px;"
+      className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3 hover:text-white`}>
       <div className="flex items-center">
         <Image
-          src={asset("./image/pin.png")}
+          src={asset("./image/pin.svg")}
           alt={"PERTO DE VOCÊ, ENCONTRE O VENDEDOR NA SUA CIDADE!"}
-          className="max-w-full max-h-full object-cover group-hover:invert"
+          className="max-w-full max-h-full object-cover"
         />
       </div>
       <div className="flex-auto flex flex-col gap-1">
-        <div className="text-base md:text-lg font-semibold uppercase hover:text-white">PERTO DE VOCÊ</div>
-        <p className="text-xs uppercase hover:text-white">ENCONTRE O VENDEDOR NA SUA CIDADE!</p>
+        <div className="text-base md:text-lg font-semibold uppercase">PERTO DE VOCÊ</div>
+        <p className="text-xs uppercase">ENCONTRE O VENDEDOR NA SUA CIDADE!</p>
       </div>
     </div>
   )
@@ -82,7 +84,7 @@ const Benefits = () => {
       <DevolutionBenefit />
       <MarketplaceBenefit />
       <StoreBenefit />
-      </div>
+    </div>
   );
 };
 

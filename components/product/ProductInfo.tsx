@@ -108,7 +108,7 @@ function ProductInfo({ page }: Props) {
                     discount={discount}
                     seller={seller}
                   />
-                  <div>Vendido e Entregue por <span class="uppercase underline">{seller}</span></div>
+                  <div>Vendido e Entregue por <span style="color: #BC81FF" class="uppercase underline">{seller}</span></div>
                   <p class="text-sm">ATENÇÃO: O prazo de entrega começa a contar em até 48h úteis após a aprovação do pedido.</p>
                 </>
               )}
@@ -118,16 +118,16 @@ function ProductInfo({ page }: Props) {
       </div>
       <SellersSelector {...product} />
       {/* Description card */}
-      <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
+      <div class="border-t border-gray-300 pt-4 mt-4 sm:m4-6">
         <span class="block text-base uppercase mb-3">Detalhes do Produto</span>
         <div
           class="text-sm"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
-      <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
+      <div class="border-t border-gray-300 pt-4 mt-4 sm:my-6">
         <span class="block text-base uppercase mb-3">Ficha Técnica do Produto</span>
-        <div class="flex flex-row flex-wrap">
+        <div class="flex flex-row flex-wrap sm:mb-6">
           {
             isVariantOf.additionalProperty?.map((property) => {
               if ([

@@ -52,15 +52,15 @@ export default function FixedShippingSimulation({
           ) : (
             <>
               <p class={`text-xs sm:text-sm text-black text-left sm:text-center ${context === "header" ? "text-left sm:text-center" : "text-center"}`}>
-                Calcule o CEP para encontrar mais ofertas de Vendedores Ramarim.
+                Calcule o CEP para encontrar mais ofertas de Vendedores Comfortflex.
               </p>
               <button
-                class="block bg-black text-white text-xs uppercase py-2 px-2 sm:px-3"
+                class="block bg-brand text-white text-xs uppercase py-2 px-2 sm:px-3 rounded-3xl "
                 style={{ minWidth: "96px" }}
                 onClick={() => setDisplayPopup(true)}
               >
                 Inserir CEP
-              </button>
+              </button> 
             </>
           )
         }
@@ -77,14 +77,14 @@ export default function FixedShippingSimulation({
             </div>
             <form onSubmit={submitHandler} class="join">
               <input
-                class="outline-none px-3 rounded-none h-10 border border-black text-sm text-black"
+                class="outline-none px-3 rounded-3xl h-10 border border-brand text-sm text-black"
                 type="text"
                 maxLength={9}
                 required
                 placeholder="Insira seu CEP"
                 onKeyUp={handleZipCode}
               />
-              <button type="submit" class="outline-none px-3 rounded-none h-10 border border-black bg-black text-white uppercase text-xs">
+              <button type="submit" class="outline-none px-3 rounded-3xl h-10 border border-brand bg-brand text-white uppercase text-xs">
                 Buscar
               </button>
             </form>

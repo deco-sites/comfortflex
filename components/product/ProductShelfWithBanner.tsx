@@ -47,9 +47,9 @@ function ProductShelfWithBanner({
 
     return (
         <div className="relative">
-            <div class="w-full lg:bg-black flex flex-col gap-8 lg:gap-16 mt-7 pt-0 lg:pb-0 lg:mb-28">
-                <div className="md:pt-16 text-center text-base sm:text-xl text-black lg:text-white">{title || ""}</div>
-                <div class="flex flex-col md:flex-row items-center gap-8 container bg-black lg:bg-transparent mt-[50px] lg:mt-0 pb-9 lg:pb-0">
+            <div class="w-full lg:bg-brand flex flex-col gap-8 lg:gap-16 mt-7 pt-0 lg:pb-0 lg:mb-28">
+                <div className="md:pt-16 text-center text-base sm:text-xl text-brand lg:text-white">{title || ""}</div>
+                <div class="flex flex-col md:flex-row items-center gap-8 container bg-brand lg:bg-transparent mt-[50px] lg:mt-0 pb-9 lg:pb-0">
                     <Image
                         src={banner}
                         class="block w-[80vw] lg:w-[calc(40% - 16px)] relative mt-[-50px] lg:mt-0 lg:mb-[-50px] h-[calc(100% + 50px)] object-cover object-center"
@@ -110,7 +110,7 @@ function ProductShelfWithBanner({
                     </div>
                 </div>
             </div>
-            <a href={link} className="block w-fit py-3 lg:py-2 px-7 bg-black lg:bg-white text-white lg:text-black text-sm mt-4 mx-auto lg:m-0 uppercase lg:border lg:border-black lg:absolute lg:left-[73%] lg:-bottom-[50px] lg:-translate-x-[50%]">{buttonText}</a>
+            <a style="border-radius:23px; color: #BC81FF; border: 1px solid #bc81ff" href={link} className="block w-fit py-3 lg:py-2 px-7 lg:bg-white text-white text-sm mt-4 mx-auto lg:m-0 uppercase lg:border lg:border-brand lg:absolute lg:left-[73%] lg:-bottom-[50px] lg:-translate-x-[50%]">{buttonText}</a>
         </div>
     );
 }

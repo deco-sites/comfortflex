@@ -89,12 +89,12 @@ function CartItem(
             onChange={withLoading(async (quantity) => {
               const analyticsItem = itemToAnalyticsItem(index);
               const diff = quantity - item.quantity;
-  
+
               await onUpdateQuantity(quantity, index);
-  
+
               if (analyticsItem) {
                 analyticsItem.quantity = diff;
-  
+
                 sendEvent({
                   name: diff < 0 ? "remove_from_cart" : "add_to_cart",
                   params: { items: [analyticsItem] },
@@ -102,7 +102,7 @@ function CartItem(
               }
             })}
           />
-        <Button
+          <Button
             disabled={loading || isGift}
             loading={loading}
             class="btn-ghost btn-square hover:bg-transparent"
@@ -117,9 +117,11 @@ function CartItem(
               });
             })}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="25.364" height="27.669" viewBox="0 0 25.364 27.669" class="max-w-[17px]">
-              <path id="fi-rs-trash-xmark" d="M26.364,4.612H19.446V2.306A2.308,2.308,0,0,0,17.14,0H10.223A2.308,2.308,0,0,0,7.917,2.306V4.612H1V6.917H2.9L4.859,24.592A3.456,3.456,0,0,0,8.3,27.669H19.023a3.453,3.453,0,0,0,3.437-3.077L24.423,6.917h1.939V4.612ZM10.223,2.306H17.14V4.612H10.223Zm9.945,22.032a1.151,1.151,0,0,1-1.146,1.026H8.3a1.152,1.152,0,0,1-1.146-1.026L5.215,6.917H22.1l-1.936,17.42ZM9.12,19.072l2.932-2.932L9.12,13.209l1.63-1.63,2.932,2.932,2.932-2.932,1.63,1.63L15.312,16.14l2.932,2.932-1.63,1.63-2.932-2.932L10.75,20.7Z" transform="translate(-1)"/>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25.364" height="27.669" viewBox="0 0 25.364 27.669">
+              <path id="fi-rs-trash-xmark" d="M26.364,4.612H19.446V2.306A2.308,2.308,0,0,0,17.14,0H10.223A2.308,2.308,0,0,0,7.917,2.306V4.612H1V6.917H2.9L4.859,24.592A3.456,3.456,0,0,0,8.3,27.669H19.023a3.453,3.453,0,0,0,3.437-3.077L24.423,6.917h1.939V4.612ZM10.223,2.306H17.14V4.612H10.223Zm9.945,22.032a1.151,1.151,0,0,1-1.146,1.026H8.3a1.152,1.152,0,0,1-1.146-1.026L5.215,6.917H22.1l-1.936,17.42ZM9.12,19.072l2.932-2.932L9.12,13.209l1.63-1.63,2.932,2.932,2.932-2.932,1.63,1.63L15.312,16.14l2.932,2.932-1.63,1.63-2.932-2.932L10.75,20.7Z" transform="translate(-1)" fill="#bc81ff" />
             </svg>
+
           </Button>
         </div>
       </div>

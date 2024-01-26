@@ -9,7 +9,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   return (
     <li class="group flex">
       <a href={url} class="flex items-center">
-        <span class="group-hover:underline text-[13px] uppercase">
+        <span style="color: #BC81FF" class="group-hover:underline text-[13px] uppercase">
           {name}
         </span>
       </a>
@@ -58,7 +58,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
                           return (
                             <li>
-                              <a class={name.search(/tamanho/i) !== -1 ? "flex items-center justify-center rounded-full w-10 h-10 border-solid border-black bg-black text-white" : "hover:underline"} href={leaf.url}>
+                              <a class={name.search(/tamanho/i) !== -1 ? "flex items-center justify-center rounded-full w-10 h-10 border-solid border-brand bg-brand text-white" : "hover:underline"} href={leaf.url}>
                                 <span class={name.search(/tamanho/i) !== -1 ? "text-xs" : "text-[13.5px]"}>{leaf.name}</span>
                               </a>
                             </li>

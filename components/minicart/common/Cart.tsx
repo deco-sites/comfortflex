@@ -49,12 +49,14 @@ function Cart({
       {isEmtpy
         ? (
           <div class="flex flex-col items-center gap-6">
+
             <svg id="_01_align_center" data-name="01 align center" xmlns="http://www.w3.org/2000/svg" width="68.332" height="68.332" viewBox="0 0 68.332 68.332">
-              <path id="Caminho_9" data-name="Caminho 9" d="M51.249,17.083a17.083,17.083,0,0,0-34.166,0H0V59.791a8.542,8.542,0,0,0,8.542,8.542H59.791a8.542,8.542,0,0,0,8.542-8.542V17.083ZM34.166,5.694A11.389,11.389,0,0,1,45.555,17.083H22.777A11.389,11.389,0,0,1,34.166,5.694Zm28.472,54.1a2.847,2.847,0,0,1-2.847,2.847H8.542a2.847,2.847,0,0,1-2.847-2.847V22.777H17.083v5.694h5.694V22.777H45.555v5.694h5.694V22.777H62.638Z"/>
+              <path id="Caminho_9" data-name="Caminho 9" d="M51.249,17.083a17.083,17.083,0,0,0-34.166,0H0V59.791a8.542,8.542,0,0,0,8.542,8.542H59.791a8.542,8.542,0,0,0,8.542-8.542V17.083ZM34.166,5.694A11.389,11.389,0,0,1,45.555,17.083H22.777A11.389,11.389,0,0,1,34.166,5.694Zm28.472,54.1a2.847,2.847,0,0,1-2.847,2.847H8.542a2.847,2.847,0,0,1-2.847-2.847V22.777H17.083v5.694h5.694V22.777H45.555v5.694h5.694V22.777H62.638Z" fill="#bc81ff" />
             </svg>
+
             <span class="block text-center font-medium text-[17px] uppercase max-w-[130px]">Sua sacola está vazia</span>
             <button
-              class="text-sm py-4 px-12 uppercase border-black bg-black text-white rounded-none"
+              class="text-sm py-4 px-12 uppercase border-none bg-brand text-white rounded-3xl"
               onClick={() => {
                 displayCart.value = false;
               }}
@@ -126,7 +128,7 @@ function Cart({
                 <a class="inline-block w-full" href={checkoutHref}>
                   <Button
                     data-deco="buy-button"
-                    class="rounded-none outline-none w-full bg-black text-xl uppercase text-white p-4 font-light leading-none h-auto"
+                    class="rounded-3xl outline-none w-full bg-brand text-xl uppercase text-white p-4 font-light leading-none h-auto"
                     disabled={loading || isEmtpy}
                     onClick={() => {
                       sendEvent({

@@ -30,7 +30,7 @@ function NotFound() {
   return (
     <>
       <div className="container w-full flex justify-center items-center py-2 ">
-        <div className="bg-black mb-8">
+        <div className="bg-brand mb-8">
           <div className="max-w-container w-full mx-auto px-4 flex flex-col items-center w-full justify-center text-center py-12 text-white">
             <h1 className="text-[25px] leading-[25px] font-bold mb-6 uppercase">Oops! <br /> O item que você buscou não foi encontrado!</h1>
             <h2 className="uppercase mb-3">Mas não se preocupe, tente novamente utilizando nossas dicas:</h2>
@@ -89,7 +89,7 @@ function Result({
           {pageInfo.previousPage && pageInfo.previousPage.replace(/(.*)(page=[0-9]*)(.*)/i, "$2").replace('page=', "")}
         </a>
 
-        <span class="btn join-item border border-solid hover:bg-slate-50 bg-transparent border-black">
+        <span style="border-radius: 100%; border: 1px solid #BC81FF" class="btn join-item hover:bg-slate-50 bg-transparent ">
           {pageInfo.currentPage}
         </span>
 

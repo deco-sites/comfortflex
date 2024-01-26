@@ -56,7 +56,7 @@ function SearchControls(
           <div class="flex flex-col justify-between sm:gap-4 sm:flex-row sm:items-end sm:h-auto">
             <div class="flex flex-col ml-0 items-start sm:p-0 mb-7">
               <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
-              <div class="hidden sm:block mt-5 uppercase text-base text-black">Filtros</div>
+              <div style="color: #BC81FF" class="hidden sm:block mt-5 uppercase text-base font-bold">Filtros</div>
             </div>
 
             <div class="flex items-center gap-x-5 mb-7">
@@ -65,9 +65,10 @@ function SearchControls(
                   <div class="hidden sm:block font-medium text-sm">{records === 1 ? `1 Produto` : `${records} Produtos`}</div>
                 ) : null
               }
-              <div class="flex flex-row items-center justify-between sm:gap-4 sm:border-none w-full">
+              <div class="flex flex-row items-center justify-between sm:gap-4 sm:border-none w-full ">
                 <Button
-                  class={displayFilter ? "btn-ghost" : "bg-black text-white uppercase sm:hidden font-normal h-10 border-0 rounded-none text-xs"}
+                  style="border: 2px solid #BC81FF; border-radius: 23px;"
+                  class={displayFilter ? "btn-ghost" : "bg-brand text-white uppercase sm:hidden font-normal h-10 border-0 text-xs"}
                   onClick={() => {
                     open.value = true;
                   }}

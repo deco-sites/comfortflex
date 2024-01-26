@@ -21,7 +21,7 @@ const Banner = (banner: BannerCTA, index: number) => {
                 src={banner?.srcDesktop || banner?.srcMobile}
                 alt={banner.alt}
                 loading="lazy"
-                class="w-full h-auto"
+                class="w-full h-auto rounded-3xl"
             />
             <div className="absolute bottom-0 left-1/2 translate-x-[-50%] pb-5">
                 <div className="flex justify-center">
@@ -33,7 +33,7 @@ const Banner = (banner: BannerCTA, index: number) => {
                     {banner?.buttonText && (
                         <a
                             href={banner.href}
-                            className="mt-5 bg-white sm:bg-transparent border border-solid border-white text-base text-black sm:text-white px-14 py-2 lg:px-24 uppercase"
+                            className="mt-5 bg-white sm:bg-transparent rounded-3xl border border-solid border-white text-base text-black sm:text-white px-14 py-2 lg:px-24 uppercase"
                         >
                             {banner.buttonText}
                         </a>
