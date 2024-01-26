@@ -4,6 +4,7 @@ import OutOfStock from "$store/islands/OutOfStock.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
+import SellerPopup from "$store/islands/SellerPopup.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
@@ -48,6 +49,7 @@ function ProductInfo({ page }: Props) {
 
   return (
     <div class="flex flex-col lg:first-letter:max-w-[500px]">
+      <SellerPopup />
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
         <h1>
