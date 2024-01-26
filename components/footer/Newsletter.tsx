@@ -49,7 +49,7 @@ function Newsletter(
 
   return (
     <form
-      class="form-control flex items-center flex-col justify-center lg:flex-row lg:gap-6 px-7 sm:px-10 py-7 bg-brand rounded-3xl"
+      class="form-control flex items-center flex-col justify-center lg:flex-row lg:gap-4 px-7 sm:px-10 py-7 bg-brand rounded-3xl"
       onSubmit={handleSubmit}
     >
       {
@@ -57,7 +57,7 @@ function Newsletter(
           <div class="text-white">Incrição concluída com sucesso!</div>
         ) : (
           <>
-            <p class="text-center sm:px-12 sm:py-4 text-lg text-white lg:text-lg lg:mb-0 lg:text-start lg:w-[280px]">{content?.description || ""}</p>
+            <p class="text-center sm:py-4 sm:px-2 text-lg text-white lg:text-lg lg:mb-0 lg:text-start lg:w-[380px]">{content?.description || ""}</p>
             <input
               name="name"
               class="outline-0 placeholder:text-slate-50 lg:flex-none input min-w-[250px] w-2/3 lg:w-[240px] input-bordered rounded-3xl placeholder-center text-center border-1 border-solid border-white mt-4 lg:mt-0 text-sm bg-transparent text-white"

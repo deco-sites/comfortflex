@@ -46,7 +46,7 @@ export default function FixedShippingSimulation({
           zipCode ? (
             <>
               <p class="text-sm text-black text-center">
-                Exibindo ofertas para <strong class="underline cursor-pointer" onClick={() => setDisplayPopup(true)}>{zipCode}</strong>
+                Exibindo ofertas para <strong class="underline cursor-pointer text-brand" onClick={() => setDisplayPopup(true)}>{zipCode}</strong>
               </p>
             </>
           ) : (

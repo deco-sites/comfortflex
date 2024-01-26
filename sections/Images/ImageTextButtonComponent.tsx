@@ -20,7 +20,7 @@ const ImageTextButtonComponent = ({
     buttonText,
 }: ImageTextButtonProps) => {
     return (
-        <div className="container min-[430px]:bg-black lg:bg-transparent min-[430px]:flex lg:block min-[430px]:items-stretch min-[430px]:px-[15px] min-[430px]:py-7 lg:px-[30px] lg:py-0 relative mb-10">
+        <div className="container lg:bg-transparent min-[430px]:flex lg:block min-[430px]:items-stretch min-[430px]:px-[15px] min-[430px]:py-7 lg:px-[30px] lg:py-0 relative mb-10">
             <img
                 src={isDesktop}
                 alt={alt}

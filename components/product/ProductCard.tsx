@@ -182,7 +182,7 @@ function ProductCard(
             >
               {formatPrice(listPrice, offers?.priceCurrency)}
             </div>
-            <div class={`text-base sm:text-xl ${theme === "light" ? "text-white" : "text-black"} font-semibold`}>
+            <div class={`text-brand sm:text-xl ${theme === "light" ? "text-white" : "text-black"} font-semibold`}>
               {formatPrice(price, offers?.priceCurrency)}
             </div>
           </div>

@@ -5,6 +5,7 @@ interface Props {
     srcMobile?: ImageWidget;
     srcDesktop?: ImageWidget;
     alt?: string;
+    href?: string;
     // title?: string;
     // subTitle?: string;
     // buttonText?: string;
@@ -14,9 +15,10 @@ interface Props {
 const Infocard = ({
     srcMobile = {},
     srcDesktop = {},
+    alt = 'Outlet Ramarim',
+    href = ''
     // title = 'OUTLET ',
     // subTitle = 'RAMARIM',
-    alt = 'Outlet Ramarim',
     // buttonText = 'CONFIRA',
     // href = '',
     // hiddenText
@@ -25,9 +27,11 @@ const Infocard = ({
     return (
         <div className="container">
             {/* <div> */}
+            <a href={href}>
                 <img src={srcDesktop} class="hidden sm:block" alt={alt} />
                 <img src={srcMobile} class="block sm:hidden" alt={alt} />
-                {/* <div className="flex flex-row-reverse md:ml-24 h-[344px] md:h-[500px]">
+            </a>
+            {/* <div className="flex flex-row-reverse md:ml-24 h-[344px] md:h-[500px]">
                     {!hiddenText &&
                         <div className="mt-32 mr-8 md:mt-[170px] md:mr-[200px]">
                             <div className=" md:w-1/4">
