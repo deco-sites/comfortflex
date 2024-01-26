@@ -9,11 +9,13 @@ const displayCart = signal(false);
 const displayMenu = signal(false);
 const displaySearchPopup = signal(false);
 const displaySearchDrawer = signal(false);
+const displaySellerPopup: any | null = signal(null);
 
 const state = {
   displayCart,
   displayMenu,
   displaySearchPopup,
+  displaySellerPopup,
   displaySearchDrawer,
 };
 

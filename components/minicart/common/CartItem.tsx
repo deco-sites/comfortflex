@@ -6,6 +6,7 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useCallback, useState } from "preact/hooks";
+import { useCart } from "apps/vtex/hooks/useCart.ts";
 
 export interface Item {
   image: {
@@ -45,6 +46,10 @@ function CartItem(
   const { image, name, price: { sale, list }, quantity } = item;
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
+  const { cart } = useCart();
+
+  const sellerId = cart.value?.items[index]?.seller;
+  const sellerName = cart.value?.sellers?.find((seller) => seller.id === sellerId)?.name;
 
   const withLoading = useCallback(
     <A,>(cb: (args: A) => Promise<void>) => async (e: A) => {
@@ -74,6 +79,7 @@ function CartItem(
       />
       <div class="flex flex-col gap-2">
         <span class="block text-sm text-black">{name}</span>
+        {sellerName && <small class="text-xs text-black font-semibold">{sellerName}</small>}
         <div class="flex items-center gap-2">
           <span class="line-through text-gray-300 text-sm">
             {formatPrice(list, currency, locale)}
