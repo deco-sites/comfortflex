@@ -28,7 +28,7 @@ const ImageTextButtonComponent = ({
                 height={666}
                 className="object-cover object-center min-[430px]:block lg:w-full lg:max-w-[80%] h-auto"
             />
-            <div className="flex flex-col items-start w-[90%] m-auto relative -mt-[100px] min-[430px]:mt-0 p-[38px] min-[430px]:p-7 lg:absolute lg:translate-y-[-50%] lg:top-1/2 lg:right-0 min-[430px]:w-1/2 lg:w-2/4 lg:px-[68px] lg:py-[63px] bg-brand rounded-3xl lg:mr-[30px] lg:mt-0">
+            <div className="flex flex-col items-start w-[90%] m-auto relative -mt-[150px] min-[430px]:mt-0 p-[38px] min-[430px]:p-7 lg:absolute lg:translate-y-[-50%] lg:top-1/2 lg:right-0 min-[430px]:w-1/2 lg:w-2/4 lg:px-[68px] lg:py-[63px] bg-brand rounded-3xl lg:mr-[30px] lg:mt-0">
                 <h2 className="text-white text-xl leading-tight min-[430px]:text-2xl lg:leading-normal lg:text-[40px] mb-5 lg:mb-5">{title}</h2>
                 <p className="text-xs text-white min-[430px]:text-sm lg:text-xl">{text}</p>
                 <a href={link} className="flex items-center gap-x-2 text-sm min-[430px]:text-base text-white py-3 px-8 border border-solid border-white rounded-3xl mt-7 lg:mt-[35px]" style={{ lineHeight: "1.2" }}>

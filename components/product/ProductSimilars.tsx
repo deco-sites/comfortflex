@@ -3,6 +3,7 @@ import { useSignal } from "@preact/signals";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { useCallback, useEffect } from "preact/compat";
 import type { Product } from "apps/commerce/types.ts";
+import Image from "deco-sites/std/components/Image.tsx";
 
 interface Props {
   product: Product;
@@ -37,7 +38,7 @@ function SimilarSelector({ product }: Props) {
                 {productSimilars.value.map((similar) => (
                     <li class="border border-gray-300 min-w-16">
                         <a href={similar.url}>
-                            <img src={similar.image[0].url.replace(/(https:\/\/ramarim\.vteximg\.com\.br\/arquivos\/ids\/)([0-9]*)(\/.*)/, "$1$2-64-64$3")} />
+                            <Image src={similar.image[0].url.replace(/(https:\/\/ramarim\.vteximg\.com\.br\/arquivos\/ids\/)([0-9]*)(\/.*)/, "$1$2-64-64$3")} />
                         </a>
                     </li>
                 ))}

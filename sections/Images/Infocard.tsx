@@ -1,4 +1,5 @@
 import type { ImageWidget } from 'apps/admin/widgets.ts';
+import Image from "deco-sites/std/components/Image.tsx";
 
 
 interface Props {
@@ -28,8 +29,8 @@ const Infocard = ({
         <div className="container">
             {/* <div> */}
             <a href={href}>
-                <img src={srcDesktop} class="hidden sm:block" alt={alt} />
-                <img src={srcMobile} class="block sm:hidden" alt={alt} />
+                <Image src={srcDesktop} class="hidden sm:block" alt={alt} />
+                <Image src={srcMobile} class="block sm:hidden" alt={alt} />
             </a>
             {/* <div className="flex flex-row-reverse md:ml-24 h-[344px] md:h-[500px]">
                     {!hiddenText &&

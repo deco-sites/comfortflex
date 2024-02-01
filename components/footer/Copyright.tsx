@@ -1,3 +1,4 @@
+import Image from "deco-sites/std/components/Image.tsx";
 interface Props {
     text: {
         institucionalText?: string,
@@ -10,7 +11,7 @@ export default function Copyright(props: Props) {
     return (
         <div>
             <div class="lg:container flex flex-col items-center justify-center gap-5 mx-4 my-7 md:flex-row md:mx-auto">
-                <img width="246" height="44" class="h-[44px]" src="https://ramarim.vteximg.com.br/arquivos/grupoRamarim.png" alt="Descrição da imagem" />
+                <Image width="246" height="44" class="h-[44px]" src="https://ramarim.vteximg.com.br/arquivos/grupoRamarim.png" alt="Descrição da imagem" />
                 <p class="text-center text-xs md:text-sm md:text-start md:m-0">{institucionalText}</p>
             </div>
             <div class="bg-gray-200 md:mt-5">

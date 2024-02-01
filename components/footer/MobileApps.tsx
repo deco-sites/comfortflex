@@ -1,3 +1,5 @@
+import Image from "deco-sites/std/components/Image.tsx";
+
 export default function MobileApps(
   { content }: { content: { apple?: string; android?: string } },
 ) {
@@ -7,7 +9,7 @@ export default function MobileApps(
         <div class="flex gap-2 lg:flex-wrap">
           {content?.apple && (
             <a href={content?.apple} target="_blank">
-              <img
+              <Image
                 loading="lazy"
                 width="135"
                 height="40"
@@ -17,7 +19,7 @@ export default function MobileApps(
           )}
           {content?.android && (
             <a href={content?.android} target="_blank">
-              <img
+              <Image
                 loading="lazy"
                 width="135"
                 height="40"
