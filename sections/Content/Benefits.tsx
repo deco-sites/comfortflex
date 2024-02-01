@@ -40,6 +40,7 @@ const DevolutionBenefit = () => {
 
 const MarketplaceBenefit = () => {
   return (
+    <a className="order-3" href='/quero-revender'>
     <div style="border: 1px solid #BC81FF; color:#BC81FF; border-radius:23px;"
       className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3 hover:text-white`}>
       <div className="flex items-center">
@@ -54,11 +55,13 @@ const MarketplaceBenefit = () => {
         <p className="text-xs uppercase">FAÇA PARTE DO NOSSO MARKETPLACE!</p>
       </div>
     </div>
+    </a>
   )
 }
 
 const StoreBenefit = () => {
   return (
+    <a className='order-4' href="/nossas-lojas">
     <div style="border: 1px solid #BC81FF; color:#BC81FF; border-radius:23px;"
       className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3 hover:text-white`}>
       <div className="flex items-center">
@@ -73,6 +76,7 @@ const StoreBenefit = () => {
         <p className="text-xs uppercase">ENCONTRE O VENDEDOR NA SUA CIDADE!</p>
       </div>
     </div>
+    </a>
   )
 }
 

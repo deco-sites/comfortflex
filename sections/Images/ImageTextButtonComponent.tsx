@@ -20,22 +20,15 @@ const ImageTextButtonComponent = ({
     buttonText,
 }: ImageTextButtonProps) => {
     return (
-        <div className="container lg:bg-transparent min-[430px]:flex lg:block min-[430px]:items-stretch min-[430px]:px-[15px] min-[430px]:py-7 lg:px-[30px] lg:py-0 relative mb-10">
+        <div className="container min-[450px]:bg-brand lg:bg-transparent min-[1050px]:flex lg:block min-[430px]:items-stretch min-[430px]:px-[15px] min-[430px]:py-7 lg:px-[30px] lg:py-0 relative mb-10 ">
             <img
                 src={isDesktop}
                 alt={alt}
                 width={834}
                 height={666}
-                className="hidden object-cover object-center min-[430px]:block w-1/2 lg:w-full lg:max-w-[80%] h-auto rounded-3xl"
+                className="object-cover object-center min-[430px]:block lg:w-full lg:max-w-[80%] h-auto"
             />
-            <img
-                src={isMobile}
-                alt={alt}
-                width={834}
-                height={666}
-                className="block min-[430px]:hidden w-full h-auto rounded-3xl"
-            />
-            <div className="flex flex-col items-start w-[90%] m-auto relative -mt-[150px] min-[430px]:mt-0 p-[38px] min-[430px]:p-7 lg:absolute lg:translate-y-[-50%] lg:top-1/2 lg:right-0 min-[430px]:w-1/2 lg:w-2/4 lg:px-[68px] lg:py-[63px] bg-brand rounded-3xl lg:mr-[30px] lg:mt-0">
+            <div className="flex flex-col items-start w-[90%] m-auto relative -mt-[100px] min-[430px]:mt-0 p-[38px] min-[430px]:p-7 lg:absolute lg:translate-y-[-50%] lg:top-1/2 lg:right-0 min-[430px]:w-1/2 lg:w-2/4 lg:px-[68px] lg:py-[63px] bg-brand rounded-3xl lg:mr-[30px] lg:mt-0">
                 <h2 className="text-white text-xl leading-tight min-[430px]:text-2xl lg:leading-normal lg:text-[40px] mb-5 lg:mb-5">{title}</h2>
                 <p className="text-xs text-white min-[430px]:text-sm lg:text-xl">{text}</p>
                 <a href={link} className="flex items-center gap-x-2 text-sm min-[430px]:text-base text-white py-3 px-8 border border-solid border-white rounded-3xl mt-7 lg:mt-[35px]" style={{ lineHeight: "1.2" }}>
