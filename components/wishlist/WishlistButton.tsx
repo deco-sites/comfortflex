@@ -29,7 +29,7 @@ function WishlistButton({
     e.preventDefault();
 
     if (!isUserLoggedIn) {
-      window.alert("Please log in before adding to your wishlist");
+      window.alert("Faça login antes de adicionar à sua lista de desejos");
 
       return;
     }

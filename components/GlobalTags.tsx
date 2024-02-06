@@ -15,7 +15,8 @@ function GlobalTags() {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
-      {/* <link rel="shortcut icon" href="/arquivos/favicon.ico?v=637861834869130000" /> */}
+      {/* FavIcon */}
+      <link rel="shortcut icon" href="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/27e07532-9bed-4b33-97a9-01a1542a8e63" />
 
       <style 
         type="text/css"

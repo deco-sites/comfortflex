@@ -86,7 +86,7 @@ function Navbar({ items, searchbar, logo }: {
           <a
             style="color: #BC81FF"
             class="flex items-center text-sm gap-x-1"
-            href="/wishlist"
+            href="/login?ReturnUrl=%2f_secure%2faccount#/wishlist"
             aria-label="Wishlist"
           >
 
