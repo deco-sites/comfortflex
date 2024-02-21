@@ -1,7 +1,6 @@
 import { useMemo } from "preact/hooks";
 import { useId } from "$store/sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
-import Header from "$store/components/ui/SectionHeader.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -52,7 +51,7 @@ function Logos(props: Props) {
   );
 
   return (
-    <div class="container mt-10">
+    <div class="container mt-10 mb-20">
       <div class="flex flex-col gap-1">
         <div class="text-center text-base sm:text-xl text-black uppercase">
           {title || ""}
@@ -61,7 +60,7 @@ function Logos(props: Props) {
           {description || ""}
         </div>
       </div>
-      <div class="relative px-10 mt-4">
+      <div id={id} class="relative px-10 mt-4">
         <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-8">
           {list.map((element, index) => (
             <Slider.Item index={index} class="carousel-item max-w-[110px]">
@@ -76,16 +75,16 @@ function Logos(props: Props) {
         </Slider>
         <Slider.PrevButton class="disabled:hidden absolute top-1/2 translate-y-[-50%] left-0 bg-transparent">
           <svg xmlns="http://www.w3.org/2000/svg" width="29.635" height="29.635" viewBox="0 0 29.635 29.635">
-            <path id="fi-rs-angle-circle-left" d="M0,14.818A14.818,14.818,0,1,1,14.818,29.635,14.818,14.818,0,0,1,0,14.818Zm27.166,0A12.348,12.348,0,1,0,14.818,27.166,12.348,12.348,0,0,0,27.166,14.818ZM10.6,16.564l5.821,5.818,1.746-1.746-5.821-5.818,5.77-5.77L16.372,7.3l-5.77,5.77A2.47,2.47,0,0,0,10.6,16.564Z"/>
+            <path id="fi-rs-angle-circle-left" d="M0,14.818A14.818,14.818,0,1,1,14.818,29.635,14.818,14.818,0,0,1,0,14.818Zm27.166,0A12.348,12.348,0,1,0,14.818,27.166,12.348,12.348,0,0,0,27.166,14.818ZM10.6,16.564l5.821,5.818,1.746-1.746-5.821-5.818,5.77-5.77L16.372,7.3l-5.77,5.77A2.47,2.47,0,0,0,10.6,16.564Z" />
           </svg>
         </Slider.PrevButton>
         <Slider.NextButton class="disabled:hidden absolute top-1/2 translate-y-[-50%] right-0 bg-transparent">
           <svg xmlns="http://www.w3.org/2000/svg" width="29.635" height="29.635" viewBox="0 0 29.635 29.635">
-            <path id="fi-rs-angle-circle-right" d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z"/>
+            <path id="fi-rs-angle-circle-right" d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z" />
           </svg>
         </Slider.NextButton>
         <SliderJS rootId={id} />
-      </div>
+      </div >
     </div>
   );
 }

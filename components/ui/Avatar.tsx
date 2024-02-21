@@ -1,13 +1,15 @@
 interface Props {
-  variant?: "active" | "disabled" | "default";
+  variant?: "active" | "disabled" | "default" | "disabled-active" | "default-active";
   content: string;
 }
 
 const variants = {
-  active: "border border-brand bg-brand text-white rounded-3xl",
+  active: "border border-brand bg-brand text-white rounded-full",
   disabled:
-    `relative after:absolute after:left-0 after:top-1/2 after:h-[1px] after:bg-red-800 after:w-full after:block after:-rotate-45 after:content-[""]`,
-  default: "border border-brand text-black hover:border-brand rounded-3xl",
+    `border rounded-full border-gray-300 text-brand hover:border-brand relative after:absolute after:left-0 after:top-1/2 after:h-[1px] after:bg-gray-400/65 after:w-full after:block after:-rotate-45 after:content-[""]`,
+  default:  "border border-gray-300 text-brand hover:border-brand rounded-full",
+  "disabled-active": `border border-brand bg-brand text-white relative after:absolute after:left-0 after:top-1/2 after:h-[1px] after:bg-white after:w-full after:block after:-rotate-45 after:content-[""]`,
+  "default-active": "border border-brand bg-brand text-white",
 };
 
 function Avatar({ content, variant = "default" }: Props) {

@@ -177,11 +177,14 @@ function ProductCard(
           <div
             class="flex items-center gap-x-1"
           >
-            <div
-              class="line-through text-gray-300 text-sm sm:text-lg"
-            >
-              {formatPrice(listPrice, offers?.priceCurrency)}
-            </div>
+            {
+              listPrice > price &&
+              <div
+                class="line-through text-gray-300 text-sm sm:text-lg"
+              >
+                {formatPrice(listPrice, offers?.priceCurrency)}
+              </div>
+            }
             <div class={`text-brand sm:text-xl ${theme === "light" ? "text-white" : "text-black"} font-semibold`}>
               {formatPrice(price, offers?.priceCurrency)}
             </div>
