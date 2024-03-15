@@ -40,6 +40,8 @@ function Cart({
 }: Props) {
   const { displayCart } = useUI();
   const isEmtpy = items.length === 0;
+  
+  const istotal: number = subtotal + discounts;
 
   return (
     <div
@@ -119,7 +121,7 @@ function Cart({
                 <div class="flex justify-between items-center w-full">
                   <span class="uppercase">Total</span>
                   <span class="font-bold text-lg text-black">
-                    {formatPrice(total, currency, locale)}
+                    {formatPrice(istotal)}
                   </span>
                 </div>
               </div>
