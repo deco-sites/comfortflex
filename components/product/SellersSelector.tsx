@@ -9,11 +9,11 @@ import type { SimulationOrderForm, SKU, Sla } from "apps/vtex/utils/types.ts";
 const LOADING_TIME = 1000;
 
 const formatShippingEstimate = (estimate: string) => {
-  const [, time, type] = estimate.split(/(\d+)/);
+    const [, time, type] = estimate.split(/(\d+)/);
 
-  if (type === "bd") return `${time} dias úteis`;
-  if (type === "d") return `${time} dias`;
-  if (type === "h") return `${time} horas`;
+    if (type === "bd") return `${time} dias úteis`;
+    if (type === "d") return `${time} dias`;
+    if (type === "h") return `${time} horas`;
 };
 
 function getSimulationVariables(simulation: SimulationOrderForm) {
@@ -31,15 +31,13 @@ function getSimulationVariables(simulation: SimulationOrderForm) {
     const days = parseInt(shippingEstimate.replace(/[^0-9]+/, ""));
 
     return { price, days };
-} 
-
+}
 function orderMethods(simulations: SimulationOrderForm[]): SimulationOrderForm[] {
     if (simulations.length <= 1) return simulations;
-  
     const pivot = simulations[0];
     const leftArr = [];
     const rightArr = [];
-  
+
     for (let index = 1; index < simulations.length; index++) {
         const currSimulation = getSimulationVariables(simulations[index]);
         const pivotSimulation = getSimulationVariables(pivot);
@@ -49,7 +47,7 @@ function orderMethods(simulations: SimulationOrderForm[]): SimulationOrderForm[]
         ) leftArr.push(simulations[index]);
         else rightArr.push(simulations[index]);
     }
-  
+
     return [...orderMethods(leftArr), pivot, ...orderMethods(rightArr)];
 }
 
@@ -89,7 +87,7 @@ function SellerCard({
                         Frete:
                         <span class={`text-xl font-semibold ${
                             shippingPrice === 0 ? "text-[#16b90b]" : "text-white"
-                        }`}>
+                            }`}>
                             {shippingPrice === 0 ? "Grátis" : (
                                 formatPrice(shippingPrice / 100, "BRL", "pt-BR")
                             )}
@@ -119,9 +117,9 @@ export default function SellersSelector(product: Product) {
     const loading = useSignal<boolean>(false);
     const simulateResult = useSignal<SimulationOrderForm[] | null>(null);
     const {
-      url,
-      name = "",
-      isVariantOf
+        url,
+        name = "",
+        isVariantOf
     } = product;
 
     const productGroupID = isVariantOf?.productGroupID ?? "";
@@ -175,42 +173,41 @@ export default function SellersSelector(product: Product) {
         return slas.length > 0;
     });
 
-    console.log("filteredSimulations", filteredSimulations);
     if (filteredSimulations.length === 0) return null;
 
     const methods = orderMethods(filteredSimulations);
-    
+
     return (
         <ul class="flex flex-col gap-4 p-4 mt-4 bg-brand text-white rounded-3xl">
             <span class="block uppercase">Outras ofertas de vendedores Ramarim</span>
             {
                 loading.value ?
-                        <div class="w-full flex items-center justify-center h-16">
-                            <span class="loading loading-ring" />
-                        </div>
+                    <div class="w-full flex items-center justify-center h-16">
+                        <span class="loading loading-ring" />
+                    </div>
                     :
-                        <>
-                            {methods.map((method, index) => {
-                                if (index < 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} />
-                                return null
-                            })}
-                            {methods.length > 2 ?
-                                <div class="collapse collapse-arrow rounded-none">
-                                    <input type="checkbox" class="min-h-[0]" />
-                                    <div class="collapse-title min-h-[0] !p-0 flex gap-2 underline mb-4">
-                                        <span class="uppercase underline">Ver mais ofertas</span>
-                                    </div>
-                                    <div class="collapse-content !p-0">
-                                        <ul class="flex flex-col gap-4">
-                                            {methods.map((method, index) => {
-                                                if (index >= 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} />
-                                                return null
-                                            })}
-                                        </ul>
-                                    </div>
+                    <>
+                        {methods.map((method, index) => {
+                            if (index < 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} />
+                            return null
+                        })}
+                        {methods.length > 2 ?
+                            <div class="collapse collapse-arrow rounded-none">
+                                <input type="checkbox" class="min-h-[0]" />
+                                <div class="collapse-title min-h-[0] !p-0 flex gap-2 underline mb-4">
+                                    <span class="uppercase underline">Ver mais ofertas</span>
                                 </div>
+                                <div class="collapse-content !p-0">
+                                    <ul class="flex flex-col gap-4">
+                                        {methods.map((method, index) => {
+                                            if (index >= 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} />
+                                            return null
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
                             : null}
-                        </>
+                    </>
             }
         </ul>
     );

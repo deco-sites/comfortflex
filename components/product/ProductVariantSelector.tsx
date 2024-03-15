@@ -27,19 +27,27 @@ function VariantSelector({ product }: Props) {
               <MeasurementChart />
             </div>
             <ul class="flex flex-row gap-3 flex-wrap">
-              {Object.entries(possibilities[name]).map(([value, link]) => {
+              {Object.entries(possibilities[name]).map((possibilitie, index) => {
+                const [value, link] = possibilitie;
                 const partial = usePartialSection({ href: link });
+
+                const variant = product.isVariantOf?.hasVariant[index];
+                const hasStock = variant?.offers?.offers.find((offer) => {
+                  if (!offer.inventoryLevel) return false;
+                  if (!offer.inventoryLevel.value) return false;
+                  return offer.inventoryLevel.value > 0;
+                });
   
                 return (
                   <li>
                     <button {...partial}>
                       <Avatar
                         content={value}
-                        variant={link === url
-                          ? "active"
-                          : link
-                          ? "default"
-                          : "disabled"}
+                        variant={
+                          link === url ?
+                            hasStock ? "default-active" : "disabled-active" 
+                              : hasStock ? "default" : "disabled"
+                        }
                       />
                     </button>
                   </li>

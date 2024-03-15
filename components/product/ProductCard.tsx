@@ -126,6 +126,22 @@ function ProductCard(
           },
         }}
       />
+       {
+        (listPrice && price) && (
+          <>
+            {
+              (listPrice > price) && (
+                <span 
+                  class="absolute top-0 right-0 bg-brand rounded-full text-white py-1 px-3 text-xs sm:text-sm mt-2 mr-2"
+                  style={{ zIndex: 1 }}
+                >
+                  {parseInt(`${((listPrice - price) / listPrice) * 100}`)}%
+                </span>
+              )
+            }
+          </>
+        )
+      }
       <figure
         class="relative overflow-hidden"
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
