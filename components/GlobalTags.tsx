@@ -45,6 +45,11 @@ function GlobalTags() {
               src: url("${asset("/fonts/Commissioner-SemiBold.woff2")}");
               font-weight: 600;
             }
+            @font-face {
+              font-family: "Nunito";
+              src: url("${asset("/fonts/Nunito-Medium.ttf")}");
+              font-weight: 600;
+            }
           `
         }}
       />

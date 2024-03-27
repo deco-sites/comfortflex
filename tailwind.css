@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:wght@300;400;600&display=swap');
+
 @layer base {
+
 
   /* Allow changing font family via CMS */
   html {
@@ -56,11 +59,11 @@
 }
 
 .markdown-body {
-	color: #000;
-	word-wrap: break-word;
+  color: #000;
+  word-wrap: break-word;
   font-size: 14px;
-	line-height: 1.7;
-	-webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 .markdown-body a {
@@ -156,4 +159,8 @@
   margin: 0;
   padding: 0;
   white-space: pre;
+}
+
+.Nunito {
+  font-family: 'Nunito';
 }

@@ -31,7 +31,7 @@ const Banner = ({ theme = 'white', ...banner }: BannerCTA) => {
                 </a>
                 <div className="absolute bottom-0 left-1/2 translate-x-[-50%] pb-5">
                     <div className="flex justify-center">
-                        <h3 className={`text-3xl uppercase font-bold  ${isWhiteTheme ? 'text-brand' : 'text-white'}`}>
+                        <h3 className={`text-3xl uppercase font-bold Nunito  ${isWhiteTheme ? 'text-brand' : 'text-white'}`}>
                             {banner?.title}
                         </h3>
                     </div>
@@ -39,7 +39,7 @@ const Banner = ({ theme = 'white', ...banner }: BannerCTA) => {
                         {banner?.buttonText && (
                             <a
                                 href={banner.href}
-                                className={`mt-5 rounded-3xl ${isWhiteTheme ? 'bg-transparent text-brand' : 'bg-transparent text-white'} border border-solid ${isWhiteTheme ? 'border-brand' : 'border-white'} text-base px-14 py-2 lg:px-24 uppercase`}
+                                className={`mt-5 rounded-3xl Nunito ${isWhiteTheme ? 'bg-transparent text-brand' : 'bg-transparent text-white'} border border-solid ${isWhiteTheme ? 'border-brand' : 'border-white'} text-base px-14 py-2 lg:px-24 uppercase`}
                             >
                                 {banner.buttonText}
                             </a>
