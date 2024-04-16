@@ -75,17 +75,17 @@ const useAddToCart = ({
 
       const { cart } = useCart();
 
-      const findSeller = cart.value?.sellers.find((s) => {
-        return s.id === seller;
-      });
+      // const findSeller = cart.value?.sellers.find((s) => {
+      //   return s.id === seller;
+      // });
 
-      if (findSeller || cart.value?.items.length === 0) {
-        await addToCart(product);
+      // if (findSeller || cart.value?.items.length === 0) {
+      await addToCart(product);
 
-        displayCart.value = true;
-      } else {
-        displaySellerPopup.value = product;
-      }
+      displayCart.value = true;
+      // } else {
+      //   displaySellerPopup.value = product;
+      // }
     } finally {
       setLoading(false);
     }
