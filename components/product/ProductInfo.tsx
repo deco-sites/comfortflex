@@ -10,7 +10,6 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import SellersSelector from "$store/islands/SellersSelector.tsx";
-
 interface Props {
   page: ProductDetailsPage | null;
 }
@@ -37,13 +36,15 @@ function ProductInfo({ page }: Props) {
   } = product;
 
   const description = product.description || isVariantOf?.description;
+  const currentOffers = useOffer(offers);
   const {
     price = 0,
     listPrice,
     seller = "1",
+    sellerName = "Comfortflex",    
     installments,
     availability,
-  } = useOffer(offers);
+  } = currentOffers;
   const productGroupID = isVariantOf?.productGroupID ?? "";
   const discount = price && listPrice ? listPrice - price : 0;
 
@@ -110,7 +111,7 @@ function ProductInfo({ page }: Props) {
                     discount={discount}
                     seller={seller}
                   />
-                  <div>Vendido e Entregue por <span style="color: #BC81FF" class="uppercase underline">{seller}</span></div>
+                  <div>Vendido e Entregue por <span style="color: #BC81FF" class="uppercase underline">{sellerName}</span></div>
                   <p class="text-sm">ATENÇÃO: O prazo de entrega começa a contar em até 48h úteis após a aprovação do pedido.</p>
                 </>
               )}
@@ -118,20 +119,20 @@ function ProductInfo({ page }: Props) {
           )
           : <OutOfStock productID={productID} />}
       </div>
-      <SellersSelector {...product} />
+      <SellersSelector product={{...product}} currentSeller={seller} />
       {/* Description card */}
-      <div class="border-t border-gray-300 pt-4 mt-4 sm:m4-6">
+      <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
         <span class="block text-base uppercase mb-3">Detalhes do Produto</span>
         <div
           class="text-sm"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
-      <div class="border-t border-gray-300 pt-4 mt-4 sm:my-6">
+      <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
         <span class="block text-base uppercase mb-3">Ficha Técnica do Produto</span>
-        <div class="flex flex-row flex-wrap sm:mb-6">
+        <div class="flex flex-row flex-wrap">
           {
-            isVariantOf.additionalProperty?.map((property) => {
+            isVariantOf?.additionalProperty?.map((property) => {
               if ([
                 "video-produto",
                 "sellerid",

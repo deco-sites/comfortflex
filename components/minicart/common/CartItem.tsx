@@ -32,6 +32,8 @@ export interface Props {
   itemToAnalyticsItem: (index: number) => AnalyticsItem | null | undefined;
 }
 
+const imageURL = /(https:\/\/comfortflex\.vteximg\.com\.br\/arquivos\/ids\/[0-9]*\-)([0-9]*\-[0-9]*)(\/.*)/;
+
 function CartItem(
   {
     item,
@@ -47,6 +49,8 @@ function CartItem(
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
   const { cart } = useCart();
+
+  image.src = image.src.replace(imageURL, "$1185-154$3");
 
   const sellerId = cart.value?.items[index]?.seller;
   const sellerName = cart.value?.sellers?.find((seller) => seller.id === sellerId)?.name;

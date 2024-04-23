@@ -16,8 +16,6 @@ export type Props =
 function SearchControls(
   { filters, breadcrumb, displayFilter, sortOptions, productsFound, Pagination, pageInfo }: Props,
 ) {
-  console.log("pageInfo", pageInfo);
-  console.log("displayFilter", displayFilter);
 
   const open = useSignal(false);
 

@@ -46,7 +46,7 @@ const MarketplaceBenefit = () => {
       <div className="flex items-center">
         <Image
           src={asset("./image/store.svg")}
-          alt={"VENDA NA RAMARIM, FAÇA PARTE DO NOSSO MARKETPLACE!"}
+          alt={"VENDA NA COMFORTFLEX, FAÇA PARTE DO NOSSO MARKETPLACE!"}
           className="max-w-full max-h-full object-cover"
         />
       </div>

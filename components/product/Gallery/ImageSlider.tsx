@@ -10,7 +10,7 @@ export interface Props {
   page: ProductDetailsPage | null;
 }
 
-const imageURL = /(https:\/\/ramarim\.vtexassets\.com\/arquivos\/ids\/)([0-9]*)(\/.*)/;
+const imageURL = /(https:\/\/comfortflex\.vtexassets\.com\/arquivos\/ids\/)([0-9]*)(\/.*)/;
 
 /**
  * @title Product Image Slider
@@ -31,7 +31,13 @@ export default function GallerySlider(props: Props) {
 
   return (
     <>
-      <div class="hidden lg:grid grid-cols-2 gap-4 min-w-[500px]">
+      <div 
+        class="hidden lg:grid grid-cols-2 gap-4"
+        style={{
+          minWidth: "640px",
+          maxWidth: "640px" 
+        }}
+      >
         {images.map((img, index) => {
           const imageFullLine = index % 3 === 0;
           const optimizedURL = imageFullLine ? 
@@ -60,6 +66,8 @@ export default function GallerySlider(props: Props) {
                   sizes="(max-width: 640px) 100vw, 40vw"
                   src={img.url!}
                   alt={img.alternateName}
+                  width={500}
+                  height={500}
                   // Preload LCP image for better web vitals
                   preload={index === 0}
                   loading={index === 0 ? "eager" : "lazy"}

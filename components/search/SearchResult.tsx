@@ -70,8 +70,6 @@ function Result({
     /*{ <div>{productsFound}</div> }*/
   );
 
-  console.log("pageInfo", pageInfo);
-
   const Pagination = (
     <div class="flex justify-center my-4">
       <div class="join">

@@ -16,13 +16,8 @@ interface Props {
 const Infocard = ({
     srcMobile = {},
     srcDesktop = {},
-    alt = 'Outlet Ramarim',
+    alt = 'Outlet Comfortflex',
     href = ''
-    // title = 'OUTLET ',
-    // subTitle = 'RAMARIM',
-    // buttonText = 'CONFIRA',
-    // href = '',
-    // hiddenText
 }: Props) => {
 
     return (

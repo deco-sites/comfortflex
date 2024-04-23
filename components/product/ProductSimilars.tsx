@@ -3,14 +3,12 @@ import { useSignal } from "@preact/signals";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { useCallback, useEffect } from "preact/compat";
 import type { Product } from "apps/commerce/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
 
 interface Props {
   product: Product;
 }
 
 function SimilarSelector({ product }: Props) {
-
     if (!IS_BROWSER) return null;
 
     const productSimilars = useSignal<Product[] | null>(null);
@@ -35,13 +33,21 @@ function SimilarSelector({ product }: Props) {
         <div>
             <span class="block text-base uppercase mb-2">Cores</span>
             <ul class="flex flex-wrap flex-row gap-2">
-                {productSimilars.value.map((similar) => (
-                    <li class="border border-gray-300 max-w-16">
-                        <a href={similar.url}>
-                            <Image src={similar.image[0].url.replace(/(https:\/\/ramarim\.vteximg\.com\.br\/arquivos\/ids\/)([0-9]*)(\/.*)/, "$1$2-64-64$3")} />
-                        </a>
-                    </li>
-                ))}
+                {productSimilars.value.map((similar) => {
+                    const validURL = similar.isVariantOf.hasVariant.find((v) => {
+                        return v.offers?.offers.find((o) => {
+                            return o.inventoryLevel?.value > 0;
+                        });
+                    })?.url || similar.url;
+                
+                    return (
+                        <li class="border border-gray-300 min-w-16">
+                            <a href={validURL}>
+                                <img src={similar.image[0].url.replace(/(https:\/\/comfortflex\.vteximg\.com\.br\/arquivos\/ids\/)([0-9]*)(\/.*)/, "$1$2-64-64$3")} width="64" height="64" />
+                            </a>
+                        </li>
+                    )
+                })}
             </ul>
         </div>
     )

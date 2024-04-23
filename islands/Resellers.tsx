@@ -20,7 +20,6 @@ export default function Reseller() {
                 }
             });
             const data = await response.json();
-            console.log(data);
             setResellers(data);
         }
 
@@ -36,7 +35,7 @@ export default function Reseller() {
         return (
             <div class="container pt-12 pb-8 flex flex-col items-center">
                 <h1 class="text-base uppercase text-brand font-semibold text-center">Representantes</h1>
-                <p class="text-sm text-[#919191] text-center">Para revender Ramarim na sua loja, entre em contato com o representante da sua região, aplicando o filtro por Estado abaixo:</p>
+                <p class="text-sm text-[#919191] text-center">Para revender Comfortflex na sua loja, entre em contato com o representante da sua região, aplicando o filtro por Estado abaixo:</p>
                 <div class="mt-3 mb-8 border border-brand">
                     <select class="w-min cursor-pointer outline-none uppercase p-3 sm:py-2 sm:px-5 mr-3 sm:mr-4 text-brand rounded-none text-xs sm:text-sm" onChange={stateChange}>
                         <option value="AC">Acre</option>

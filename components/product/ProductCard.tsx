@@ -1,42 +1,13 @@
-import type { Platform } from "$store/apps/site.ts";
-import { SendEventOnClick } from "$store/components/Analytics.tsx";
-import Avatar from "$store/components/ui/Avatar.tsx";
-import WishlistButton from "$store/islands/WishlistButton.tsx";
-import { formatPrice } from "$store/sdk/format.ts";
-import { useOffer } from "$store/sdk/useOffer.ts";
-import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
-import type { Product } from "apps/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
-import V from "https://esm.sh/v135/deepmerge@4.3.1/esnext/deepmerge.mjs";
+import WishlistButton from "$store/islands/WishlistButton.tsx";
 
-// export interface Layout {
-//   basics?: {
-//     contentAlignment?: "Left" | "Center";
-//     oldPriceSize?: "Small" | "Normal";
-//     ctaText?: string;
-//   };
-//   elementsPositions?: {
-//     skuSelector?: "Top" | "Bottom";
-//     favoriteIcon?: "Top right" | "Top left";
-//   };
-//   hide?: {
-//     productName?: boolean;
-//     productDescription?: boolean;
-//     allPrices?: boolean;
-//     installments?: boolean;
-//     skuSelector?: boolean;
-//     cta?: boolean;
-//   };
-//   onMouseOver?: {
-//     image?: "Change image" | "Zoom image";
-//     card?: "None" | "Move up";
-//     showFavoriteIcon?: boolean;
-//     showSkuSelector?: boolean;
-//     showCardShadow?: boolean;
-//     showCta?: boolean;
-//   };
-// }
+import { useOffer } from "$store/sdk/useOffer.ts";
+import { formatPrice } from "$store/sdk/format.ts";
+import { SendEventOnClick } from "$store/components/Analytics.tsx";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+
+import type { Product } from "apps/commerce/types.ts";
+import type { Platform } from "$store/apps/site.ts";
 
 interface Props {
   product: Product;
@@ -67,31 +38,31 @@ function ProductCard(
   { product, preload, itemListName, platform, theme = "dark", index }: Props,
 ) {
   const {
-    // url,
     productID,
-    name,
     image: images,
     offers,
     isVariantOf,
   } = product;
 
-  const variantWithStockURL = isVariantOf?.hasVariant?.find((v) => {
-    return v.offers.offers[0].inventoryLevel.value > 0;
-  })?.url;
+  const validOffer = isVariantOf?.hasVariant?.find((v) => {
+    // @ts-ignore offers is right
+    return v.offers.offers[0].availability === "https://schema.org/InStock";
+  }) || product;
 
-  const url = variantWithStockURL ? variantWithStockURL : product.url;
+  const url = validOffer.url ? validOffer.url : product.url;
 
   const id = `product-card-${productID}`;
-  const hasVariant = isVariantOf?.hasVariant ?? [];
   const productGroupID = isVariantOf?.productGroupID;
-  const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price, installments } = useOffer(offers);
-  const possibilities = useVariantPossibilities(hasVariant, product);
-  const variants = Object.entries(Object.values(possibilities)[0] ?? {});
+
+  const currentOffer = useOffer(validOffer.offers);
+  const {
+    price,
+    listPrice,
+    installments
+  } = currentOffer;
 
   const cta = () => {
-    console.log(url);
     return (
       <a
         href={url && relative(url)}
@@ -106,7 +77,7 @@ function ProductCard(
   return (
     <div
       id={id}
-      class="card card-compact group w-full text-start"
+      class="card card-compact group w-full text-start relative"
       data-deco="view-product"
     >
       <SendEventOnClick
@@ -166,8 +137,9 @@ function ProductCard(
             height={HEIGHT}
             class="bg-base-100 col-span-full row-span-full w-full"
             sizes="(max-width: 640px) 50vw, 20vw"
-            preload={preload}
-            loading={preload ? "eager" : "lazy"}
+            preload
+            loading="eager"
+            fetchPriority="low"            
             decoding="async"
           />
           <Image
@@ -177,7 +149,9 @@ function ProductCard(
             height={HEIGHT}
             class="bg-base-100 col-span-full row-span-full transition-opacity w-full opacity-0 lg:group-hover:opacity-100"
             sizes="(max-width: 640px) 50vw, 20vw"
-            loading="lazy"
+            preload
+            loading="eager"
+            fetchPriority="low"
             decoding="async"
           />
         </a>
@@ -193,8 +167,7 @@ function ProductCard(
           <div
             class="flex items-center gap-x-1"
           >
-            {
-              listPrice > price &&
+            {listPrice > price &&
               <div
                 class="line-through text-gray-300 text-sm sm:text-lg"
               >

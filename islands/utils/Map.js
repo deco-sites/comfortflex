@@ -28,13 +28,11 @@ export async function getStores() {
     if (localStoresData === null) {
         const fetchData = await fetch(storesURL, fetchSettings);
         const json = await fetchData.json();
-        console.log('json', json)
 
         localStorage.setItem("allStoresData", JSON.stringify(json));
 
         allStoresData.push(...json);
     } else {
-        console.log('localStoresData', localStoresData)
         allStoresData.push(...localStoresData);
     }
 

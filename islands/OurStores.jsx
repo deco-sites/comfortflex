@@ -108,7 +108,6 @@ function init() {
                 zoom
             });
             const stores = await getStores();
-            console.log("stores", stores);
             setMarkers(stores, map);
         });
 }
@@ -133,7 +132,6 @@ export default function OurStores() {
         const address = input.value;
         const geocoder = new google.maps.Geocoder();
         geocoder.geocode({ address }, function (results, status) {
-            console.log(results[0])
             if (status === "OK") {
                 bounds = new google.maps.Circle({
                     map,

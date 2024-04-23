@@ -4,7 +4,7 @@ import { useSignal } from "@preact/signals";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useCallback, useEffect } from "preact/compat";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
-import type { SimulationOrderForm, SKU, Sla } from "apps/vtex/utils/types.ts";
+import type { SimulationOrderForm } from "apps/vtex/utils/types.ts";
 
 const LOADING_TIME = 1000;
 
@@ -32,8 +32,10 @@ function getSimulationVariables(simulation: SimulationOrderForm) {
 
     return { price, days };
 }
+
 function orderMethods(simulations: SimulationOrderForm[]): SimulationOrderForm[] {
     if (simulations.length <= 1) return simulations;
+
     const pivot = simulations[0];
     const leftArr = [];
     const rightArr = [];
@@ -55,9 +57,10 @@ function SellerCard({
     productName: name,
     productUrl: url,
     productGroupID,
-    method
+    method,
+    offer,
+    sku,
 }) {
-    console.log("METHOD", method);
     const {
         purchaseConditions: {
             itemPurchaseConditions: [{
@@ -69,6 +72,8 @@ function SellerCard({
             }]
         }
     } = method;
+
+    const { sellerName } = offer;
 
     if (slas.length === 0) return null;
 
@@ -85,9 +90,7 @@ function SellerCard({
                 <div class="flex flex-col gap-1">
                     <div class="flex items-baseline text-base font-semibold gap-1">
                         Frete:
-                        <span class={`text-xl font-semibold ${
-                            shippingPrice === 0 ? "text-[#16b90b]" : "text-white"
-                            }`}>
+                        <span class="text-xl font-semibold text-white uppercase">
                             {shippingPrice === 0 ? "Grátis" : (
                                 formatPrice(shippingPrice / 100, "BRL", "pt-BR")
                             )}
@@ -98,7 +101,7 @@ function SellerCard({
                 <AddToCartButtonVTEX
                     url={url || ""}
                     name={name}
-                    productID={id}
+                    productID={sku}
                     productGroupID={productGroupID}
                     price={price}
                     discount={discount}
@@ -107,17 +110,27 @@ function SellerCard({
             </div>
             <div class="flex items-baseline text-sm gap-1">
                 <span>Vendido por:</span>
-                <span class="text-base font-semibold uppercase">{seller}</span>
+                <span class="text-base font-semibold uppercase">{sellerName}</span>
             </div>
         </li>
     )
 }
 
-export default function SellersSelector(product: Product) {
+interface Props {
+    product: Product;
+    currentSeller: string;
+}
+
+let sellers = [];
+export default function SellersSelector({
+    product,
+    currentSeller
+}: Props) {
     const loading = useSignal<boolean>(false);
     const simulateResult = useSignal<SimulationOrderForm[] | null>(null);
     const {
         url,
+        sku,
         name = "",
         isVariantOf
     } = product;
@@ -127,16 +140,16 @@ export default function SellersSelector(product: Product) {
     const getSellers = useCallback(async () => {
         loading.value = true;
         const simulations = [];
-        const sellers = product.offers.offers.filter((offer) => {
-            return offer.inventoryLevel.value > 0;
+        sellers = product.offers.offers.filter((offer) => {
+            return offer.inventoryLevel.value > 0 && offer.seller !== currentSeller;
         });
 
         for (const index in sellers) {
             simulations.push(invoke.vtex.actions.cart.simulation({
                 items: [{
                     id: product.productID,
-                    quantity: 1,
                     seller: sellers[index].seller,
+                    quantity: 1,
                 }],
                 postalCode: "12942500",
                 country: "BRA"
@@ -153,7 +166,12 @@ export default function SellersSelector(product: Product) {
 
     useEffect(() => {
         const zipCode = localStorage.getItem("zipCode");
+        const shippingCode = localStorage.getItem("shippingCode");
+
         if (zipCode) {
+            getSellers();
+        }
+        if (shippingCode) {
             getSellers();
         }
     }, [product]);
@@ -179,7 +197,7 @@ export default function SellersSelector(product: Product) {
 
     return (
         <ul class="flex flex-col gap-4 p-4 mt-4 bg-brand text-white rounded-3xl">
-            <span class="block uppercase">Outras ofertas de vendedores Ramarim</span>
+            <span class="block uppercase">Outras ofertas de vendedores Comfortflex</span>
             {
                 loading.value ?
                     <div class="w-full flex items-center justify-center h-16">
@@ -188,7 +206,7 @@ export default function SellersSelector(product: Product) {
                     :
                     <>
                         {methods.map((method, index) => {
-                            if (index < 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} />
+                            if (index < 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} sku={sku} offer={sellers[index]} />
                             return null
                         })}
                         {methods.length > 2 ?
@@ -200,7 +218,7 @@ export default function SellersSelector(product: Product) {
                                 <div class="collapse-content !p-0">
                                     <ul class="flex flex-col gap-4">
                                         {methods.map((method, index) => {
-                                            if (index >= 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} />
+                                            if (index >= 2) return <SellerCard method={method} productUrl={url} productName={name} productGroupID={productGroupID} sku={sku} offer={sellers[index]} />
                                             return null
                                         })}
                                     </ul>
