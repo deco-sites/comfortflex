@@ -141,7 +141,7 @@ export default function SellersSelector({
         loading.value = true;
         const simulations = [];
         sellers = product.offers.offers.filter((offer) => {
-            return offer.inventoryLevel.value > 0 && offer.seller !== currentSeller;
+            return offer.inventoryLevel.value > 0;
         });
 
         for (const index in sellers) {
