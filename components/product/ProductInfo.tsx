@@ -119,7 +119,7 @@ function ProductInfo({ page }: Props) {
           )
           : <OutOfStock productID={productID} />}
       </div>
-      <SellersSelector product={{...product}} currentSeller={seller} />
+      <SellersSelector product={{...product}} />
       {/* Description card */}
       <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
         <span class="block text-base uppercase mb-3">Detalhes do Produto</span>

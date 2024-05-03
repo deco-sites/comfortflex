@@ -18,11 +18,9 @@ const formatShippingEstimate = (estimate: string) => {
 
 function getSimulationVariables(simulation: SimulationOrderForm) {
   const {
-    purchaseConditions: {
-      itemPurchaseConditions: [{
+    logisticsInfo: [{
         slas,
       }],
-    },
   } = simulation;
 
   let price = 0;
@@ -77,15 +75,14 @@ function SellerCard({
   sku,
 }) {
   const {
-    purchaseConditions: {
-      itemPurchaseConditions: [{
-        id,
-        price,
-        listPrice,
-        seller,
-        slas,
-      }],
-    },
+    items: [
+      listPrice,
+      price,
+      seller
+    ],
+    logisticsInfo: [{
+      slas
+    }],
   } = method;
 
   const { sellerName } = offer;
@@ -146,13 +143,11 @@ function SellerCard({
 
 interface Props {
   product: Product;
-  currentSeller: string;
 }
 
 let sellers = [];
 export default function SellersSelector({
   product,
-  currentSeller,
 }: Props) {
   const loading = useSignal<boolean>(false);
   const simulateResult = useSignal<SimulationOrderForm[] | null>(null);
@@ -165,24 +160,29 @@ export default function SellersSelector({
 
   const productGroupID = isVariantOf?.productGroupID ?? "";
 
-  const getSellers = useCallback(async () => {
+  const getSellers = useCallback(async (currentProduct: Product) => {
     loading.value = true;
     const simulations = [];
-    sellers = product.offers.offers.filter((offer) => {
-      return offer.inventoryLevel.value > 0;
+    sellers = currentProduct.offers.offers.filter((offer) => {
+      return offer.availability === "https://schema.org/InStock";
     });
+
+    const postalCode = localStorage.getItem("zipCode");
+
+    if (!postalCode) return;
 
     for (const index in sellers) {
       simulations.push(invoke.vtex.actions.cart.simulation({
         items: [{
-          id: product.productID,
+          id: currentProduct.productID,
           seller: sellers[index].seller,
           quantity: 1,
         }],
-        postalCode: "12942500",
+        postalCode,
         country: "BRA",
       }));
     }
+
 
     try {
       const result = await Promise.all(simulations);
@@ -194,14 +194,8 @@ export default function SellersSelector({
 
   useEffect(() => {
     const zipCode = localStorage.getItem("zipCode");
-    const shippingCode = localStorage.getItem("shippingCode");
-
-    if (zipCode) {
-      getSellers();
-    }
-    if (shippingCode) {
-      getSellers();
-    }
+    const currentProduct = product;
+    if (zipCode) getSellers(currentProduct);
   }, [product]);
 
   if (simulateResult.value === null) return null;
@@ -209,11 +203,9 @@ export default function SellersSelector({
 
   const filteredSimulations = simulateResult.value.filter((simulation) => {
     const {
-      purchaseConditions: {
-        itemPurchaseConditions: [{
+      logisticsInfo: [{
           slas,
         }],
-      },
     } = simulation;
 
     return slas.length > 0;
