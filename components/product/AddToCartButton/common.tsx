@@ -2,7 +2,6 @@ import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useState } from "preact/hooks";
-import { useCart } from "apps/vtex/hooks/useCart.ts";
 
 export interface Props {
   /** @description: sku name */
@@ -14,6 +13,7 @@ export interface Props {
   url: string;
   seller: string;
   onAddItem: () => Promise<void>;
+  text?: string;
 }
 
 export async function addToCart({
@@ -24,6 +24,7 @@ export async function addToCart({
   url,
   onAddItem,
 }: Props) {
+
   await onAddItem();
 
   sendEvent({
@@ -53,7 +54,7 @@ const useAddToCart = ({
   onAddItem,
 }: Props) => {
   const [loading, setLoading] = useState(false);
-  const { displayCart, displaySellerPopup } = useUI();
+  const { displayCart, displayAddToCartPopup } = useUI();
 
   const onClick = async (e: MouseEvent) => {
     e.preventDefault();
@@ -68,24 +69,15 @@ const useAddToCart = ({
       url,
       seller,
       onAddItem,
-    };
+    }
 
     try {
       setLoading(true);
 
-      const { cart } = useCart();
-
-      // const findSeller = cart.value?.sellers.find((s) => {
-      //   return s.id === seller;
-      // });
-
-      // if (findSeller || cart.value?.items.length === 0) {
       await addToCart(product);
 
       displayCart.value = true;
-      // } else {
-      //   displaySellerPopup.value = product;
-      // }
+      displayAddToCartPopup.value = null;
     } finally {
       setLoading(false);
     }
@@ -95,12 +87,16 @@ const useAddToCart = ({
 };
 
 export default function AddToCartButton(props: Props) {
+  const {
+    text = "Adicionar à Sacola",
+  } = props;
+
   const btnProps = useAddToCart(props);
 
   return (
     <Button {...btnProps} data-deco="add-to-cart" class="font-normal uppercase 
     bg-brand text-white hover:bg-brand rounded-3xl">
-      Adicionar à Sacola
+      {text}
     </Button>
   );
 }

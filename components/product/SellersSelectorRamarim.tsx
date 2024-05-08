@@ -1,9 +1,10 @@
-import { useUI } from "$store/sdk/useUI.ts";
 import { invoke } from "../../runtime.ts";
 import { Product } from "apps/commerce/types.ts";
 import { useSignal } from "@preact/signals";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useCallback, useEffect } from "preact/compat";
+import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
+import type { SimulationOrderForm } from "apps/vtex/utils/types.ts";
 
 const LOADING_TIME = 1000;
 
@@ -15,7 +16,12 @@ const formatShippingEstimate = (estimate: string) => {
   if (type === "h") return `${time} horas`;
 };
 
-function getSimulationVariables(simulation: ProductOffer) {
+function getSimulationVariables(simulation: {
+  slas: {
+    price: number;
+    shippingEstimate: string;
+  }[];
+}) {
   const { slas } = simulation;
 
   let price = 0;
@@ -40,8 +46,8 @@ function getSimulationVariables(simulation: ProductOffer) {
 }
 
 function orderMethods(
-  simulations: ProductOffer[],
-): ProductOffer[] {
+  simulations: SimulationOrderForm[],
+): SimulationOrderForm[] {
   if (simulations.length <= 1) return simulations;
 
   const pivot = simulations[0];
@@ -58,42 +64,24 @@ function orderMethods(
   return [...orderMethods(leftArr), pivot, ...orderMethods(rightArr)];
 }
 
-interface Props {
-  product: Product;
-}
+function SellerCard({
+  index,
+  methods,
+}) {
+  console.log("methods", methods);
 
-interface ProductOffer {
-  url?: string,
-  name: string,
-  price: number,
-  seller: string,
-  listPrice: number,
-  productID: string,
-  sellerName: string,
-  productGroupID: string,
-  slas: SLA[]
-}
-
-interface SLA {
-  price: number,
-  shippingEstimate: string
-}
-
-interface SelledCardProps {
-  method: ProductOffer,
-  product: Product
-}
-
-function SellerCard({ method, product }: SelledCardProps) {
-  const { displayAddToCartPopup } = useUI();
+  let price = 0;
+  let listPrice = 0;
 
   const {
-    price,
+    url,
+    name,
+    productID,
+    productGroupID,
     seller,
-    listPrice,
     sellerName,
-    slas,
-  } = method;
+    slas
+  } = methods[index];
 
   if (slas.length === 0) return null;
 
@@ -106,9 +94,13 @@ function SellerCard({ method, product }: SelledCardProps) {
       return curr;
     });
 
+    price = sla.price;
+    listPrice = sla.listPrice;
     shippingPrice = sla.price;
     shippingEstimate = sla.shippingEstimate;
   } else {
+    price = slas[0].price;
+    listPrice = slas[0].listPrice;
     shippingPrice = slas[0].price;
     shippingEstimate = slas[0].shippingEstimate;
   }
@@ -121,29 +113,29 @@ function SellerCard({ method, product }: SelledCardProps) {
         <div class="flex flex-col gap-1">
           <div class="flex items-baseline text-base font-semibold gap-1">
             Frete:
-            <span class="text-xl font-semibold text-white uppercase">
+            <span
+              class={`text-xl font-semibold ${
+                shippingPrice === 0 ? "text-[#16b90b]" : "text-white"
+              }`}
+            >
               {shippingPrice === 0 ? "Grátis" : (
                 formatPrice(shippingPrice / 100, "BRL", "pt-BR")
               )}
             </span>
           </div>
-          <span class="text-xs text-[#fbf7ff]">
+          <span class="text-xs text-[#919191]">
             Em até {formatShippingEstimate(shippingEstimate)}
           </span>
         </div>
-        <button 
-          class="btn no-animation font-normal uppercase bg-brand text-white hover:bg-brand rounded-3xl"
-          onClick={() => {
-            displayAddToCartPopup.value = {
-              product,
-              price,
-              discount,
-              seller,
-            }
-          }}
-        >
-          Adicionar ao carrinho
-        </button>
+        <AddToCartButtonVTEX
+          url={url || ""}
+          name={name}
+          productID={productID}
+          productGroupID={productGroupID}
+          price={price}
+          discount={discount}
+          seller={seller}
+        />
       </div>
       <div class="flex items-baseline text-sm gap-1">
         <span>Vendido por:</span>
@@ -153,11 +145,24 @@ function SellerCard({ method, product }: SelledCardProps) {
   );
 }
 
+interface Props {
+  product: Product;
+}
+
 export default function SellersSelector({
   product,
 }: Props) {
   const loading = useSignal<boolean>(false);
-  const simulateResult = useSignal<ProductOffer[] | null>(null);
+  const productOffers = useSignal<[] | null>(null);
+  const simulateResult = useSignal(null);
+  const {
+    url,
+    sku,
+    name = "",
+    isVariantOf,
+  } = product;
+
+  const productGroupID = isVariantOf?.productGroupID ?? "";
 
   const getSellers = useCallback(async (currentProduct: Product) => {
     loading.value = true;
@@ -173,11 +178,15 @@ export default function SellersSelector({
       }
     } = currentProduct;
 
+    console.log("currentProduct", currentProduct);
+
     const simulations = [];
     // @ts-ignore next-line
     const sellers = offers.filter((offer) => {
       return offer.availability === "https://schema.org/InStock";
     });
+
+    console.log("sellers", sellers);
 
     const postalCode = localStorage.getItem("zipCode");
 
@@ -198,14 +207,10 @@ export default function SellersSelector({
 
     try {
       const result = await Promise.all(simulations);
-      const formattedSellers: ProductOffer[] = result.map((simulation) => {
-        // @ts-ignore Retorna o vendedor em questão, pego a primeira casa, por que como a simulação tem apenas um vendedor, a primeira e a unica
+      const formattedSellers = result.map((simulation) => {
         const seller = simulation.items[0].seller;
-        // @ts-ignore Sellers é uma lista de objetos criado logo acima para fazer a requisição de simulação
         const currentSeller = sellers.find((s) => s.seller === seller);
-        // @ts-ignore Dentro do objeto de produto, existe uma propriedade chamada "priceSpecification" que contém todas as opções de preços e parcelamentos
         const listPrice = currentSeller?.priceSpecification.find((p) => p.priceType === "https://schema.org/ListPrice")?.price;
-        // Formato um objeto especificamente com os dados necessários, antes estava pegando de 2 ou 3 objetos diferentes, gerando total confusão
         return {
           url: productURL,
           name: productName,
@@ -218,13 +223,13 @@ export default function SellersSelector({
           slas: simulation.logisticsInfo[0].slas
         }
       });
+      console.log("formattedSellers", formattedSellers);
       simulateResult.value = formattedSellers;
     } finally {
       setTimeout(() => loading.value = false, LOADING_TIME);
     }
   }, []);
 
-  // Inicializa a função, buscando o CEP armazenado no localStorage
   useEffect(() => {
     const zipCode = localStorage.getItem("zipCode");
     const currentProduct = product;
@@ -234,23 +239,23 @@ export default function SellersSelector({
   if (simulateResult.value === null) return null;
   if (simulateResult.value.length === 0) return null;
 
-  // Elimina os vendedores que não tiverem opções de entrega disponíveis
+  console.log("simulateResult", simulateResult.value);
   const filteredSimulations = simulateResult.value.filter((simulation) => {
+    console.log("simulation", simulation);
     const { slas } = simulation;
     return slas.length > 0;
   });
+  console.log("filteredSimulations", filteredSimulations);
 
-  // Caso não haja vendedores que tenham opções de entrega disponíveis, retorna null
   if (filteredSimulations.length === 0) return null;
 
-  // Ordena os métodos de entrega usando um algoritmo de ordenação Bubble Sort
   const methods = orderMethods(filteredSimulations);
 
+  console.log("methods", methods);
+
   return (
-    <ul class="flex flex-col gap-4 p-4 mt-4 bg-brand text-white rounded-3xl">
-      <span class="block uppercase">
-        Outras ofertas de vendedores Comfortflex
-      </span>
+    <ul class="flex flex-col gap-4 p-4 mt-4 bg-black text-white">
+      <span class="block uppercase">Outras ofertas de vendedores Ramarim</span>
       {loading.value
         ? (
           <div class="w-full flex items-center justify-center h-16">
@@ -260,7 +265,14 @@ export default function SellersSelector({
         : (
           <>
             {methods.map((method, index) => {
-              if (index < 2) return <SellerCard method={method} product={product} />;
+              if (index < 2) {
+                return (
+                  <SellerCard
+                    index={index}
+                    methods={methods}
+                  />
+                );
+              }
               return null;
             })}
             {methods.length > 2
@@ -273,7 +285,14 @@ export default function SellersSelector({
                   <div class="collapse-content !p-0">
                     <ul class="flex flex-col gap-4">
                       {methods.map((method, index) => {
-                        if (index >= 2) return <SellerCard method={method} product={product} />;
+                        if (index >= 2) {
+                          return (
+                            <SellerCard
+                              index={index}
+                              methods={methods}
+                            />
+                          );
+                        }
                         return null;
                       })}
                     </ul>

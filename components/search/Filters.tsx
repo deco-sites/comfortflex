@@ -19,8 +19,8 @@ function ValueItem(
   { url, selected, label, quantity }: FilterToggleValue,
 ) {
   return (
-    <a href={url} class="flex items-center gap-2 py-1">
-      <div aria-checked={selected} class="checkbox rounded-none w-4 h-4" />
+    <a href={url} class="flex items-center gap-2 py-1" rel="nofollow">
+      <div aria-checked={selected} class="checkbox rounded-none w-4 h-4 pointer-events-none" />
       <span class="text-xs">{label}</span>
       {/* {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>} */}
     </a>

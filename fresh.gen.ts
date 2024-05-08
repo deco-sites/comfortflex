@@ -3,11 +3,13 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $AddToCardArea from "./islands/AddToCardArea.tsx";
 import * as $AddToCartButton_linx from "./islands/AddToCartButton/linx.tsx";
 import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx";
 import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
+import * as $AddToCartModal from "./islands/AddToCartModal.tsx";
 import * as $FixedShippingSimulation from "./islands/FixedShippingSimulation.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Cart_linx from "./islands/Header/Cart/linx.tsx";
@@ -25,7 +27,6 @@ import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $ProductSimilars from "./islands/ProductSimilars.tsx";
 import * as $Resellers from "./islands/Resellers.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
-import * as $SellerPopup from "./islands/SellerPopup.tsx";
 import * as $SellersSelector from "./islands/SellersSelector.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
@@ -38,11 +39,13 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/AddToCardArea.tsx": $AddToCardArea,
     "./islands/AddToCartButton/linx.tsx": $AddToCartButton_linx,
     "./islands/AddToCartButton/shopify.tsx": $AddToCartButton_shopify,
     "./islands/AddToCartButton/vnda.tsx": $AddToCartButton_vnda,
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
+    "./islands/AddToCartModal.tsx": $AddToCartModal,
     "./islands/FixedShippingSimulation.tsx": $FixedShippingSimulation,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
     "./islands/Header/Cart/linx.tsx": $Header_Cart_linx,
@@ -60,7 +63,6 @@ const manifest = {
     "./islands/ProductSimilars.tsx": $ProductSimilars,
     "./islands/Resellers.tsx": $Resellers,
     "./islands/SearchControls.tsx": $SearchControls,
-    "./islands/SellerPopup.tsx": $SellerPopup,
     "./islands/SellersSelector.tsx": $SellersSelector,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,

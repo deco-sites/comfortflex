@@ -1,9 +1,6 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
-import CartButtonLinx from "$store/islands/Header/Cart/linx.tsx";
-import CartButtonShopify from "$store/islands/Header/Cart/shopify.tsx";
-import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 import CartButtonWake from "$store/islands/Header/Cart/wake.tsx";
 import Searchbar from "$store/islands/Header/Searchbar.tsx";
@@ -38,10 +35,10 @@ function Navbar({ items, searchbar, logo }: {
           <a
             href="/"
             class="flex-grow inline-flex items-center"
-            style={{ minHeight: navbarHeight }}
+            style={{ height: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={138} height={19} />
+            <Image src={logo.src} alt={logo.alt} width={138} height={97} />
           </a>
         )}
 
@@ -56,14 +53,14 @@ function Navbar({ items, searchbar, logo }: {
         <div class="flex-none w-header-laterals flex justify-start gap-x-5">
           {items.map((item) => <NavItem item={item} />)}
         </div>
-        <div class="flex-none w-[200px] bg-brand flex justify-center py-5">
+        <div class="flex-none w-[200px] bg-brand flex justify-center">
           {logo && (
             <a
               href="/"
               aria-label="Store logo"
               class="block"
             >
-              <Image src={logo.src} alt={logo.alt} width={138} height={19} />
+              <Image src={logo.src} alt={logo.alt} width={138} height={parseInt(navbarHeight)} />
             </a>
           )}
         </div>
