@@ -38,7 +38,7 @@ function Navbar({ items, searchbar, logo }: {
             style={{ height: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={138} height={97} />
+            <Image src={logo.src} alt={logo.alt} width={138} height={53} />
           </a>
         )}
 
