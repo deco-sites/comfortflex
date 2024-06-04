@@ -5,6 +5,7 @@ function Cart() {
   const { cart, loading, updateItems, addCouponsToCart } = useCart();
   const { items, totalizers } = cart.value ?? { items: [] };
   const total = totalizers?.find((item) => item.id === "Items")?.value || 0;
+  const shipping = totalizers?.find((item) => item.id === "Shipping")?.value || null;
   const discounts =
     totalizers?.find((item) => item.id === "Discounts")?.value || 0;
   const locale = cart.value?.clientPreferencesData.locale ?? "pt-BR";
@@ -17,12 +18,13 @@ function Cart() {
         image: { src: item.imageUrl, alt: item.skuName },
         quantity: item.quantity,
         name: item.name,
+        detailUrl: item.detailUrl,
         price: {
           sale: item.sellingPrice / 100,
           list: item.listPrice / 100,
         },
       }))}
-      total={(total - discounts) / 100}
+      total={(total + discounts) / 100}
       subtotal={total / 100}
       discounts={discounts / 100}
       locale={locale}
@@ -38,6 +40,7 @@ function Cart() {
 
         return item && itemToAnalyticsItem({ ...item, coupon }, index);
       }}
+      shipping={shipping !== null ? shipping / 100 : null}
       checkoutHref="/checkout"
     />
   );

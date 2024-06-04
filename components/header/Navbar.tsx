@@ -58,7 +58,7 @@ function Navbar({ items, searchbar, logo }: {
             <a
               href="/"
               aria-label="Store logo"
-              class="block"
+              class="flex items-center justify-center h-[59px]"
             >
               <Image src={logo.src} alt={logo.alt} width={138} height={parseInt(navbarHeight)} />
             </a>
@@ -67,7 +67,8 @@ function Navbar({ items, searchbar, logo }: {
         <div class="flex-none w-header-laterals flex items-center justify-end gap-x-5">
           <SearchButton />
           <Searchbar searchbar={searchbar} />
-          <a style="color: #BC81FF"
+          <a 
+            style="color: #BC81FF"
             class="flex items-center text-sm gap-x-1"
             href={isUserLoggedIn ? "/account" : "/login"}
             aria-label="Log in"

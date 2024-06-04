@@ -259,28 +259,9 @@ export default function SellersSelector({
         )
         : (
           <>
-            {methods.map((method, index) => {
-              if (index < 2) return <SellerCard method={method} product={product} />;
-              return null;
-            })}
-            {methods.length > 2
-              ? (
-                <div class="collapse collapse-arrow rounded-none">
-                  <input type="checkbox" class="min-h-[0]" />
-                  <div class="collapse-title min-h-[0] !p-0 flex gap-2 underline mb-4">
-                    <span class="uppercase underline">Ver mais ofertas</span>
-                  </div>
-                  <div class="collapse-content !p-0">
-                    <ul class="flex flex-col gap-4">
-                      {methods.map((method, index) => {
-                        if (index >= 2) return <SellerCard method={method} product={product} />;
-                        return null;
-                      })}
-                    </ul>
-                  </div>
-                </div>
-              )
-              : null}
+            {
+              methods.map((method) => <SellerCard method={method} product={product} />)
+            }
           </>
         )}
     </ul>
