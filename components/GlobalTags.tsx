@@ -68,6 +68,25 @@ function GlobalTags() {
       <noscript>
         <img height="1" width="1" src="https://www.facebook.com/tr?id=305982530602697&ev=PageView&noscript=1"/>
       </noscript>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(m, a, i, l, b, z, j, s) {
+              if (m[z]) return;
+              m[z] = {
+                id: b,
+                ready: 0
+              };
+              z = a.createElement(i);
+              j = a.getElementsByTagName(i)[0];
+              z.async = 1;
+              z.src = l;
+              j.parentNode.insertBefore(z, j);
+            })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '65b92c317058d778efaf38bb', 'MailbizIntegration');
+          `
+        }}
+      />
     </Head>
   );
 }
