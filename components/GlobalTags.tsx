@@ -83,7 +83,7 @@ function GlobalTags() {
               z.async = 1;
               z.src = l;
               j.parentNode.insertBefore(z, j);
-            })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '65b92c317058d778efaf38bb', 'MailbizIntegration');
+            })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '661e79e87058d778efdb8da6', 'MailbizIntegration');
           `
         }}
       />
