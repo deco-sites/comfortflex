@@ -117,7 +117,7 @@ function SellerCard({ method, product }: SelledCardProps) {
 
   return (
     <li class="block border-b border-white last:border-none pb-3">
-      <div class="flex justify-between items-start pb-2">
+      <div class="flex justify-between items-start pb-2 max-[420px]:flex-col max-[420px]:gap-2">
         <div class="flex flex-col gap-1">
           <div class="flex items-baseline text-base font-semibold gap-1">
             Frete:

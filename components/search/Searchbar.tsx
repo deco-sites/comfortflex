@@ -76,7 +76,7 @@ function Searchbar({
 
   return (
     <div
-      class="w-full grid gap-8 px-4 py-6 overflow-y-hidden"
+      class="w-full grid gap-8 px-4 py-6 overflow-y-hidden bg-white"
       style={{ gridTemplateRows: "min-content auto" }}
     >
       <form id={id} action={action} class="relative join">
