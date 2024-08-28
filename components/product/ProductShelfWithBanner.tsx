@@ -52,7 +52,7 @@ function ProductShelfWithBanner({
                 <div class="flex flex-col md:flex-row items-center gap-8 container bg-brand lg:bg-transparent mt-[50px] lg:mt-0 pb-9 lg:pb-0">
                     <Image
                         src={banner}
-                        class="block w-[80vw] lg:w-[calc(40% - 16px)] relative mt-[-50px] lg:mt-0 lg:mb-[-50px] h-[calc(100% + 50px)] object-cover object-center"
+                        class="block w-[80vw] lg:max-w-[500px] lg:w-[calc(40% - 16px)] relative mt-[-50px] lg:mt-0 lg:mb-[-50px] h-[calc(100% + 50px)] object-cover object-center"
                     />
                     <div
                         id={id}
