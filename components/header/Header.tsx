@@ -21,6 +21,11 @@ export interface Props {
 
   /** @title Logo */
   logo?: { src: ImageWidget; alt: string };
+
+  /** @title Texto de login quando o usuario estiver logado */
+  userLoggedText: string;
+  /** @title Texto de login quando o usuario não estiver logado */
+  userNotLoggedText: string;
 }
 
 function Header({
@@ -28,6 +33,9 @@ function Header({
   searchbar,
   navItems,
   logo,
+  userLoggedText,
+  userNotLoggedText,
+  user,
 }: Props) {
   const platform = usePlatform();
   const items = navItems ?? [];
@@ -45,12 +53,22 @@ function Header({
               items={items}
               searchbar={searchbar && { ...searchbar, platform }}
               logo={logo}
+              userLoggedText={userLoggedText}
+              userNotLoggedText={userNotLoggedText}
+              user={user}
             />
           </div>
         </Drawers>
       </header>
     </>
   );
+}
+
+export async function loader(props: Props, req: Request, ctx: AppContext) {
+  return {
+    ...props,
+    user: await ctx.invoke.vtex.loaders.user(),
+  };
 }
 
 export default Header;

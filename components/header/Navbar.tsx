@@ -5,20 +5,29 @@ import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 import CartButtonWake from "$store/islands/Header/Cart/wake.tsx";
 import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import type { Person, SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import FixedShippingSimulation from "../../islands/FixedShippingSimulation.tsx";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 
-function Navbar({ items, searchbar, logo }: {
+function Navbar({
+  items,
+  searchbar,
+  logo,
+  userLoggedText,
+  userNotLoggedText,
+  user,
+}: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: { src: string; alt: string };
+  userLoggedText: string;
+  userNotLoggedText: string;
+  user: Person | null;
 }) {
-  const platform = usePlatform();
-  const { user } = useUser();
+
   // Validar
   const isUserLoggedIn = Boolean(user.value?.email);
 
@@ -79,7 +88,7 @@ function Navbar({ items, searchbar, logo }: {
               <path id="Caminho_11" data-name="Caminho 11" d="M10.663,9.326a4.663,4.663,0,1,1,4.663-4.663A4.663,4.663,0,0,1,10.663,9.326Zm0-7.772a3.109,3.109,0,1,0,3.109,3.109A3.109,3.109,0,0,0,10.663,1.554Z" transform="translate(-3.669)" fill="#bc81ff" />
             </svg>
 
-            Entrar
+            {isUserLoggedIn ? userLoggedText : userNotLoggedText}
           </a>
           <a
             style="color: #BC81FF"
