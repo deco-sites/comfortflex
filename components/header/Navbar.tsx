@@ -28,6 +28,8 @@ function Navbar({
   user: Person | null;
 }) {
 
+  const platform = usePlatform();
+  
   // Validar
   const isUserLoggedIn = Boolean(user.value?.email);
 
