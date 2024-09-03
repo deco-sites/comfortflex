@@ -29,9 +29,9 @@ function Navbar({
 }) {
 
   const platform = usePlatform();
-  
+
   // Validar
-  const isUserLoggedIn = Boolean(user.value?.email);
+  const isUserLoggedIn = Boolean(user?.email);
 
   return (
     <>
