@@ -1,6 +1,5 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "deco-sites/std/components/Image.tsx";
 
 export interface Props {
   image: {
@@ -65,7 +64,7 @@ export default function ShoppableBanner(props: Props) {
               width={384}
               height={227}
             />
-            <Image
+            <img
               class="w-full object-cover"
               sizes="(max-width: 640px) 100vw, 30vw"
               src={image?.mobile}
