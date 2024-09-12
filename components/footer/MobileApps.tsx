@@ -1,4 +1,4 @@
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MobileApps(
   { content }: { content: { apple?: string; android?: string } },
@@ -11,8 +11,8 @@ export default function MobileApps(
             <a href={content?.apple} target="_blank">
               <Image
                 loading="lazy"
-                width="135"
-                height="40"
+                width={135}
+                height={40}
                 src="/image/app-apple.png"
               />
             </a>
@@ -21,8 +21,8 @@ export default function MobileApps(
             <a href={content?.android} target="_blank">
               <Image
                 loading="lazy"
-                width="135"
-                height="40"
+                width={135}
+                height={40}
                 src="/image/app-android.png"
               />
             </a>

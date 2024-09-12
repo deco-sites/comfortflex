@@ -1,6 +1,4 @@
-import type { ImageWidget } from 'apps/admin/widgets.ts';
-import Image from "deco-sites/std/components/Image.tsx";
-
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
 interface Props {
     srcMobile?: ImageWidget;
@@ -14,20 +12,20 @@ interface Props {
     // hiddenText: boolean
 }
 const Infocard = ({
-    srcMobile = {},
-    srcDesktop = {},
-    alt = 'Outlet Comfortflex',
-    href = ''
+    srcMobile = "",
+    srcDesktop = "",
+    alt = "Outlet Comfortflex",
+    href = "",
 }: Props) => {
-
     return (
         <div className="container">
             {/* <div> */}
             <a href={href}>
-                <Image src={srcDesktop} class="hidden sm:block" alt={alt} />
-                <Image src={srcMobile} class="block sm:hidden" alt={alt} />
+                <img src={srcDesktop} class="hidden sm:block" alt={alt} />
+                <img src={srcMobile} class="block sm:hidden" alt={alt} />
             </a>
-            {/* <div className="flex flex-row-reverse md:ml-24 h-[344px] md:h-[500px]">
+            {
+                /* <div className="flex flex-row-reverse md:ml-24 h-[344px] md:h-[500px]">
                     {!hiddenText &&
                         <div className="mt-32 mr-8 md:mt-[170px] md:mr-[200px]">
                             <div className=" md:w-1/4">
@@ -38,10 +36,12 @@ const Infocard = ({
                             <div className="md:w-4/5"></div>
                         </div>
                     }
-                </div> */}
+                </div> */
+            }
             {/* </div> */}
         </div>
     );
 };
 
 export default Infocard;
+
