@@ -18,6 +18,8 @@ function GlobalTags() {
       {/* FavIcon */}
       <link rel="shortcut icon" href="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/27e07532-9bed-4b33-97a9-01a1542a8e63" />
 
+      <meta name="google-site-verification" content="jBotxCksnECJxZwCHXtavFJ8-f_kni3MS5Jyre2gEHc" />
+
       <style 
         type="text/css"
         dangerouslySetInnerHTML={{
