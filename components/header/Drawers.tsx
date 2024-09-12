@@ -44,7 +44,9 @@ const HeaderLogin = (props: any) => {
           <path id="Caminho_10" data-name="Caminho 10" d="M16.989,21.772H15.434V17.852a2.3,2.3,0,0,0-2.3-2.3H6.852a2.3,2.3,0,0,0-2.3,2.3v3.919H3V17.852A3.857,3.857,0,0,1,6.852,14h6.284a3.857,3.857,0,0,1,3.852,3.852Z" transform="translate(-3 -3.12)" />
           <path id="Caminho_11" data-name="Caminho 11" d="M10.663,9.326a4.663,4.663,0,1,1,4.663-4.663A4.663,4.663,0,0,1,10.663,9.326Zm0-7.772a3.109,3.109,0,1,0,3.109,3.109A3.109,3.109,0,0,0,10.663,1.554Z" transform="translate(-3.669)" />
         </svg>
-        <span class="block truncate text-sm max-w-[200px]">Entrar</span>
+        <span class="block truncate text-sm max-w-[200px]">
+          {isUserLoggedIn ? "Minha Conta" : "Entrar"}
+        </span>
       </a>
       {onClose && (
         <button class="py-3 text-white" onClick={onClose}>
