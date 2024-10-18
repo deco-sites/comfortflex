@@ -34,7 +34,7 @@ function Notify({ productID }: Props) {
 
       <input placeholder="Nome" class="input input-bordered" name="name" />
       <input placeholder="Email" class="input input-bordered" name="email" />
-
+      <span class="mt-2 text-black w-full text-xs">Ao clicar em ENVIAR, você concorda com os <a href="/politicas-de-privacidade" class="font-bold text-black underline">Termos de Privacidade</a> e autoriza o uso dos seus dados.</span>
       <button class="btn disabled:loading" disabled={loading}>Enviar</button>
     </form>
   );
