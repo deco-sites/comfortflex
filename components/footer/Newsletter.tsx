@@ -57,7 +57,7 @@ function Newsletter(
           <div class="text-white">Incrição concluída com sucesso!</div>
         ) : (
           <>
-            <p class="text-start sm:py-4 sm:px-2 text-lg text-white lg:text-lg lg:mb-0 lg:w-[380px]">{content?.description || ""}</p>
+            <p class="text-start text-lg text-white lg:text-lg lg:mb-0 lg:w-[380px]">{content?.description || ""}</p>
             <div className="flex flex-wrap lg:w-fit w-newsletter-inputs">
               <div className="flex w-full flex-col justify-center lg:flex-row lg:gap-4">
                 <input
