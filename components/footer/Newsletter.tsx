@@ -58,28 +58,21 @@ function Newsletter(
         ) : (
           <>
             <p class="text-center sm:py-4 sm:px-2 text-lg text-white lg:text-lg lg:mb-0 lg:text-start lg:w-[380px]">{content?.description || ""}</p>
-            <div className="flex flex-wrap lg:w-fit w-newsletter-inputs">
-              <div className="flex w-full flex-col justify-center lg:flex-row lg:gap-6">
-                <input
-                  name="name"
-                  class="lg:flex-1 input min-w-[250px] w-full lg:w-[240px] input-bordered rounded-none placeholder-center text-left border-1 border-solid border-input-gray-bd mt-4 lg:mt-0 text-sm bg-transparent text-white active:bg-active-gray-input"
-                  placeholder={"SEU NOME"}
-                />
-                <input
-                  name="email"
-                  class="lg:flex-1 input min-w-[250px] w-full lg:w-[240px] input-bordered rounded-none placeholder-center text-left mt-4 lg:mt-0 border-1 border-solid border-white text-sm bg-transparent text-white"
-                  placeholder={"SEU EMAIL"}
-                />
-                <button
-                  type="submit"
-                  class="btn disabled:loading w-full lg:w-28 mt-4 lg:mt-0 rounded-none bg-white"
-                  disabled={loading}
-                >
-                  ASSINAR!
-                </button>
-              </div>
-              <span class="mt-2 text-white w-full text-sm">Ao clicar em ASSINAR, você concorda com os <a href="/politicas-de-privacidade" class="font-bold text-white underline">Termos de Privacidade</a> e autoriza o uso dos seus dados.</span>
-            </div>
+            <input
+              name="name"
+              class="outline-0 placeholder:text-slate-50 lg:flex-none input min-w-[250px] w-2/3 lg:w-[240px] input-bordered rounded-3xl placeholder-center text-center border-1 border-solid border-white mt-4 lg:mt-0 text-sm bg-transparent text-white"
+              placeholder={"SEU NOME"}
+            />
+            <input
+              name="email"
+              class="outline-0 placeholder:text-slate-50 lg:flex-1 input min-w-[250px] w-2/3 lg:w-fit input-bordered rounded-3xl placeholder-center text-center mt-4 lg:mt-0 border-1 border-solid border-white text-sm bg-transparent text-white"
+              placeholder={"SEU EMAIL"}
+            />
+            <button
+              type="submit"
+              class="btn disabled:loading w-[120px] lg:w-28 mt-4 lg:mt-0 rounded-3xl bg-white"
+              disabled={loading}
+            >ASSINAR!</button>
           </>
         )
       }
