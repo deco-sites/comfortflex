@@ -1,4 +1,3 @@
-import type { RichText } from 'apps/admin/widgets.ts'
 import { useId } from '../../sdk/useId.ts'
 
 /**
@@ -12,7 +11,10 @@ interface SEO {
     /**
      * @title Texto
      */
-    text: RichText
+    /**
+     * @format html
+     */
+    text: string
 }
 
 interface Props {
