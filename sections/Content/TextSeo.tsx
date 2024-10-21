@@ -45,7 +45,7 @@ export default function (props: ReturnType<typeof loader>) {
 
                     <label
                         for={id}
-                        class='text-[#353535] text-sm font-normal text-center underline underline-offset-2 cursor-pointer'
+                        class='text-[#BC81FF] text-sm font-normal text-center underline underline-offset-2 cursor-pointer'
                     >
                         <span class='block peer-checked:group-[]:hidden text-center'>Ver mais</span>
                         <span class='hidden peer-checked:group-[]:block text-center'>Ver menos</span>
