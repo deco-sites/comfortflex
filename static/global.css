@@ -56,15 +56,3 @@
     border-color: #fff;
     background-color: #fff;
 }
-
-.peer:checked~.group .peer-checked\:group-\[\]\:block {
-    display: block;
-}
-
-.peer:checked~.group .peer-checked\:group-\[\]\:hidden {
-    display: none;
-}
-
-.peer:checked~.group .prose-like {
-    max-height: none;
-}
