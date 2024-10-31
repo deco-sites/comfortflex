@@ -49,7 +49,8 @@ function SearchControls(
         </>
       }
     >
-      <div class="border-b border-[#D1D1D1] mb-4 sm:mb-7">
+      <div style="height: 144px"></div>
+      <div class="border-b border-[#D1D1D1] mb-4 sm:mb-7 w-full bg-white fixed z-50" style="top:90px">
         <div class="container box-border">
           <div class="flex flex-col justify-between sm:gap-4 sm:flex-row sm:items-end sm:h-auto">
             <div class="flex flex-col ml-0 items-start sm:p-0 mb-7">
