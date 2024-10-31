@@ -12,7 +12,7 @@ interface SEO {
      * @title Texto
      */
     /**
-     * @format html
+     * @format textarea
      */
     text: string
 }
