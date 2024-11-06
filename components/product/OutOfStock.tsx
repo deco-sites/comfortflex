@@ -29,8 +29,8 @@ function Notify({ productID }: Props) {
 
   return (
     <form class="form-control justify-start gap-2" onSubmit={handleSubmit}>
-      <span class="text-base">Este produto está indisponivel no momento</span>
-      <span class="text-sm">Avise-me quando estiver disponivel</span>
+      <span class="text-base">Este produto está indisponível no momento</span>
+      <span class="text-sm">Avise-me quando estiver disponível</span>
 
       <input placeholder="SEU NOME" class="input input-bordered rounded-3xl" name="name" />
       <input placeholder="SEU E-MAIL" class="input input-bordered rounded-3xl" name="email" />
