@@ -83,10 +83,10 @@ const Benefits = () => {
   return (
     <div
       id={id}
-      className="p-5 max-w-full	overflow-hidden"
+      className="lg:p-5 max-w-full	overflow-hidden"
     >
       <div
-        className="lg:container flex overflow-auto my-5 items-center lg:justify-center gap-3 md:flex-row md:gap-11"
+        className="lg:container flex overflow-auto md:my-5 items-center lg:justify-center gap-3 md:flex-row md:gap-11"
       >
         <InstallmentBenefit />
         <DevolutionBenefit />
