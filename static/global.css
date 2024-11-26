@@ -68,3 +68,109 @@
 .peer:checked~.group .prose-like {
     max-height: none;
 }
+
+
+
+.pitchbar__btn {
+    width: 127px;
+    height: 40px;
+    border-radius: 23px;
+    border: 2px solid #BC81FF;
+    color: #BC81FF;
+}
+.pitchbar {
+    padding: 8px 16px;
+    background-color: #26152F !important;
+}
+.pitchbar__text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pitchbar__text span {
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.cupomList {
+    padding: 64px 0;
+    margin: 52px auto;
+}
+
+.cupomList__title {
+    margin-bottom: 16px;
+}
+
+.cupomList__left {
+    display: block;
+    position: relative;
+    background: black;
+    border: 2px dashed white;
+    border-right: 0;
+    border-radius: 4px;
+    padding: 15px 40px 15px 8px;
+}
+.cupomList__left img {
+    max-width: 30px;
+}
+
+.cupomList__left p{
+    position: absolute;
+    height: 25px;
+    transform: rotate(-90deg);
+    width: 150px;
+    color: white;
+    bottom: 88px;
+    left: -28px;
+}
+
+.cupomList__right {
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px dashed #A3A3A3;
+}
+
+.cupomList__btn {
+    background: #BC81FF;
+    height: 40px;
+    border-radius: 23px;
+    width: 95%;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+section[data-manifest-key="deco-sites/comfortflex/sections/Content/BFPitchBar.tsx"] + section {
+    margin-top: 56px
+}
+
+section[data-manifest-key="deco-sites/comfortflex/sections/Content/BFPitchBar.tsx"] > div {
+    top: 0;
+}
+
+@media(max-width: 767px) {
+    section[data-manifest-key="deco-sites/comfortflex/sections/Content/BFPitchBar.tsx"] + section {
+        margin-top: 66px
+    }
+    
+    .bf-benefits__item {
+        min-width: 80vw;
+        border: 0 !important;
+    }
+
+    .bf-benefits__img {
+        min-width: 55px;
+    }
+    .bf-benefits__item.order-1 {
+        text-align: center;
+    }
+    
+    .bf-benefits__item.order-1 > div {
+        width: 50%!important;
+        text-align: center
+    }
+    
+    .bf-benefits__item.order-1 > div img {
+        margin: 0 auto;
+    }
+}
