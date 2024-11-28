@@ -54,7 +54,7 @@ function Newsletter(
     >
       {
         response.value !== null ? (
-          <div class="text-white">Incrição concluída com sucesso!</div>
+          <div class="text-white">Inscrição concluída com sucesso!</div>
         ) : (
           <>
             <p class="text-start text-lg text-white lg:text-lg lg:mb-0 lg:w-[380px]">{content?.description || ""}</p>
