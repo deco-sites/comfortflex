@@ -44,14 +44,14 @@ const MarketplaceBenefit = () => {
     <div className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3`}>
       <div className="flex items-center bf-benefits__img">
         <Image
-          src={asset("./image/store.svg")}
-          alt={"VENDA NA COMFORTFLEX, FAÇA PARTE DO NOSSO MARKETPLACE!"}
+          src={asset("./image/icon-discount.png")}
+          alt={"APROVEITE NOSSOS descontos BLACK FRIDAY"}
           className="max-w-full max-h-full object-cover"
         />
       </div>
       <div className="flex-auto flex flex-col gap-1 ">
-        <div className="text-base md:text-lg font-semibold uppercase">VENDA NA COMFORTFLEX</div>
-        <p className="text-xs uppercase">FAÇA PARTE DO NOSSO MARKETPLACE!</p>
+        <div className="text-xs uppercase">APROVEITE NOSSOS</div>
+        <p className="text-base md:text-lg font-semibold uppercase">descontos BLACK FRIDAY</p>
       </div>
     </div>
     </a>
@@ -64,14 +64,14 @@ const StoreBenefit = () => {
     <div className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3`}>
       <div className="flex items-center bf-benefits__img">
         <Image
-          src={asset("./image/pin.svg")}
-          alt={"PERTO DE VOCÊ, ENCONTRE O VENDEDOR NA SUA CIDADE!"}
+          src={asset("./image/icon-gift.png")}
+          alt={"ANTECIPE SUAS COMPRAS DE NATAL COM A nossa a Black Friday"}
           className="max-w-full max-h-full object-cover"
         />
       </div>
       <div className="flex-auto flex flex-col gap-1">
-        <div className="text-base md:text-lg font-semibold uppercase">PERTO DE VOCÊ</div>
-        <p className="text-xs uppercase">ENCONTRE O VENDEDOR NA SUA CIDADE!</p>
+        <div className="text-xs uppercase">ANTECIPE SUAS COMPRAS DE NATAL</div>
+        <p className="text-base md:text-lg font-semibold uppercase">COM A nossa a Black Friday</p>
       </div>
     </div>
     </a>
@@ -86,7 +86,7 @@ const Benefits = () => {
       className="p-5 max-w-full	overflow-hidden"
     >
       <div
-        className="lg:container flex overflow-auto my-5 items-center lg:justify-center gap-3 md:flex-row md:gap-11"
+        className="lg:container flex overflow-auto my-5 items-center lg:justify-center gap-3 md:flex-row md:gap-10"
       >
         <InstallmentBenefit />
         <DevolutionBenefit />
