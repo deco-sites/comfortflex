@@ -65,7 +65,7 @@ const StoreBenefit = () => {
       <div className="flex items-center bf-benefits__img">
         <Image
           src={asset("./image/icon-gift.png")}
-          alt={"ANTECIPE SUAS COMPRAS DE NATAL COM A nossa Black Friday"}
+          alt={"Antecipe suas compras de natal com a nossa black friday"}
           className="max-w-full max-h-full object-cover"
         />
       </div>
