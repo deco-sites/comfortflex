@@ -173,4 +173,12 @@ section[data-manifest-key="deco-sites/comfortflex/sections/Content/BFPitchBar.ts
     .bf-benefits__item.order-1 > div img {
         margin: 0 auto;
     }
+
+    .pitchbar__btn {
+        font-size: 9px !important;
+    }
+
+    .cupomList__item {
+        width: 380px;
+    }
 }

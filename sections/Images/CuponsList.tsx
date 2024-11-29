@@ -20,7 +20,7 @@ const Banner = ({ icon, valor, cupom, obs1, obs2 }: CupomList) => {
 
   return (
     <div
-      className='cupomList__item relative flex-none md:flex-initial w-[80vw] sm:w-[50vw] md:w-[60vw] lg:w-auto lg:mb-10'
+      className='cupomList__item relative flex-none md:flex-initial w-[360px] sm:w-[50vw] md:w-[60vw] lg:w-auto lg:mb-10'
     >
       <div class='flex items-center bg-white w-full rounded'>
         <div class='cupomList__left bg-brand flex items-center pr-10 relative'>
