@@ -37,7 +37,7 @@ const Banner = ({ icon, valor, cupom, obs1, obs2 }: CupomList) => {
                 </span>
             </div>
             <button
-                class='cupomList__btn mt-2 mb-1 h-8 text-white text-xs font-semibold flex justify-center items-center'
+                class='cupomList__btn mt-2 mb-1 h-8 text-white text-xs font-semibold flex justify-center items-center hidden'
             >
                 Copiar Código
             </button>
