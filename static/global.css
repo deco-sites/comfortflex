@@ -57,6 +57,14 @@
     background-color: #fff;
 }
 
+
+form.form-control input:focus {
+    background-color: #FFFFFFCC;
+    border-color: #BC81FF;
+    color: #BC81FF;
+    outline: none;
+}
+
 .peer:checked~.group .peer-checked\:group-\[\]\:block {
     display: block;
 }
