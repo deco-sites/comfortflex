@@ -1,11 +1,11 @@
 {
   "imports": {
     "deco-sites/comfortflex/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.25.1/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.8/",
     "$store/": "./",
     "https://esm.sh/@aws-sdk/client-s3@3.513.0": "npm:@aws-sdk/client-s3@3.513.0",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.61.5/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.36.13/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.109.0/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.64.21/",
     "$fresh/": "https://deno.land/x/fresh@1.6.1/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",
