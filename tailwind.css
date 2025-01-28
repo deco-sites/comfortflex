@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:wght@300;400;600&display=swap");
 
 @layer base {
-
-
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
@@ -17,8 +15,8 @@
   }
 
   /** Remove default styles from input[type=number] */
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
@@ -45,16 +43,16 @@
 }
 
 .group:disabled .group-disabled\:animate-progress {
-  animation: progress-frame ease normal
+  animation: progress-frame ease normal;
 }
 
 @keyframes progress-frame {
   0% {
-    --dot-progress: 0%
+    --dot-progress: 0%;
   }
 
   to {
-    --dot-progress: 100%
+    --dot-progress: 100%;
   }
 }
 
@@ -132,9 +130,9 @@
   margin: 1em 0 15px 0;
 }
 
-.markdown-body h1+p,
-.markdown-body h2+p,
-.markdown-body h3+p {
+.markdown-body h1 + p,
+.markdown-body h2 + p,
+.markdown-body h3 + p {
   margin-top: 10px;
 }
 
@@ -144,9 +142,9 @@
 
 .markdown-body code,
 .markdown-body pre {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   border-radius: 3px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: 12px;
   margin: 0 2px;
@@ -162,5 +160,34 @@
 }
 
 .Nunito {
-  font-family: 'Nunito';
+  font-family: "Nunito";
+}
+
+.seo-text h1 {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #353535 !important;
+  margin-bottom: 16px;
+}
+
+.seo-text h2 {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #353535 !important;
+}
+
+.seo-text p {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #353535 !important;
+}
+
+.seo-text strong {
+  font-weight: 700;
 }
