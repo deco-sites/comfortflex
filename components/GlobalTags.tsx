@@ -89,6 +89,12 @@ function GlobalTags() {
           `
         }}
       />
+
+      <script 
+        type="text/javascript" 
+        async 
+        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/f9b72c27-99e3-4bdd-8084-1fa8f9f30731-loader.js" >
+      </script>
     </Head>
   );
 }
