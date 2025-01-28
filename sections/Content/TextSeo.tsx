@@ -33,8 +33,8 @@ export default function (props: ReturnType<typeof loader>) {
             <div class="hidden sm:block w-min min-w-[300px]"></div>
             <div
                 id='seo'
-                class='flex flex-col lg:flex-row gap-x-10 gap-y-6 max-w-[96px] w-[95%] mx-auto mb-6 lg:mb-10'
-            >
+                class="flex flex-col lg:flex-row gap-x-10 gap-y-6 w-full mb-6 lg:mb-10 seo-text"
+                >
                 <input type='checkbox' id={id} class='hidden peer' />
 
                 <div class='flex flex-col gap-3 flex-1 group'>
