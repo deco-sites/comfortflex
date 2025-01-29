@@ -159,7 +159,7 @@ function ProductCard(
       {/* Prices & Name */}
       <div class="flex-auto flex flex-col py-2 gap-3 lg:gap-4">
         <h2
-          class={`truncate lg:text-lg text-base-content font-normal ${theme === "light" ? "text-white" : "text-black"}`}
+          class={`lg:text-lg text-base-content font-normal ${theme === "light" ? "text-white" : "text-black"}`}
         >
           {isVariantOf?.name}
         </h2>
