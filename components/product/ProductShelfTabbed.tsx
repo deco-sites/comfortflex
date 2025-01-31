@@ -1,7 +1,5 @@
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
-import ProductCard, {
-  Layout as cardLayout,
-} from "$store/components/product/ProductCard.tsx";
+import ProductCard, { Layout as cardLayout, } from "$store/components/product/ProductCard.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Header from "$store/components/ui/SectionHeader.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
@@ -10,83 +8,50 @@ import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-
+import { usePartialSection } from "@deco/deco/hooks";
 /** @titleBy title */
 interface Tab {
-  title: string;
-  products: Product[] | null;
+    title: string;
+    products: Product[] | null;
 }
-
 export interface Props {
-  tabs: Tab[];
-  title?: string;
-  description?: string;
-  layout?: {
-    headerAlignment?: "center" | "left";
-    headerfontSize?: "Normal" | "Large";
-  };
-  cardLayout?: cardLayout;
-  tabIndex?: number;
-  id?: string;
+    tabs: Tab[];
+    title?: string;
+    description?: string;
+    layout?: {
+        headerAlignment?: "center" | "left";
+        headerfontSize?: "Normal" | "Large";
+    };
+    cardLayout?: cardLayout;
+    tabIndex?: number;
+    id?: string;
 }
-
-function TabbedProductShelf({
-  tabs,
-  title,
-  description,
-  layout,
-  cardLayout,
-  tabIndex,
-  id: sectionId,
-}: Props) {
-  const id = useId();
-  const platform = usePlatform();
-  const ti = typeof tabIndex === "number"
-    ? Math.min(Math.max(tabIndex, 0), tabs.length)
-    : 0;
-  const { products } = tabs[ti];
-
-  if (!products || products.length === 0) {
-    return null;
-  }
-
-  return (
-    <div class="w-full container py-8 flex flex-col gap-5 lg:gap-7 lg:py-10">
+function TabbedProductShelf({ tabs, title, description, layout, cardLayout, tabIndex, id: sectionId, }: Props) {
+    const id = useId();
+    const platform = usePlatform();
+    const ti = typeof tabIndex === "number"
+        ? Math.min(Math.max(tabIndex, 0), tabs.length)
+        : 0;
+    const { products } = tabs[ti];
+    if (!products || products.length === 0) {
+        return null;
+    }
+    return (<div class="w-full container py-8 flex flex-col gap-5 lg:gap-7 lg:py-10">
       <div class="text-center text-base sm:text-xl text-brand font-bold uppercase">{title || ""}</div>
       <div class="flex justify-center">
         <div style="border:solid 1px #BC81FF; border-radius:23px;" class="flex items-center justify-center p-0">
-          {tabs.map((tab, index) => (
-            <button
-              class={`text-base uppercase block h-9 px-5 rounded-3xl ${index === ti ? "bg-brand text-white" : "bg-white text-brand"}`}
-              {...usePartialSection({ id: sectionId, props: { tabIndex: index } })}
-            >
+          {tabs.map((tab, index) => (<button class={`text-base uppercase block h-9 px-5 rounded-3xl ${index === ti ? "bg-brand text-white" : "bg-white text-brand"}`} {...usePartialSection({ id: sectionId, props: { tabIndex: index } })}>
               {tab.title}
-            </button>
-          ))}
+            </button>))}
         </div>
       </div>
 
-      <div
-        id={id}
-        class="container grid grid-cols-[48px_1fr_48px] px-0 sm:px-9"
-      >
+      <div id={id} class="container grid grid-cols-[48px_1fr_48px] px-0 sm:px-9">
         <Slider class="carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-5">
-          {products?.map((product, index) => (
-            <Slider.Item
-              index={index}
-              class="carousel-item w-[270px] sm:w-[292px] last:pr-6 sm:last:pr-0"
-            >
-              <ProductCard
-                product={product}
-                itemListName={title}
-                layout={cardLayout}
-                platform={platform}
-                index={index}
-              />
-            </Slider.Item>
-          ))}
+          {products?.map((product, index) => (<Slider.Item index={index} class="carousel-item w-[270px] sm:w-[292px] last:pr-6 sm:last:pr-0">
+              <ProductCard product={product} itemListName={title} layout={cardLayout} platform={platform} index={index}/>
+            </Slider.Item>))}
         </Slider>
 
         <>
@@ -102,24 +67,18 @@ function TabbedProductShelf({
           </div>
         </>
         
-        <SliderJS rootId={id} />
-        <SendEventOnLoad
-          event={{
+        <SliderJS rootId={id}/>
+        <SendEventOnLoad event={{
             name: "view_item_list",
             params: {
-              item_list_name: title,
-              items: products.map((product) =>
-                mapProductToAnalyticsItem({
-                  product,
-                  ...(useOffer(product.offers)),
-                })
-              ),
+                item_list_name: title,
+                items: products.map((product) => mapProductToAnalyticsItem({
+                    product,
+                    ...(useOffer(product.offers)),
+                })),
             },
-          }}
-        />
+        }}/>
       </div>
-    </div>
-  );
+    </div>);
 }
-
 export default TabbedProductShelf;

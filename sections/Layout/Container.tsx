@@ -1,15 +1,10 @@
-import { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 interface Props {
-  children: Section;
+    children: Section;
 }
-
 function Container({ children }: Props) {
-  return (
-    <div class="container">
-      <children.Component {...children.props} />
-    </div>
-  );
+    return (<div class="container">
+      <children.Component {...children.props}/>
+    </div>);
 }
-
 export default Container;
