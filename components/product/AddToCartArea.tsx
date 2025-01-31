@@ -20,7 +20,7 @@ export default function AddToCardArea({
 
   return (
     <>
-      <button 
+      <button
         class="btn no-animation font-normal uppercase bg-brand text-white hover:bg-brand rounded-3xl"
         onClick={() => {
           displayAddToCartPopup.value = {
@@ -28,7 +28,7 @@ export default function AddToCardArea({
             price,
             discount,
             seller,
-          }
+          };
         }}
       >
         Adicionar ao carrinho

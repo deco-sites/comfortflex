@@ -16,7 +16,7 @@ interface Collection {
   btn: string;
 }
 
-const btn = "Comprar"
+const btn = "Comprar";
 
 function Collections({ variant, collections }: Props) {
   if (variant === "one") {
@@ -41,7 +41,9 @@ function Collections({ variant, collections }: Props) {
                   class="relative flex justify-center items-end p-6 w-[310px] desktop:w-[calc((100vw-70px-70px)/4-20px)] monitor:w-[310px] h-[480px] border border-solid border-white text-base text-white shrink-0 snap-start desktop:shrink uppercase"
                 >
                   <p class="z-10 text-center text-black">{collection.label}</p>
-                  <a class="border border-solid border-white text-base text-white px-14 py-2 md:px-24 uppercase">{collection.btn}</a>
+                  <a class="border border-solid border-white text-base text-white px-14 py-2 md:px-24 uppercase">
+                    {collection.btn}
+                  </a>
                   <div class="h-full w-full bg-grey-1 absolute top-0 left-0 z-0">
                     <Image
                       alt="Imagem da coleção"
@@ -53,10 +55,7 @@ function Collections({ variant, collections }: Props) {
                       class="object-cover h-full w-full"
                     />
                   </div>
-                  <div
-                    class="absolute h-full w-full top-0 left-0 z-[1]"
-                  
-                  />
+                  <div class="absolute h-full w-full top-0 left-0 z-[1]" />
                 </a>
               </li>
             );
@@ -88,7 +87,6 @@ function Collections({ variant, collections }: Props) {
                   aria-label={`Clique para ver produtos de: ${collection.label}`}
                   class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 desktop:shrink group"
                 >
-                  
                   <h4 class="text-center text-large tracking-wide font-medium uppercase">
                     {collection.label}
                   </h4>

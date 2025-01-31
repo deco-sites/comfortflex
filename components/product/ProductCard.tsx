@@ -59,7 +59,7 @@ function ProductCard(
   const {
     price,
     listPrice,
-    installments
+    installments,
   } = currentOffer;
 
   const cta = () => {
@@ -67,11 +67,15 @@ function ProductCard(
       <a
         href={url && relative(url)}
         aria-label="view product"
-        class={`block py-2 sm:py-3 bg-black sm:bg-transparent border border-solid rounded-none hover:bg-black sm:hover:bg-transparent uppercase text-sm sm:text-base font-normal text-center text-white sm:text-black ${theme === "dark" ? "border-black text-white sm:text-black" : "border-white text-white sm:text-white"}`}
+        class={`block py-2 sm:py-3 bg-black sm:bg-transparent border border-solid rounded-none hover:bg-black sm:hover:bg-transparent uppercase text-sm sm:text-base font-normal text-center text-white sm:text-black ${
+          theme === "dark"
+            ? "border-black text-white sm:text-black"
+            : "border-white text-white sm:text-white"
+        }`}
       >
         Ver produto
       </a>
-    )
+    );
   };
 
   return (
@@ -97,22 +101,18 @@ function ProductCard(
           },
         }}
       />
-       {
-        (listPrice && price) && (
-          <>
-            {
-              (listPrice > price) && (
-                <span 
-                  class="absolute top-0 right-0 bg-brand rounded-full text-white py-1 px-3 text-xs sm:text-sm mt-2 mr-2"
-                  style={{ zIndex: 1 }}
-                >
-                  {parseInt(`${((listPrice - price) / listPrice) * 100}`)}%
-                </span>
-              )
-            }
-          </>
-        )
-      }
+      {(listPrice && price) && (
+        <>
+          {(listPrice > price) && (
+            <span
+              class="absolute top-0 right-0 bg-brand rounded-full text-white py-1 px-3 text-xs sm:text-sm mt-2 mr-2"
+              style={{ zIndex: 1 }}
+            >
+              {parseInt(`${((listPrice - price) / listPrice) * 100}`)}%
+            </span>
+          )}
+        </>
+      )}
       <figure
         class="relative overflow-hidden"
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
@@ -139,7 +139,7 @@ function ProductCard(
             sizes="(max-width: 640px) 50vw, 20vw"
             preload
             loading="eager"
-            fetchPriority="low"            
+            fetchPriority="low"
             decoding="async"
           />
           <Image
@@ -159,32 +159,37 @@ function ProductCard(
       {/* Prices & Name */}
       <div class="flex-auto flex flex-col py-2 gap-3 lg:gap-4">
         <h2
-          class={`truncate lg:text-lg text-base-content font-normal ${theme === "light" ? "text-white" : "text-black"}`}
+          class={`lg:text-lg text-base-content font-normal ${
+            theme === "light" ? "text-white" : "text-black"
+          }`}
         >
           {isVariantOf?.name}
         </h2>
         <div class="flex flex-col">
-          <div
-            class="flex items-center gap-x-1"
-          >
+          <div class="flex items-center gap-x-1">
             {listPrice > price &&
-              <div
-                class="line-through text-gray-300 text-sm sm:text-lg"
-              >
-                {formatPrice(listPrice, offers?.priceCurrency)}
-              </div>
-            }
-            <div class={`text-brand sm:text-xl ${theme === "light" ? "text-white" : "text-black"} font-semibold`}>
+              (
+                <div class="line-through text-gray-300 text-sm sm:text-lg">
+                  {formatPrice(listPrice, offers?.priceCurrency)}
+                </div>
+              )}
+            <div
+              class={`text-brand sm:text-xl ${
+                theme === "light" ? "text-white" : "text-black"
+              } font-semibold`}
+            >
               {formatPrice(price, offers?.priceCurrency)}
             </div>
           </div>
-          {
-            !installments ? null : (
-              <div class={`${theme === "light" ? "text-gray-300" : "text-gray-600"} text-sm sm:text-base font-medium truncate`}>
-                {installments}
-              </div>
-            )
-          }
+          {!installments ? null : (
+            <div
+              class={`${
+                theme === "light" ? "text-gray-300" : "text-gray-600"
+              } text-sm sm:text-base font-medium truncate`}
+            >
+              {installments}
+            </div>
+          )}
         </div>
         {cta}
       </div>

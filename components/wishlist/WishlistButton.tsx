@@ -46,7 +46,7 @@ function WishlistButton({
     } finally {
       fetching.value = false;
     }
-  }
+  };
 
   if (variant === "icon") {
     return (
@@ -63,9 +63,9 @@ function WishlistButton({
           fill={inWishlist ? "black" : "none"}
         />
       </Button>
-    )
+    );
   }
-  
+
   if (variant === "full") {
     return (
       <button
@@ -80,12 +80,11 @@ function WishlistButton({
           strokeWidth={2}
           fill={inWishlist ? "black" : "none"}
         />
-        {inWishlist ? 
-          "Remover da lista de Favoritos" : 
-          "Colocar na lista de Favoritos"
-        }
+        {inWishlist
+          ? "Remover da lista de Favoritos"
+          : "Colocar na lista de Favoritos"}
       </button>
-    )
+    );
   }
 
   return null;

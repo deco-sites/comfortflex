@@ -87,13 +87,15 @@ function TimerCount({
   return (
     <>
       <div id={id} class="w-full">
-        <div class="mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center p-4 gap-4 bg-black" style="max-width: 570px; background-color: #26152F;">
-          
-              <div
-                class="text-center lg:text-2xl lg:text-left lg:max-w-lg uppercase font-bold text-white"
-                dangerouslySetInnerHTML={{ __html: text }}
-              >
-              </div>
+        <div
+          class="mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center p-4 gap-4 bg-black"
+          style="max-width: 570px; background-color: #26152F;"
+        >
+          <div
+            class="text-center lg:text-2xl lg:text-left lg:max-w-lg uppercase font-bold text-white"
+            dangerouslySetInnerHTML={{ __html: text }}
+          >
+          </div>
           <div
             id={`${id}::expired`}
             class="hidden text-sm text-center lg:text-xl lg:text-left lg:max-w-lg"
@@ -128,7 +130,7 @@ function TimerCount({
                   {labels?.seconds || ""}
                 </div>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </div>

@@ -79,7 +79,7 @@ const DEFAULT_PROPS = {
   preload: true,
 };
 
- function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
+function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
   const {
     alt,
     theme,
@@ -87,17 +87,21 @@ const DEFAULT_PROPS = {
     position,
     desktop,
     action,
-    hiddenText
+    hiddenText,
   } = image;
 
   const isDarkTheme = !theme ? false : theme === "light" ? false : true;
   const isLeftPosition = !position ? true : position === "right" ? true : false;
 
-  const darkButton = "group flex items-center gap-x-2 border py-2 px-8 border-brand uppercase text-brand hover:text-white max-sm:text-white hover:bg-brand max-sm:bg-brand";
-  const lightButton = "group flex items-center gap-x-2 border py-2 px-8 border-white uppercase text-white hover:text-brand max-sm:text-brand hover:bg-white max-sm:bg-white";
+  const darkButton =
+    "group flex items-center gap-x-2 border py-2 px-8 border-brand uppercase text-brand hover:text-white max-sm:text-white hover:bg-brand max-sm:bg-brand";
+  const lightButton =
+    "group flex items-center gap-x-2 border py-2 px-8 border-white uppercase text-white hover:text-brand max-sm:text-brand hover:bg-white max-sm:bg-white";
 
-  const leftBox = "flex flex-col items-center sm:items-start w-80 absolute max-sm:bottom-0 sm:top-1/2 max-sm:translate-x-[-50%] sm:translate-y-[-50%] left-1/2 sm:left-28 gap-y-3 sm:gap-y-5 py-5 max-sm:pb-12 max-sm:mb-4";
-  const rightBox = "flex flex-col items-center sm:items-end w-80 absolute max-sm:bottom-0 sm:top-1/2 max-sm:translate-x-[-50%] sm:translate-y-[-50%] left-1/2 sm:right-28 gap-y-3 sm:gap-y-5 py-5 max-sm:pb-12 max-sm:mb-4";
+  const leftBox =
+    "flex flex-col items-center sm:items-start w-80 absolute max-sm:bottom-0 sm:top-1/2 max-sm:translate-x-[-50%] sm:translate-y-[-50%] left-1/2 sm:left-28 gap-y-3 sm:gap-y-5 py-5 max-sm:pb-12 max-sm:mb-4";
+  const rightBox =
+    "flex flex-col items-center sm:items-end w-80 absolute max-sm:bottom-0 sm:top-1/2 max-sm:translate-x-[-50%] sm:translate-y-[-50%] left-1/2 sm:right-28 gap-y-3 sm:gap-y-5 py-5 max-sm:pb-12 max-sm:mb-4";
 
   return (
     <a
@@ -124,7 +128,7 @@ const DEFAULT_PROPS = {
           src={desktop}
           alt={alt}
         />
-         <img
+        <img
           class="object-cover w-full h-auto lg:hidden"
           loading={lcp ? "eager" : "lazy"}
           src={mobile}
@@ -135,7 +139,11 @@ const DEFAULT_PROPS = {
         <>
           {action && (
             <div class={isLeftPosition ? leftBox : rightBox}>
-              <span class={isDarkTheme ? "text-brand text-4xl" : "text-white text-4xl"}>
+              <span
+                class={isDarkTheme
+                  ? "text-brand text-4xl"
+                  : "text-white text-4xl"}
+              >
                 {action.title}
               </span>
               <span class={isDarkTheme ? "text-brand" : "text-white"}>
@@ -144,7 +152,9 @@ const DEFAULT_PROPS = {
               <button class={isDarkTheme ? darkButton : lightButton}>
                 {action.label}
                 <Icon
-                  class={isDarkTheme ? "text-brand group-hover:text-white max-sm:text-white" : "text-white group-hover:text-brand max-sm:text-brand"}
+                  class={isDarkTheme
+                    ? "text-brand group-hover:text-white max-sm:text-white"
+                    : "text-white group-hover:text-brand max-sm:text-brand"}
                   size={20}
                   id="ChevronRight"
                   strokeWidth={3}
@@ -195,15 +205,33 @@ function Buttons() {
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
         <Slider.PrevButton class="disabled:hidden border-none bg-transparent rotate-180">
-          <svg xmlns="http://www.w3.org/2000/svg" width="29.635" height="29.635" viewBox="0 0 29.635 29.635">
-            <path id="fi-rs-angle-circle-right" d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z" fill="#fff"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29.635"
+            height="29.635"
+            viewBox="0 0 29.635 29.635"
+          >
+            <path
+              id="fi-rs-angle-circle-right"
+              d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z"
+              fill="#fff"
+            />
           </svg>
         </Slider.PrevButton>
       </div>
       <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
         <Slider.NextButton class="disabled:hidden border-none bg-transparent">
-          <svg xmlns="http://www.w3.org/2000/svg" width="29.635" height="29.635" viewBox="0 0 29.635 29.635">
-            <path id="fi-rs-angle-circle-right" d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z" fill="#fff"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29.635"
+            height="29.635"
+            viewBox="0 0 29.635 29.635"
+          >
+            <path
+              id="fi-rs-angle-circle-right"
+              d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z"
+              fill="#fff"
+            />
           </svg>
         </Slider.NextButton>
       </div>
