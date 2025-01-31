@@ -25,12 +25,12 @@ export type Section = {
 
 export interface SocialItem {
   label:
-  | "Discord"
-  | "Facebook"
-  | "Instagram"
-  | "Linkedin"
-  | "Tiktok"
-  | "Twitter";
+    | "Discord"
+    | "Facebook"
+    | "Instagram"
+    | "Linkedin"
+    | "Tiktok"
+    | "Twitter";
   link: string;
 }
 
@@ -59,17 +59,17 @@ export interface NewsletterForm {
 
 export interface Layout {
   backgroundColor?:
-  | "Primary"
-  | "Secondary"
-  | "Accent"
-  | "Base 100"
-  | "Base 100 inverted";
+    | "Primary"
+    | "Secondary"
+    | "Accent"
+    | "Base 100"
+    | "Base 100 inverted";
   variation?:
-  | "Variation 1"
-  | "Variation 2"
-  | "Variation 3"
-  | "Variation 4"
-  | "Variation 5";
+    | "Variation 1"
+    | "Variation 2"
+    | "Variation 3"
+    | "Variation 4"
+    | "Variation 5";
   hide?: {
     logo?: boolean;
     newsletter?: boolean;
@@ -158,8 +158,7 @@ function Footer({
         "label": "Políticas de Privacidade",
       },
     ],
-  },
-  {
+  }, {
     "label": "Atendimento",
     "items": [
       {
@@ -179,8 +178,7 @@ function Footer({
         "label": "Segunda à sexta-feira: 8h às 11h / 13:30h às 17h",
       },
     ],
-  },
-  {
+  }, {
     "label": "Formas de pagamento",
     "items": [
       {
@@ -213,8 +211,10 @@ function Footer({
     title: "Formas de pagamento",
     items: [{ label: "Mastercard" }, { label: "Visa" }, { label: "Pix" }],
   },
-  institucionalText = "O Grupo Ramarim é uma das maiores empresas calçadistas do Brasil. Fundado em 1962, é formado pelas marcas Ramarim e Comfortflex.\nSomos referência em pesquisa, moda, tecnologia do conforto e inovação, tudo pensado para levar as últimas tendências para o dia a dia das nossas consumidoras no Brasil e no mundo.",
-  copyrightText = "© Ramarim 2021 - Rua General Nascimento Vargas, 154 - Sapiranga / RS.",
+  institucionalText =
+    "O Grupo Ramarim é uma das maiores empresas calçadistas do Brasil. Fundado em 1962, é formado pelas marcas Ramarim e Comfortflex.\nSomos referência em pesquisa, moda, tecnologia do conforto e inovação, tudo pensado para levar as últimas tendências para o dia a dia das nossas consumidoras no Brasil e no mundo.",
+  copyrightText =
+    "© Ramarim 2021 - Rua General Nascimento Vargas, 154 - Sapiranga / RS.",
   mobileApps = { apple: "/", android: "/" },
   regionOptions = { currency: [], language: [] },
   extraLinks = [],
@@ -253,7 +253,9 @@ function Footer({
     />
   );
 
-  const _copyright = layout?.hide?.copyright ? <></> : <Copyright text={{institucionalText, copyrightText}} />;
+  const _copyright = layout?.hide?.copyright
+    ? <></>
+    : <Copyright text={{ institucionalText, copyrightText }} />;
 
   const _social = layout?.hide?.socialLinks
     ? <></>

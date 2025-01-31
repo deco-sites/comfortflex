@@ -10,7 +10,8 @@ export interface Props {
   page: ProductDetailsPage | null;
 }
 
-const imageURL = /(https:\/\/comfortflex\.vtexassets\.com\/arquivos\/ids\/)([0-9]*)(\/.*)/;
+const imageURL =
+  /(https:\/\/comfortflex\.vtexassets\.com\/arquivos\/ids\/)([0-9]*)(\/.*)/;
 
 /**
  * @title Product Image Slider
@@ -26,22 +27,22 @@ export default function GallerySlider(props: Props) {
   }
 
   const {
-    page: { product: { image: images = [] } }
+    page: { product: { image: images = [] } },
   } = props;
 
   return (
     <>
-      <div 
+      <div
         class="hidden lg:grid grid-cols-2 gap-4"
         style={{
           minWidth: "640px",
-          maxWidth: "640px" 
+          maxWidth: "640px",
         }}
       >
         {images.map((img, index) => {
           const imageFullLine = index % 3 === 0;
-          const optimizedURL = imageFullLine ? 
-            img.url.replace(imageURL, "$1$2-600-auto$3")
+          const optimizedURL = imageFullLine
+            ? img.url.replace(imageURL, "$1$2-600-auto$3")
             : img.url.replace(imageURL, "$1$2-380-auto$3");
           return (
             <Image
@@ -49,7 +50,7 @@ export default function GallerySlider(props: Props) {
               src={optimizedURL}
               alt={img.alternateName}
             />
-          )
+          );
         })}
       </div>
       <div id={id} class="grid lg:hidden grid-flow-row">

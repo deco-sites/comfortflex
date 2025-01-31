@@ -53,14 +53,15 @@ const installmentToString = (
 
 export const useOffer = (aggregateOffer?: AggregateOffer) => {
   // @ts-ignore offers is right
-  const offer = aggregateOffer?.offers.find((o) => 
-    o.availability === "https://schema.org/InStock"
-  ) || aggregateOffer?.offers[0];
+  const offer =
+    aggregateOffer?.offers.find((o) =>
+      o.availability === "https://schema.org/InStock"
+    ) || aggregateOffer?.offers[0];
 
   const listPrice = offer?.priceSpecification.find((spec) =>
     spec.priceType === "https://schema.org/ListPrice"
   );
-  
+
   const availability = offer?.availability;
   const installment = offer?.priceSpecification.reduce(bestInstallment, null);
   const sellerName = offer?.sellerName;

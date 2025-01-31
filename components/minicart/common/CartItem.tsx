@@ -32,7 +32,8 @@ export interface Props {
   itemToAnalyticsItem: (index: number) => AnalyticsItem | null | undefined;
 }
 
-const imageURL = /(https:\/\/comfortflex\.vteximg\.com\.br\/arquivos\/ids\/[0-9]*\-)([0-9]*\-[0-9]*)(\/.*)/;
+const imageURL =
+  /(https:\/\/comfortflex\.vteximg\.com\.br\/arquivos\/ids\/[0-9]*\-)([0-9]*\-[0-9]*)(\/.*)/;
 
 function CartItem(
   {
@@ -44,7 +45,6 @@ function CartItem(
     itemToAnalyticsItem,
   }: Props,
 ) {
-
   const { image, name, price: { sale, list }, quantity } = item;
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
@@ -53,7 +53,9 @@ function CartItem(
   image.src = image.src.replace(imageURL, "$1185-154$3");
 
   const sellerId = cart.value?.items[index]?.seller;
-  const sellerName = cart.value?.sellers?.find((seller) => seller.id === sellerId)?.name;
+  const sellerName = cart.value?.sellers?.find((seller) =>
+    seller.id === sellerId
+  )?.name;
 
   const withLoading = useCallback(
     <A,>(cb: (args: A) => Promise<void>) => async (e: A) => {
@@ -83,7 +85,9 @@ function CartItem(
       />
       <div class="flex flex-col gap-2">
         <span class="block text-sm text-black">{name}</span>
-        {sellerName && <small class="text-xs text-black font-semibold">{sellerName}</small>}
+        {sellerName && (
+          <small class="text-xs text-black font-semibold">{sellerName}</small>
+        )}
         <div class="flex items-center gap-2">
           <span class="line-through text-gray-300 text-sm">
             {formatPrice(list, currency, locale)}
@@ -127,11 +131,19 @@ function CartItem(
               });
             })}
           >
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="25.364" height="27.669" viewBox="0 0 25.364 27.669">
-              <path id="fi-rs-trash-xmark" d="M26.364,4.612H19.446V2.306A2.308,2.308,0,0,0,17.14,0H10.223A2.308,2.308,0,0,0,7.917,2.306V4.612H1V6.917H2.9L4.859,24.592A3.456,3.456,0,0,0,8.3,27.669H19.023a3.453,3.453,0,0,0,3.437-3.077L24.423,6.917h1.939V4.612ZM10.223,2.306H17.14V4.612H10.223Zm9.945,22.032a1.151,1.151,0,0,1-1.146,1.026H8.3a1.152,1.152,0,0,1-1.146-1.026L5.215,6.917H22.1l-1.936,17.42ZM9.12,19.072l2.932-2.932L9.12,13.209l1.63-1.63,2.932,2.932,2.932-2.932,1.63,1.63L15.312,16.14l2.932,2.932-1.63,1.63-2.932-2.932L10.75,20.7Z" transform="translate(-1)" fill="#bc81ff" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25.364"
+              height="27.669"
+              viewBox="0 0 25.364 27.669"
+            >
+              <path
+                id="fi-rs-trash-xmark"
+                d="M26.364,4.612H19.446V2.306A2.308,2.308,0,0,0,17.14,0H10.223A2.308,2.308,0,0,0,7.917,2.306V4.612H1V6.917H2.9L4.859,24.592A3.456,3.456,0,0,0,8.3,27.669H19.023a3.453,3.453,0,0,0,3.437-3.077L24.423,6.917h1.939V4.612ZM10.223,2.306H17.14V4.612H10.223Zm9.945,22.032a1.151,1.151,0,0,1-1.146,1.026H8.3a1.152,1.152,0,0,1-1.146-1.026L5.215,6.917H22.1l-1.936,17.42ZM9.12,19.072l2.932-2.932L9.12,13.209l1.63-1.63,2.932,2.932,2.932-2.932,1.63,1.63L15.312,16.14l2.932,2.932-1.63,1.63-2.932-2.932L10.75,20.7Z"
+                transform="translate(-1)"
+                fill="#bc81ff"
+              />
             </svg>
-
           </Button>
         </div>
       </div>

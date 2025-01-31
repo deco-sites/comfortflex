@@ -24,7 +24,7 @@ export default function AddToCartModal() {
     productID,
     name = "",
     isVariantOf: {
-        productGroupID = ""
+      productGroupID = "",
     },
   } = product;
 
@@ -38,29 +38,33 @@ export default function AddToCartModal() {
     >
       <div class="w-full md:w-auto absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] bg-base-100">
         <div class="flex flex-col items-center gap-y-2 p-4">
-            {
-                !name ?
-                "Tem certeza que deseja adicionar este item ao carrinho?" :
-                <>
-                    A numeração escolhida foi:
-                    <div class="flex items-center justify-center w-11 h-11 border border-brand bg-brand text-white rounded-full">{name}</div>
-                </>
-            }
-            <div class="flex items-center gap-3">
-                <button
-                  onClick={() => displayAddToCartPopup.value = null}
-                >Cancelar</button>
-                <AddToCartButtonVTEX
-                    url={url || ""}
-                    name={name}
-                    productID={productID}
-                    productGroupID={productGroupID}
-                    price={price}
-                    discount={discount}
-                    seller={seller}
-                    text="Sim, continuar"
-                />
-            </div>
+          {!name
+            ? "Tem certeza que deseja adicionar este item ao carrinho?"
+            : (
+              <>
+                A numeração escolhida foi:
+                <div class="flex items-center justify-center w-11 h-11 border border-brand bg-brand text-white rounded-full">
+                  {name}
+                </div>
+              </>
+            )}
+          <div class="flex items-center gap-3">
+            <button
+              onClick={() => displayAddToCartPopup.value = null}
+            >
+              Cancelar
+            </button>
+            <AddToCartButtonVTEX
+              url={url || ""}
+              name={name}
+              productID={productID}
+              productGroupID={productGroupID}
+              price={price}
+              discount={discount}
+              seller={seller}
+              text="Sim, continuar"
+            />
+          </div>
         </div>
       </div>
     </Modal>

@@ -13,7 +13,7 @@ export default function ProductMain(props: Props) {
 
   return (
     <div class="container">
-      <Breadcrumb 
+      <Breadcrumb
         itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
       />
       <div class="flex flex-col lg:flex-row lg:gap-8">
@@ -21,5 +21,5 @@ export default function ProductMain(props: Props) {
         <ProductInfo page={props.page} />
       </div>
     </div>
-  )
+  );
 }

@@ -14,7 +14,7 @@
     "javascript": "javascript",
     "javascriptreact": "javascriptreact",
     "typescript": "typescript",
-    "typescriptreact": "typescriptreact",
+    "typescriptreact": "typescriptreact"
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"

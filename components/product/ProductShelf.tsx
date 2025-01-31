@@ -40,8 +40,12 @@ function ProductShelf({
   return (
     <div class="w-full container  py-8 flex flex-col gap-12 lg:gap-16 lg:py-10">
       <div class="flex flex-col gap-1">
-        <div class="text-center text-2xl text-black uppercase">{title || ""}</div>
-        <div class="text-center text-base text-neutral uppercase">{description || ""}</div>
+        <div class="text-center text-2xl text-black uppercase">
+          {title || ""}
+        </div>
+        <div class="text-center text-base text-neutral uppercase">
+          {description || ""}
+        </div>
       </div>
       <div
         id={id}
@@ -67,16 +71,33 @@ function ProductShelf({
         <>
           <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
             <Slider.PrevButton class="disabled:hidden absolute left-[-36px] bg-transparent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="29.635" height="29.635" viewBox="0 0 29.635 29.635">
-                <path id="fi-rs-angle-circle-right" d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z" fill="#fff" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29.635"
+                height="29.635"
+                viewBox="0 0 29.635 29.635"
+              >
+                <path
+                  id="fi-rs-angle-circle-right"
+                  d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z"
+                  fill="#fff"
+                />
               </svg>
-
             </Slider.PrevButton>
           </div>
           <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
             <Slider.NextButton class="disabled:hidden absolute right-[-36px] bg-transparent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="29.635" height="29.635" viewBox="0 0 29.635 29.635">
-                <path id="fi-rs-angle-circle-right" d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z" fill="#fff" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29.635"
+                height="29.635"
+                viewBox="0 0 29.635 29.635"
+              >
+                <path
+                  id="fi-rs-angle-circle-right"
+                  d="M29.635,14.818A14.818,14.818,0,1,1,14.818,0,14.818,14.818,0,0,1,29.635,14.818Zm-27.166,0A12.348,12.348,0,1,0,14.818,2.47,12.348,12.348,0,0,0,2.47,14.818Zm16.564-1.746L13.212,7.253,11.47,9l5.817,5.818-5.77,5.77,1.746,1.746,5.77-5.77a2.47,2.47,0,0,0,0-3.492Z"
+                  fill="#fff"
+                />
               </svg>
             </Slider.NextButton>
           </div>

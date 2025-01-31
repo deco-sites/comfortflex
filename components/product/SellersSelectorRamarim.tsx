@@ -57,8 +57,9 @@ function orderMethods(
   for (let index = 1; index < simulations.length; index++) {
     const currSimulation = getSimulationVariables(simulations[index]);
     const pivotSimulation = getSimulationVariables(pivot);
-    if (currSimulation.price <= pivotSimulation.price) leftArr.push(simulations[index]);
-    else rightArr.push(simulations[index]);
+    if (currSimulation.price <= pivotSimulation.price) {
+      leftArr.push(simulations[index]);
+    } else rightArr.push(simulations[index]);
   }
 
   return [...orderMethods(leftArr), pivot, ...orderMethods(rightArr)];
@@ -80,7 +81,7 @@ function SellerCard({
     productGroupID,
     seller,
     sellerName,
-    slas
+    slas,
   } = methods[index];
 
   if (slas.length === 0) return null;
@@ -175,7 +176,7 @@ export default function SellersSelector({
       offers: {
         // @ts-ignore next-line
         offers,
-      }
+      },
     } = currentProduct;
 
     console.log("currentProduct", currentProduct);
@@ -210,7 +211,9 @@ export default function SellersSelector({
       const formattedSellers = result.map((simulation) => {
         const seller = simulation.items[0].seller;
         const currentSeller = sellers.find((s) => s.seller === seller);
-        const listPrice = currentSeller?.priceSpecification.find((p) => p.priceType === "https://schema.org/ListPrice")?.price;
+        const listPrice = currentSeller?.priceSpecification.find((p) =>
+          p.priceType === "https://schema.org/ListPrice"
+        )?.price;
         return {
           url: productURL,
           name: productName,
@@ -220,8 +223,8 @@ export default function SellersSelector({
           price: currentSeller?.price || 0,
           listPrice,
           sellerName: currentSeller?.sellerName || seller,
-          slas: simulation.logisticsInfo[0].slas
-        }
+          slas: simulation.logisticsInfo[0].slas,
+        };
       });
       console.log("formattedSellers", formattedSellers);
       simulateResult.value = formattedSellers;

@@ -32,20 +32,29 @@ function NotFound() {
       <div className="container w-full flex justify-center items-center py-2 ">
         <div className="bg-brand mb-8">
           <div className="max-w-container w-full mx-auto px-4 flex flex-col items-center w-full justify-center text-center py-12 text-white">
-            <h1 className="text-[25px] leading-[25px] font-bold mb-6 uppercase">Oops! <br /> O item que você buscou não foi encontrado!</h1>
-            <h2 className="uppercase mb-3">Mas não se preocupe, tente novamente utilizando nossas dicas:</h2>
+            <h1 className="text-[25px] leading-[25px] font-bold mb-6 uppercase">
+              Oops! <br /> O item que você buscou não foi encontrado!
+            </h1>
+            <h2 className="uppercase mb-3">
+              Mas não se preocupe, tente novamente utilizando nossas dicas:
+            </h2>
             <ul className="mb-5">
               <li className="text-[13px] leading-[13px]">
-                <span className="text-lg inline-block mr-1">•</span> Verifique se não há erro de digitação.
+                <span className="text-lg inline-block mr-1">•</span>{" "}
+                Verifique se não há erro de digitação.
               </li>
               <li className="text-[13px] leading-[13px]">
-                <span className="text-lg inline-block mr-1">•</span> Tente utilizar uma única palavra.
+                <span className="text-lg inline-block mr-1">•</span>{" "}
+                Tente utilizar uma única palavra.
               </li>
               <li className="text-[13px] leading-[13px]">
-                <span className="text-lg inline-block mr-1">•</span> Tente buscar por termos menos específicos e posteriormente use os filtros da busca.
+                <span className="text-lg inline-block mr-1">•</span>{" "}
+                Tente buscar por termos menos específicos e posteriormente use
+                os filtros da busca.
               </li>
               <li className="text-[13px] leading-[13px]">
-                <span className="text-lg inline-block mr-1">•</span> Procure utilizar sinônimos ao termo desejado.
+                <span className="text-lg inline-block mr-1">•</span>{" "}
+                Procure utilizar sinônimos ao termo desejado.
               </li>
             </ul>
           </div>
@@ -82,18 +91,31 @@ function Result({
           <Icon id="ChevronLeft" size={24} strokeWidth={2} />
         </a>
 
-        <a class="btn bg-transparent border-none hover:bg-slate-50 join-item mx-[1px]"
-          href={pageInfo.previousPage}>
-          {pageInfo.previousPage && pageInfo.previousPage.replace(/(.*)(page=[0-9]*)(.*)/i, "$2").replace('page=', "")}
+        <a
+          class="btn bg-transparent border-none hover:bg-slate-50 join-item mx-[1px]"
+          href={pageInfo.previousPage}
+        >
+          {pageInfo.previousPage &&
+            pageInfo.previousPage.replace(/(.*)(page=[0-9]*)(.*)/i, "$2")
+              .replace("page=", "")}
         </a>
 
-        <span style="border-radius: 100%; border: 1px solid #BC81FF" class="btn join-item hover:bg-slate-50 bg-transparent ">
+        <span
+          style="border-radius: 100%; border: 1px solid #BC81FF"
+          class="btn join-item hover:bg-slate-50 bg-transparent "
+        >
           {pageInfo.currentPage}
         </span>
 
-        <a class="btn bg-transparent border-none hover:bg-slate-50 join-item mx-[1px]"
-          href={pageInfo.nextPage}>
-          {pageInfo.nextPage && (pageInfo.nextPage).replace(/(.*)(page=[0-9]*)(.*)/i, "$2").replace('page=', "")}
+        <a
+          class="btn bg-transparent border-none hover:bg-slate-50 join-item mx-[1px]"
+          href={pageInfo.nextPage}
+        >
+          {pageInfo.nextPage &&
+            pageInfo.nextPage.replace(/(.*)(page=[0-9]*)(.*)/i, "$2").replace(
+              "page=",
+              "",
+            )}
         </a>
         <a
           aria-label="next page link"
@@ -105,7 +127,7 @@ function Result({
         </a>
       </div>
     </div>
-  )
+  );
 
   return (
     <>

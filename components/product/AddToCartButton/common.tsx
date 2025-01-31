@@ -24,7 +24,6 @@ export async function addToCart({
   url,
   onAddItem,
 }: Props) {
-
   await onAddItem();
 
   sendEvent({
@@ -69,7 +68,7 @@ const useAddToCart = ({
       url,
       seller,
       onAddItem,
-    }
+    };
 
     try {
       setLoading(true);
@@ -94,8 +93,12 @@ export default function AddToCartButton(props: Props) {
   const btnProps = useAddToCart(props);
 
   return (
-    <Button {...btnProps} data-deco="add-to-cart" class="font-normal uppercase 
-    bg-brand text-white hover:bg-brand rounded-3xl">
+    <Button
+      {...btnProps}
+      data-deco="add-to-cart"
+      class="font-normal uppercase 
+    bg-brand text-white hover:bg-brand rounded-3xl"
+    >
       {text}
     </Button>
   );

@@ -51,8 +51,9 @@ function orderMethods(
   for (let index = 1; index < simulations.length; index++) {
     const currSimulation = getSimulationVariables(simulations[index]);
     const pivotSimulation = getSimulationVariables(pivot);
-    if (currSimulation.price <= pivotSimulation.price) leftArr.push(simulations[index]);
-    else rightArr.push(simulations[index]);
+    if (currSimulation.price <= pivotSimulation.price) {
+      leftArr.push(simulations[index]);
+    } else rightArr.push(simulations[index]);
   }
 
   return [...orderMethods(leftArr), pivot, ...orderMethods(rightArr)];
@@ -63,25 +64,25 @@ interface Props {
 }
 
 interface ProductOffer {
-  url?: string,
-  name: string,
-  price: number,
-  seller: string,
-  listPrice: number,
-  productID: string,
-  sellerName: string,
-  productGroupID: string,
-  slas: SLA[]
+  url?: string;
+  name: string;
+  price: number;
+  seller: string;
+  listPrice: number;
+  productID: string;
+  sellerName: string;
+  productGroupID: string;
+  slas: SLA[];
 }
 
 interface SLA {
-  price: number,
-  shippingEstimate: string
+  price: number;
+  shippingEstimate: string;
 }
 
 interface SelledCardProps {
-  method: ProductOffer,
-  product: Product
+  method: ProductOffer;
+  product: Product;
 }
 
 function SellerCard({ method, product }: SelledCardProps) {
@@ -131,7 +132,7 @@ function SellerCard({ method, product }: SelledCardProps) {
             Em até {formatShippingEstimate(shippingEstimate)}
           </span>
         </div>
-        <button 
+        <button
           class="btn no-animation font-normal uppercase bg-brand text-white hover:bg-brand rounded-3xl"
           onClick={() => {
             displayAddToCartPopup.value = {
@@ -139,7 +140,7 @@ function SellerCard({ method, product }: SelledCardProps) {
               price,
               discount,
               seller,
-            }
+            };
           }}
         >
           Adicionar ao carrinho
@@ -170,7 +171,7 @@ export default function SellersSelector({
       offers: {
         // @ts-ignore next-line
         offers,
-      }
+      },
     } = currentProduct;
 
     const simulations = [];
@@ -204,7 +205,9 @@ export default function SellersSelector({
         // @ts-ignore Sellers é uma lista de objetos criado logo acima para fazer a requisição de simulação
         const currentSeller = sellers.find((s) => s.seller === seller);
         // @ts-ignore Dentro do objeto de produto, existe uma propriedade chamada "priceSpecification" que contém todas as opções de preços e parcelamentos
-        const listPrice = currentSeller?.priceSpecification.find((p) => p.priceType === "https://schema.org/ListPrice")?.price;
+        const listPrice = currentSeller?.priceSpecification.find((p) =>
+          p.priceType === "https://schema.org/ListPrice"
+        )?.price;
         // Formato um objeto especificamente com os dados necessários, antes estava pegando de 2 ou 3 objetos diferentes, gerando total confusão
         return {
           url: productURL,
@@ -215,8 +218,8 @@ export default function SellersSelector({
           price: currentSeller?.price || 0,
           listPrice,
           sellerName: currentSeller?.sellerName || seller,
-          slas: simulation.logisticsInfo[0].slas
-        }
+          slas: simulation.logisticsInfo[0].slas,
+        };
       });
       simulateResult.value = formattedSellers;
     } finally {
@@ -259,9 +262,9 @@ export default function SellersSelector({
         )
         : (
           <>
-            {
-              methods.map((method) => <SellerCard method={method} product={product} />)
-            }
+            {methods.map((method) => (
+              <SellerCard method={method} product={product} />
+            ))}
           </>
         )}
     </ul>

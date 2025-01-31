@@ -1,11 +1,12 @@
-const storesURL = "/api/dataentities/SM/search?_fields=id,address,cep,city,name,phone,latitude,longitude,UF&_where=(name is not null)";
+const storesURL =
+  "/api/dataentities/SM/search?_fields=id,address,cep,city,name,phone,latitude,longitude,UF&_where=(name is not null)";
 const fetchSettings = {
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/vnd.vtex.ds.v10+json',
-        "REST-Range": "resources=0-500",
-        "v-cache": "false"
-    }
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/vnd.vtex.ds.v10+json",
+    "REST-Range": "resources=0-500",
+    "v-cache": "false",
+  },
 };
 
 export function loadAPI(apiKey) {
@@ -23,51 +24,60 @@ export function loadAPI(apiKey) {
 }
 
 export async function getStores() {
-    const allStoresData = [];
-    const localStoresData = JSON.parse(localStorage.getItem("allStoresData"));
-    if (localStoresData === null) {
-        const fetchData = await fetch(storesURL, fetchSettings);
-        const json = await fetchData.json();
+  const allStoresData = [];
+  const localStoresData = JSON.parse(localStorage.getItem("allStoresData"));
+  if (localStoresData === null) {
+    const fetchData = await fetch(storesURL, fetchSettings);
+    const json = await fetchData.json();
 
-        localStorage.setItem("allStoresData", JSON.stringify(json));
+    localStorage.setItem("allStoresData", JSON.stringify(json));
 
-        allStoresData.push(...json);
-    } else {
-        allStoresData.push(...localStoresData);
-    }
+    allStoresData.push(...json);
+  } else {
+    allStoresData.push(...localStoresData);
+  }
 
-    return allStoresData;
+  return allStoresData;
 }
 
 export function setMarkers(stores, map) {
-    const markers = [];
-    stores.forEach(store => {
-        markers.push(new google.maps.Marker({
-            position: { lat: parseFloat(store.latitude), lng: parseFloat(store.longitude) },
-            map,
-            zIndex: 999,
-            icon: {
-                url: "https://ramarim.vteximg.com.br/arquivos/ramarim_pin.png"
-            }
-        }));
-    });
-    
-    stores.forEach((store, index) => {
-        const content = `
+  const markers = [];
+  stores.forEach((store) => {
+    markers.push(
+      new google.maps.Marker({
+        position: {
+          lat: parseFloat(store.latitude),
+          lng: parseFloat(store.longitude),
+        },
+        map,
+        zIndex: 999,
+        icon: {
+          url: "https://ramarim.vteximg.com.br/arquivos/ramarim_pin.png",
+        },
+      }),
+    );
+  });
+
+  stores.forEach((store, index) => {
+    const content = `
             <div style="padding:8px">
                 <h2 style="font-weight:600;margin-bottom:4px;">${store.name}</h2>
                 <b style="margin-right:4px">Phone:</b>${store.phone}
             </div> 
         `;
 
-        const globalInfoWindow = new google.maps.InfoWindow();
+    const globalInfoWindow = new google.maps.InfoWindow();
 
-        const marker = markers[index];
-        google.maps.event.addListener(marker, 'click', (function (marker, content) {
-            return function () {
-                globalInfoWindow.setContent(content)
-                globalInfoWindow.open(map, marker)
-            }
-        })(marker, content));
-    });
+    const marker = markers[index];
+    google.maps.event.addListener(
+      marker,
+      "click",
+      (function (marker, content) {
+        return function () {
+          globalInfoWindow.setContent(content);
+          globalInfoWindow.open(map, marker);
+        };
+      })(marker, content),
+    );
+  });
 }

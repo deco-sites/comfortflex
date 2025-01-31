@@ -20,7 +20,10 @@ function ValueItem(
 ) {
   return (
     <a href={url} class="flex items-center gap-2 py-1" rel="nofollow">
-      <div aria-checked={selected} class="checkbox rounded-none w-4 h-4 pointer-events-none" />
+      <div
+        aria-checked={selected}
+        class="checkbox rounded-none w-4 h-4 pointer-events-none"
+      />
       <span class="text-xs">{label}</span>
       {/* {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>} */}
     </a>
@@ -72,7 +75,7 @@ function Filters({ filters }: Props) {
         .filter(isToggle)
         .map((filter) => (
           <div className="collapse collapse-arrow pb-4 border-b border-solid border-gray-300 rounded-none pl-4 sm:pl-0">
-            <input type="checkbox" className="min-h-[0]"/>
+            <input type="checkbox" className="min-h-[0]" />
             <div class="collapse-title min-h-[0] !p-0 flex gap-2 divide-y divide-black">
               <span className="uppercase text-sm">{filter.label}</span>
             </div>

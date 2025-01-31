@@ -38,7 +38,7 @@ function Cart(props: Props) {
     checkoutHref,
     itemToAnalyticsItem,
     onUpdateQuantity,
-    onAddCoupon
+    onAddCoupon,
   } = props;
 
   const { displayCart } = useUI();
@@ -52,10 +52,24 @@ function Cart(props: Props) {
       {isEmpty
         ? (
           <div class="flex flex-col items-center gap-6">
-            <svg id="_01_align_center" data-name="01 align center" xmlns="http://www.w3.org/2000/svg" width="68.332" height="68.332" viewBox="0 0 68.332 68.332">
-              <path id="Caminho_9" data-name="Caminho 9" d="M51.249,17.083a17.083,17.083,0,0,0-34.166,0H0V59.791a8.542,8.542,0,0,0,8.542,8.542H59.791a8.542,8.542,0,0,0,8.542-8.542V17.083ZM34.166,5.694A11.389,11.389,0,0,1,45.555,17.083H22.777A11.389,11.389,0,0,1,34.166,5.694Zm28.472,54.1a2.847,2.847,0,0,1-2.847,2.847H8.542a2.847,2.847,0,0,1-2.847-2.847V22.777H17.083v5.694h5.694V22.777H45.555v5.694h5.694V22.777H62.638Z" fill="#bc81ff" />
+            <svg
+              id="_01_align_center"
+              data-name="01 align center"
+              xmlns="http://www.w3.org/2000/svg"
+              width="68.332"
+              height="68.332"
+              viewBox="0 0 68.332 68.332"
+            >
+              <path
+                id="Caminho_9"
+                data-name="Caminho 9"
+                d="M51.249,17.083a17.083,17.083,0,0,0-34.166,0H0V59.791a8.542,8.542,0,0,0,8.542,8.542H59.791a8.542,8.542,0,0,0,8.542-8.542V17.083ZM34.166,5.694A11.389,11.389,0,0,1,45.555,17.083H22.777A11.389,11.389,0,0,1,34.166,5.694Zm28.472,54.1a2.847,2.847,0,0,1-2.847,2.847H8.542a2.847,2.847,0,0,1-2.847-2.847V22.777H17.083v5.694h5.694V22.777H45.555v5.694h5.694V22.777H62.638Z"
+                fill="#bc81ff"
+              />
             </svg>
-            <span class="block text-center font-medium text-[17px] uppercase max-w-[130px]">Sua sacola está vazia</span>
+            <span class="block text-center font-medium text-[17px] uppercase max-w-[130px]">
+              Sua sacola está vazia
+            </span>
             <button
               class="text-sm py-4 px-12 uppercase border-none bg-brand text-white rounded-3xl"
               onClick={() => {
@@ -91,7 +105,10 @@ function Cart(props: Props) {
             </ul>
 
             {/* Cart Footer */}
-            <footer class="w-full pt-4" style="box-shadow: 0 0 10px rgba(0,0,0,.15);">
+            <footer
+              class="w-full pt-4"
+              style="box-shadow: 0 0 10px rgba(0,0,0,.15);"
+            >
               <Coupon onAddCoupon={onAddCoupon} coupon={coupon} />
               {/* Subtotal */}
               <div class="py-2 flex flex-col">
@@ -110,7 +127,9 @@ function Cart(props: Props) {
 
                     <span class="text-base font-semibold text-[#16b90b]">
                       {/* @ts-ignore shipping is valid */}
-                      {shipping === 0 ? "Grátis" : formatPrice(shipping, currency, locale)}
+                      {shipping === 0
+                        ? "Grátis"
+                        : formatPrice(shipping, currency, locale)}
                     </span>
                   </div>
                 )}

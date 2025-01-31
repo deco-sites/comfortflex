@@ -8,7 +8,7 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import SellersSelector from "$store/islands/SellersSelector.tsx";
-import ShippingSimulation from "$store/islands/ShippingSimulation.tsx"
+import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import AddToCartArea from "$store/islands/AddToCardArea.tsx";
 import AddToCartModal from "$store/islands/AddToCartModal.tsx";
 
@@ -41,7 +41,7 @@ function ProductInfo({ page }: Props) {
     price = 0,
     listPrice,
     seller = "1",
-    sellerName = "Comfortflex",    
+    sellerName = "Comfortflex",
     installments,
     availability,
   } = currentOffers;
@@ -101,25 +101,25 @@ function ProductInfo({ page }: Props) {
           {availability === "https://schema.org/InStock"
             ? (
               <>
-                  <AddToCartArea
-                    product={product}
-                    price={price}
-                    discount={discount}
-                    seller={seller}
-                    sellerName={sellerName}
-                  />
-                  {platform === "vtex" && (
-                    <>
-                      {/* Shipping Simulation */}
-                      <div class="mt-8">
-                        <ShippingSimulation
-                          items={[{
-                            id: Number(product.sku),
-                            quantity: 1,
-                            seller: seller ?? "1",
-                          }]}
-                        />
-                      </div>
+                <AddToCartArea
+                  product={product}
+                  price={price}
+                  discount={discount}
+                  seller={seller}
+                  sellerName={sellerName}
+                />
+                {platform === "vtex" && (
+                  <>
+                    {/* Shipping Simulation */}
+                    <div class="mt-8">
+                      <ShippingSimulation
+                        items={[{
+                          id: Number(product.sku),
+                          quantity: 1,
+                          seller: seller ?? "1",
+                        }]}
+                      />
+                    </div>
                   </>
                 )}
               </>
@@ -127,10 +127,12 @@ function ProductInfo({ page }: Props) {
             : <OutOfStock productID={productID} />}
         </div>
 
-        <SellersSelector product={{...product}} />
+        <SellersSelector product={{ ...product }} />
         {/* Description card */}
         <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
-          <span class="block text-base uppercase mb-3">Detalhes do Produto</span>
+          <span class="block text-base uppercase mb-3">
+            Detalhes do Produto
+          </span>
           <div
             class="text-sm"
             dangerouslySetInnerHTML={{ __html: description }}
@@ -138,27 +140,29 @@ function ProductInfo({ page }: Props) {
         </div>
 
         <div class="border-t border-gray-300 pt-4 mt-4 sm:mt-6">
-          <span class="block text-base uppercase mb-3">Ficha Técnica do Produto</span>
+          <span class="block text-base uppercase mb-3">
+            Ficha Técnica do Produto
+          </span>
           <div class="flex flex-row flex-wrap">
-            {
-              isVariantOf?.additionalProperty?.map((property) => {
-                if ([
+            {isVariantOf?.additionalProperty?.map((property) => {
+              if (
+                [
                   "video-produto",
                   "sellerid",
                   "tamanho",
-                  "cor"
-                ].includes(property.name?.toLowerCase())) return null;
+                  "cor",
+                ].includes(property.name?.toLowerCase())
+              ) return null;
 
-                return (
-                  <div class="w-1/2 mt-2">
-                    <span class="text-black font-semibold">{property.name}</span>
-                    <div class="text-[#919191] text-sm">
-                      {property.value}
-                    </div>
+              return (
+                <div class="w-1/2 mt-2">
+                  <span class="text-black font-semibold">{property.name}</span>
+                  <div class="text-[#919191] text-sm">
+                    {property.value}
                   </div>
-                )
-              })
-            }
+                </div>
+              );
+            })}
           </div>
         </div>
         {/* Analytics Event */}

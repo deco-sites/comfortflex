@@ -16,11 +16,17 @@ function GlobalTags() {
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       {/* FavIcon */}
-      <link rel="shortcut icon" href="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/27e07532-9bed-4b33-97a9-01a1542a8e63" />
+      <link
+        rel="shortcut icon"
+        href="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/27e07532-9bed-4b33-97a9-01a1542a8e63"
+      />
 
-      <meta name="google-site-verification" content="jBotxCksnECJxZwCHXtavFJ8-f_kni3MS5Jyre2gEHc" />
+      <meta
+        name="google-site-verification"
+        content="jBotxCksnECJxZwCHXtavFJ8-f_kni3MS5Jyre2gEHc"
+      />
 
-      <style 
+      <style
         type="text/css"
         dangerouslySetInnerHTML={{
           __html: `
@@ -52,7 +58,7 @@ function GlobalTags() {
               src: url("${asset("/fonts/Nunito-Medium.ttf")}");
               font-weight: 600;
             }
-          `
+          `,
         }}
       />
 
@@ -63,12 +69,16 @@ function GlobalTags() {
             
             fbq('init', '305982530602697');
             fbq('track', 'PageView');
-          `
+          `,
         }}
       />
 
       <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=305982530602697&ev=PageView&noscript=1"/>
+        <img
+          height="1"
+          width="1"
+          src="https://www.facebook.com/tr?id=305982530602697&ev=PageView&noscript=1"
+        />
       </noscript>
 
       <script
@@ -86,7 +96,7 @@ function GlobalTags() {
               z.src = l;
               j.parentNode.insertBefore(z, j);
             })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '661e79e87058d778efdb8da6', 'MailbizIntegration');
-          `
+          `,
         }}
       />
     </Head>

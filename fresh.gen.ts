@@ -32,7 +32,7 @@ import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $WishlistButton from "./islands/WishlistButton.tsx";
 import * as $utils_Map from "./islands/utils/Map.js";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

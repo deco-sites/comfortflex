@@ -4,11 +4,10 @@ import { color as vnda } from "apps/vnda/mod.ts";
 import { color as vtex } from "apps/vtex/mod.ts";
 import { color as wake } from "apps/wake/mod.ts";
 import { color as linx } from "apps/linx/mod.ts";
-import { Section } from "deco/blocks/section.ts";
-import { App } from "deco/mod.ts";
 import { rgb24 } from "std/fmt/colors.ts";
 import manifest, { Manifest } from "../manifest.gen.ts";
-
+import { type Section } from "@deco/deco/blocks";
+import { type App } from "@deco/deco";
 export type Props = {
   /**
    * @title Active Commerce Platform
@@ -18,11 +17,8 @@ export type Props = {
   platform: Platform;
   theme?: Section;
 } & CommerceProps;
-
 export type Platform = "vtex" | "vnda" | "shopify" | "wake" | "linx" | "custom";
-
 export let _platform: Platform = "custom";
-
 const color = (platform: string) => {
   switch (platform) {
     case "vtex":
@@ -41,31 +37,34 @@ const color = (platform: string) => {
       return 0x212121;
   }
 };
-
 let firstRun = true;
-
-export default function Site(
-  { theme, ...state }: Props,
-): App<Manifest, Props, [ReturnType<typeof commerce>]> {
-  _platform = state.platform || state.commerce?.platform || "custom";
-
-  // Prevent console.logging twice
-  if (firstRun) {
-    firstRun = false;
-    console.info(
-      ` 🐁 ${rgb24("Storefront", color("deco"))} | ${
-        rgb24(_platform, color(_platform))
-      } \n`,
-    );
+export default function Site({ theme, ...state }: Props): App<Manifest, Props, [
+  ReturnType<typeof commerce>,
+]> {
+  try {
+    _platform = state.platform || state.commerce?.platform || "custom";
+    // Prevent console.logging twice
+    if (firstRun) {
+      firstRun = false;
+      console.info(
+        ` 🐁 ${rgb24("Storefront", color("deco"))} | ${
+          rgb24(_platform, color(_platform))
+        } \n`,
+      );
+    }
+    return {
+      state,
+      manifest,
+      dependencies: [
+        commerce({
+          ...state,
+          global: theme ? [...(state.global ?? []), theme] : state.global,
+        }),
+      ],
+    };
+  } catch (error) {
+    console.error("Error in Site function:", error);
+    throw error; // Re-throw the error to avoid silent failures
   }
-
-  return {
-    state,
-    manifest,
-    dependencies: [
-      commerce({ ...state, global: theme ? [...(state.global ?? []), theme] : state.global }),
-    ],
-  };
 }
-
 export { onBeforeResolveProps } from "apps/website/mod.ts";
