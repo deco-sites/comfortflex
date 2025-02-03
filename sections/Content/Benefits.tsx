@@ -1,12 +1,13 @@
-import Image from "apps/website/components/Image.tsx";
 import { useId } from "$store/sdk/useId.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-interface BenefitsProps {
+interface Props {
   benefits: Benefit[];
 }
 
 interface Benefit {
-  benefitImgSrc: string;
+  benefitImgSrc: ImageWidget;
   benefitImgAltText: string;
   benefitTitle: string;
   benefitDescription: string;
@@ -44,7 +45,7 @@ const BenefitItem = ({ benefit }: BenefitItemProps) => {
   );
 };
 
-const Benefits = ({ benefits }: BenefitsProps) => {
+const Benefits = ({ benefits }: Props) => {
   const id = useId();
   return (
     <div
