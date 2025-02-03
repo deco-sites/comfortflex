@@ -28,7 +28,7 @@ export default function FixedShippingSimulation({
       localStorage.setItem("zipCode", enteredZipCode);
       window.location.reload();
     }
-  }
+  };
 
   useLayoutEffect(() => {
     const zipCode = localStorage.getItem("zipCode");
@@ -36,23 +36,39 @@ export default function FixedShippingSimulation({
     else setZipCode("");
   }, []);
 
-  const classContent = context === "header" ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2" : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2"
+  const classContent = context === "header"
+    ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2"
+    : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2";
 
   if (zipCode === null) return null;
   return (
     <>
       <div class={classContent}>
-        {
-          zipCode ? (
+        {zipCode
+          ? (
             <>
               <p class="text-sm text-black text-center">
-                Exibindo ofertas para <strong class="underline cursor-pointer text-brand" onClick={() => setDisplayPopup(true)}>{zipCode}</strong>
+                Exibindo ofertas para{" "}
+                <strong
+                  class="underline cursor-pointer text-brand"
+                  onClick={() => setDisplayPopup(true)}
+                >
+                  {zipCode}
+                </strong>
               </p>
             </>
-          ) : (
+          )
+          : (
             <>
-              <p class={`text-xs sm:text-sm text-black text-left sm:text-center ${context === "header" ? "text-left sm:text-center" : "text-center"}`}>
-                Calcule o CEP para encontrar mais ofertas de Vendedores Comfortflex.
+              <p
+                class={`text-xs sm:text-sm text-black text-left sm:text-center ${
+                  context === "header"
+                    ? "text-left sm:text-center"
+                    : "text-center"
+                }`}
+              >
+                Calcule o CEP para encontrar mais ofertas de Vendedores
+                Comfortflex.
               </p>
               <button
                 class="block bg-brand text-white text-xs uppercase py-2 px-2 sm:px-3 rounded-3xl "
@@ -60,10 +76,9 @@ export default function FixedShippingSimulation({
                 onClick={() => setDisplayPopup(true)}
               >
                 Inserir CEP
-              </button> 
+              </button>
             </>
-          )
-        }
+          )}
       </div>
       <Modal
         loading="lazy"
@@ -84,7 +99,10 @@ export default function FixedShippingSimulation({
                 placeholder="Insira seu CEP"
                 onKeyUp={handleZipCode}
               />
-              <button type="submit" class="outline-none px-3 rounded-3xl h-10 border border-brand bg-brand text-white uppercase text-xs">
+              <button
+                type="submit"
+                class="outline-none px-3 rounded-3xl h-10 border border-brand bg-brand text-white uppercase text-xs"
+              >
                 Buscar
               </button>
             </form>

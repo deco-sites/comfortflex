@@ -11,7 +11,9 @@ const loader = async (
   req: Request,
   ctx: AppContext,
 ): any => {
-  const response = await fetchSafe("https://ramarim.myvtex.com/api/checkout/pub/regions?country=BRA&postalCode=05407002");
+  const response = await fetchSafe(
+    "https://ramarim.myvtex.com/api/checkout/pub/regions?country=BRA&postalCode=05407002",
+  );
 
   const json = await response.json();
 

@@ -1,7 +1,6 @@
-import { Section } from "deco/blocks/section.ts";
 import { grid, VNode } from "../../constants.tsx";
 import { clx } from "../../sdk/clx.ts";
-
+import { type Section } from "@deco/deco/blocks";
 interface Props {
   children: VNode[] | null;
   layout?: {
@@ -59,7 +58,6 @@ interface Props {
     };
   };
 }
-
 function Section({ layout, children }: Props) {
   return (
     <div
@@ -81,5 +79,4 @@ function Section({ layout, children }: Props) {
     </div>
   );
 }
-
 export default Section;

@@ -16,11 +16,12 @@ export default function Institucional({
   title = "Modelo Institucional",
   content = [
     { text: "Lorem ipsum dolor sit amet" },
-  ]
+  ],
 }: Props) {
   return (
     <div className="sm:flex container py-6 sm:py-12 sm:gap-8 lg:gap-12">
-      {/* <div class="collapse collapse-arrow sm:hidden mb-3" >
+      {
+        /* <div class="collapse collapse-arrow sm:hidden mb-3" >
         <input type="checkbox" class="min-h-[0]" />
         <div class="collapse-title min-h-[0] !p-0 flex gap-2">
           <h2 className="text-base sm:text-xl text-black uppercase py-2">Navegue pelas institucionais</h2>
@@ -44,8 +45,10 @@ export default function Institucional({
             </li>
           </ul>
         </div>
-      </div> */}
-      {/* <aside className="sm:w-1/4 hidden sm:block">
+      </div> */
+      }
+      {
+        /* <aside className="sm:w-1/4 hidden sm:block">
         <ul>
             <li className="flex justify-start sm:justify-center sm:border sm:border-solid transition duration-300 ease-out hover:ease-in rounded-none hover:bg-black hover:text-white border-black mb-2 sm:mb-4">
               <a className="text-base py-2 uppercase" href="/quem-somos">Quem Somos</a>
@@ -63,9 +66,12 @@ export default function Institucional({
               <a className="text-base py-2 uppercase" href="/politica-de-privacidade">Politica de Privacidade</a>
             </li>
         </ul>
-      </aside> */}
+      </aside> */
+      }
       <div className="w-full flex flex-col mt-2 gap-x-2">
-        <h1 className="text-base text-left sm:text-xl text-black uppercase">{title}</h1>
+        <h1 className="text-base text-left sm:text-xl text-black uppercase">
+          {title}
+        </h1>
         {content.map((item) => {
           return (
             <>
@@ -79,6 +85,6 @@ export default function Institucional({
           );
         })}
       </div>
-    </div >
+    </div>
   );
 }
