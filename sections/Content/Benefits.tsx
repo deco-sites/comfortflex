@@ -29,7 +29,7 @@ const BenefitItem = ({ benefit }: BenefitItemProps) => {
         className={`group flex gap-2 py-[1.3rem] px-[2.2rem] lg:p-5  order-3 hover:text-white w-full h-full items-center`}
       >
         <div className="flex items-center">
-          <Image
+          <img
             src={benefit.benefitImgSrc}
             alt={benefit.benefitImgAltText}
             className="max-w-full max-h-full object-cover"
