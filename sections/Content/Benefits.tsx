@@ -1,8 +1,8 @@
 import { useId } from "$store/sdk/useId.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
-interface Props {
+
+export interface Props {
   benefits: Benefit[];
 }
 
@@ -16,6 +16,7 @@ interface Benefit {
 
 interface BenefitItemProps {
   benefit: Benefit;
+  key: string;
 }
 
 const BenefitItem = ({ benefit }: BenefitItemProps) => {
@@ -50,9 +51,7 @@ const Benefits = ({ benefits }: Props) => {
   return (
     <div
       id={id}
-      className={`container grid grid-cols-1 my-5 items-center justify-center gap-3 w-full h-full md:gap-8 md:grid-cols-2 lg:grid-cols-${
-        benefits && benefits.length
-      }`}
+      className={`container grid grid-cols-1 my-5 items-center justify-center gap-3 w-full h-full md:gap-8 md:grid-cols-2 ${benefits.length ? `lg:grid-cols-${benefits.length}`: null}`}
     >
       {benefits &&
         benefits.map((benefit: Benefit) => (
