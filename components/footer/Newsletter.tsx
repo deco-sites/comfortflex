@@ -76,7 +76,7 @@ function Newsletter(
                 />
                 <button
                   type="submit"
-                  class="btn disabled:loading w-full lg:w-28 mt-4 lg:mt-0 rounded-3xl bg-white"
+                  class="btn disabled:loading w-full lg:w-28 mt-4 lg:mt-0 rounded-3xl bg-white border border-transparent hover:border-black"
                   disabled={loading}
                 >
                   ASSINAR!
