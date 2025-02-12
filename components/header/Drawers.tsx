@@ -131,7 +131,7 @@ const Aside = (
     children: ComponentChildren;
   },
 ) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full max-w-[100vw]">
+  <div class="bg-white grid grid-rows-[auto_1fr] h-full max-w-[100vw]">
     {title === MENU_TITLE && <HeaderLogin closeFunction={{ onClose }} />}
     {title === SEARCH_TITLE && <SearchHeader closeFunction={{ onClose }} />}
     {title === MINICART_TITLE && <MinicartHeader closeFunction={{ onClose }} />}
