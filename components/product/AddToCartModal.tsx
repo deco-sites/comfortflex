@@ -37,7 +37,7 @@ export default function AddToCartModal() {
       onClose={() => displayAddToCartPopup.value = null}
     >
       <div class="w-full md:w-auto absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] bg-base-100">
-        <div class="flex flex-col items-center gap-y-2 p-4">
+        <div class="bg-white flex flex-col items-center gap-y-2 p-4">
           {!name
             ? "Tem certeza que deseja adicionar este item ao carrinho?"
             : (
