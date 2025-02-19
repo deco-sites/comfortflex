@@ -1,1 +1,221 @@
-{"logo":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c","description":"O estilo pensado para você"},"layout":{"hide":{"logo":false,"mobileApps":false,"newsletter":false,"socialLinks":false,"regionOptions":false},"variation":"Variation 1","backgroundColor":"Primary"},"social":{"items":[{"link":"https://www.instagram.com/comfortflex/","label":"Instagram"},{"link":"https://www.facebook.com/CalcadosComfortflex","label":"Facebook"},{"link":"https://www.tiktok.com/@comfortflexoficial","label":"Tiktok"}],"title":"Siga-nos nas redes"},"payments":{"items":[{"label":"Elo"},{"label":"Mastercard"},{"label":"Pix"},{"label":"Visa"}],"title":"Formas de pagamento"},"sections":[{"items":[{"href":"/quem-somos","label":"Quem somos"},{"href":"http://showroomvirtual.ramarim.com.br/","label":"Área do Lojista"},{"href":"/quero-revender","label":"Quero Revender"},{"href":"/nossas-lojas","label":"Onde Encontrar"},{"href":"https://gruporamarim.com.br/catalogo/Catalogo_Ramarim_Verao24_Completo.pdf","label":"Catálogo"}],"label":"Institucional","children":[{"href":"/quemsomos","label":"Quem somos"},{"href":"/privacidadeeseguranca","label":"Privacidade e segurança"},{"href":"/termosdeuso","label":"Termos de uso"},{"href":"/trabalheconosco","label":"Trabalhe conosco"}]},{"items":[{"href":"/devolucao","label":"Devolução"},{"href":"/politicas-de-privacidade","label":"Políticas de Privacidade"}],"label":"Ajuda e Suporte","children":[{"href":"/centraldeatendimento","label":"Central de atendimento"},{"href":"/whatsapp","label":"Fale conosco pelo WhatsApp"},{"href":"/trocaedevolucao","label":"Troca e devolução"}]},{"items":[{"href":"/login","label":"Login e cadastro"},{"href":"/account#/orders","label":"Meus pedidos"}],"label":"Minha conta","children":[{"href":"/loginecadastro","label":"Login e cadastro"},{"href":"/meuspedidos","label":"Meus pedidos"}]},{"items":[{"href":"/","label":"(51) 3565-8100 | (51) 4000-1846"},{"href":"https://api.whatsapp.com/send/?phone=51%203565-8111","label":"Whatsapp: (51) 3565-8111"},{"href":"mailto:sac@comfortflex.com.br","label":"sac@comfortflex.com.br"},{"href":"/","label":"Segunda à sexta-feira: 8h às 11h / 13:30h às 17h"}],"label":"Atendimento"}],"copyright":{"institucional_text":"Lorem ipsum"},"poweredBy":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/4a852f9c-3e04-45dd-a171-5fa110dc2883","extraLinks":[{"href":"http://www.google.com","link":"http://www.google.com/","label":"Política de privacidade"},{"href":"http://www.google.com","link":"http://www.google.com","label":"Termos de serviço"}],"mobileApps":{"apple":"http://www.google.com","android":"http://www.google.com"},"newsletter":{"form":{"helpText":"<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"},"title":"Assine nossa newsletter","description":"Assine nossa Newsletter e receba os lançamentos em primeira mão!"},"backToTheTop":{"text":"Voltar ao topo"},"waveCommerce":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/32da3e15-a490-4a66-af0d-d25b5efebb00","__resolveType":"site/sections/Footer/Footer.tsx","regionOptions":{"currency":[{"href":"/","label":"Brasil BRL"},{"href":"/","label":"United Stated USD"}],"language":[{"href":"/","label":"PT"},{"href":"/","label":"EN"}]}}
+{
+  "logo": {
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+    "description": "O estilo pensado para você"
+  },
+  "layout": {
+    "hide": {
+      "logo": false,
+      "mobileApps": false,
+      "newsletter": false,
+      "socialLinks": false,
+      "regionOptions": false
+    },
+    "variation": "Variation 1",
+    "backgroundColor": "Primary"
+  },
+  "social": {
+    "items": [
+      {
+        "link": "https://www.instagram.com/comfortflex/",
+        "label": "Instagram"
+      },
+      {
+        "link": "https://www.facebook.com/CalcadosComfortflex",
+        "label": "Facebook"
+      },
+      {
+        "link": "https://www.tiktok.com/@comfortflexoficial",
+        "label": "Tiktok"
+      }
+    ],
+    "title": "Siga-nos nas redes"
+  },
+  "payments": {
+    "items": [
+      {
+        "label": "Elo"
+      },
+      {
+        "label": "Mastercard"
+      },
+      {
+        "label": "Pix"
+      },
+      {
+        "label": "Visa"
+      }
+    ],
+    "title": "Formas de pagamento"
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "href": "/quem-somos",
+          "label": "Quem somos"
+        },
+        {
+          "href": "http://showroomvirtual.ramarim.com.br/",
+          "label": "Área do Lojista"
+        },
+        {
+          "href": "/quero-revender",
+          "label": "Quero Revender"
+        },
+        {
+          "href": "/nossas-lojas",
+          "label": "Onde Encontrar"
+        },
+        {
+          "href": "https://gruporamarim.com.br/catalogo/Catalogo_Ramarim_Verao24_Completo.pdf",
+          "label": "Catálogo"
+        }
+      ],
+      "label": "Institucional",
+      "children": [
+        {
+          "href": "/quemsomos",
+          "label": "Quem somos"
+        },
+        {
+          "href": "/privacidadeeseguranca",
+          "label": "Privacidade e segurança"
+        },
+        {
+          "href": "/termosdeuso",
+          "label": "Termos de uso"
+        },
+        {
+          "href": "/trabalheconosco",
+          "label": "Trabalhe conosco"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "href": "/devolucao",
+          "label": "Devolução"
+        },
+        {
+          "href": "/politicas-de-privacidade",
+          "label": "Políticas de Privacidade"
+        }
+      ],
+      "label": "Ajuda e Suporte",
+      "children": [
+        {
+          "href": "/centraldeatendimento",
+          "label": "Central de atendimento"
+        },
+        {
+          "href": "/whatsapp",
+          "label": "Fale conosco pelo WhatsApp"
+        },
+        {
+          "href": "/trocaedevolucao",
+          "label": "Troca e devolução"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "href": "/login",
+          "label": "Login e cadastro"
+        },
+        {
+          "href": "/account#/orders",
+          "label": "Meus pedidos"
+        }
+      ],
+      "label": "Minha conta",
+      "children": [
+        {
+          "href": "/loginecadastro",
+          "label": "Login e cadastro"
+        },
+        {
+          "href": "/meuspedidos",
+          "label": "Meus pedidos"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "href": "/",
+          "label": "(51) 3565-8100 | (51) 4000-1846"
+        },
+        {
+          "href": "https://wa.link/g6ewnl",
+          "label": "Whatsapp: (55) 5121-600741"
+        },
+        {
+          "href": "mailto:sac@comfortflex.com.br",
+          "label": "sac@comfortflex.com.br"
+        },
+        {
+          "href": "/",
+          "label": "Segunda à sexta-feira: 8h às 11h / 13:30h às 17h"
+        }
+      ],
+      "label": "Atendimento"
+    }
+  ],
+  "copyright": {
+    "institucional_text": "Lorem ipsum"
+  },
+  "poweredBy": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/4a852f9c-3e04-45dd-a171-5fa110dc2883",
+  "extraLinks": [
+    {
+      "href": "http://www.google.com",
+      "link": "http://www.google.com/",
+      "label": "Política de privacidade"
+    },
+    {
+      "href": "http://www.google.com",
+      "link": "http://www.google.com",
+      "label": "Termos de serviço"
+    }
+  ],
+  "mobileApps": {
+    "apple": "http://www.google.com",
+    "android": "http://www.google.com"
+  },
+  "newsletter": {
+    "form": {
+      "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
+    },
+    "title": "Assine nossa newsletter",
+    "description": "Assine nossa Newsletter e receba os lançamentos em primeira mão!"
+  },
+  "backToTheTop": {
+    "text": "Voltar ao topo"
+  },
+  "waveCommerce": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/32da3e15-a490-4a66-af0d-d25b5efebb00",
+  "__resolveType": "site/sections/Footer/Footer.tsx",
+  "regionOptions": {
+    "currency": [
+      {
+        "href": "/",
+        "label": "Brasil BRL"
+      },
+      {
+        "href": "/",
+        "label": "United Stated USD"
+      }
+    ],
+    "language": [
+      {
+        "href": "/",
+        "label": "PT"
+      },
+      {
+        "href": "/",
+        "label": "EN"
+      }
+    ]
+  }
+}
