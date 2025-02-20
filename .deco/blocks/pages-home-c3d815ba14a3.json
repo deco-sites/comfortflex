@@ -12,7 +12,7 @@
             "__resolveType": "Header - 01"
           },
           {
-            "phone": 5135658111,
+            "phone": 555121600740,
             "__resolveType": "site/sections/Social/WhatsApp.tsx"
           },
           {
@@ -92,8 +92,8 @@
             "link": "/preview-verao-25",
             "text": "Deixe-se levar pela brisa fresca do mar e mergulhe na essência da nossa coleção Primavera Verão 25, onde a moda encontra a natureza e o bem-estar se torna uma prioridade. Dos tons suaves das areias às tonalidades vibrantes das cores selvagens à beira-mar, cada detalhe inspira uma sensação de paz e tranquilidade. Uma celebração da vida à beira-mar! Junte-se a nós nesta jornada e venha se apaixonar pela moda que respira frescor e transborda vida. Explore nossa coleção e descubra como podemos levar você a um estado de espírito LITORÂNEO.",
             "title": "VERÃO 25",
-            "isMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/abb9f472-0fb4-43c0-97d6-f0fd736b5588",
-            "isDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/76d802ab-3e92-47f0-92f7-19bb519a1cdd",
+            "isMobile": "https://data.decoassets.com/comfortflex/cbd4ce69-bf35-41f7-b5ba-8e6f8b17591c/RP2_9522-copy.jpg",
+            "isDesktop": "https://data.decoassets.com/comfortflex/43c73110-7f56-4696-b702-9b7ea94315f1/RP2_9178-copy.jpg",
             "buttonText": "VER OS PRODUTOS",
             "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx"
           },
@@ -122,7 +122,7 @@
           {
             "link": "/black-friday",
             "title": "VERÃO 2025",
-            "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/bbd952da-9853-40c5-8443-1ba055448546",
+            "banner": "https://data.decoassets.com/comfortflex/d745d24c-8cd6-4c72-a065-7be6afec8de7/GIF-Superleve.gif",
             "layout": {
               "headerfontSize": "Normal"
             },
@@ -134,7 +134,6 @@
               },
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
             },
-            "buttonText": "VER PRODUTOS",
             "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx"
           },
           {
