@@ -1,1 +1,869 @@
-{"items":[{"url":"/tenis","name":"TÊNIS","@type":"SiteNavigationElement","image":[],"children":[{"name":"Ocasião","@type":"SiteNavigationElement","image":[],"children":[{"url":"/tenis?filter.category-1=tenis&filter.ocasiao=trabalho","name":"Para trabalhar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.ocasiao=dia-a-dia","name":"Para o dia a dia","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.ocasiao=festa","name":"Para festas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Faixa de preço","@type":"SiteNavigationElement","image":[],"children":[{"url":"/tenis?filter.category-1=tenis&filter.price=99.99%3A199.99","name":"100,00 até 200,00","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.price=199.99%3A299.99","name":"200,00 até 300,00","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Tamanhos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/tenis?filter.category-1=tenis&filter.tamanho=33","name":"33","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=34","name":"34","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=35","name":"35","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=36","name":"36","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=37","name":"37","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=38","name":"38","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=39","name":"39","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tenis?filter.category-1=tenis&filter.tamanho=40","name":"40","@type":"SiteNavigationElement","image":[],"children":[]}]}]},{"url":"/sandalias","name":"SANDÁLIAS","@type":"SiteNavigationElement","image":[],"children":[{"name":"Ocasião","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sandalias?filter.category-1=sandalias&filter.ocasiao=trabalho","name":"Para trabalhar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.ocasiao=dia-a-dia","name":"Para o dia a dia","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.ocasiao=festa","name":"Para festas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Salto","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sandalias?filter.category-1=sandalias&filter.tipo-de-salto=alto","name":"Alto","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tipo-de-salto=medio","name":"Médio","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tipo-de-salto=baixo","name":"Baixo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Bico","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sandalias?filter.category-1=sandalias&filter.tipo-de-bico=bico-arredondado","name":"Redondo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tipo-de-bico=bico-quadrado","name":"Quadrado","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tipo-de-bico=bico-fino","name":"Fino","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Tamanhos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=33","name":"33","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=34","name":"34","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=35","name":"35","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=36","name":"36","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=37","name":"37","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=38","name":"38","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=39","name":"39","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sandalias?filter.category-1=sandalias&filter.tamanho=40","name":"40","@type":"SiteNavigationElement","image":[],"children":[]}]}]},{"url":"/botas","name":"BOTAS","@type":"SiteNavigationElement","children":[{"name":"Ocasião","@type":"SiteNavigationElement","image":[],"children":[{"url":"/botas?filter.category-1=botas&filter.ocasiao=trabalho","name":"Para trabalhar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.ocasiao=dia-a-dia","name":"Para o dia a dia","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.ocasiao=festa","name":"Para festas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Salto","@type":"SiteNavigationElement","image":[],"children":[{"url":"/botas?filter.category-1=botas&filter.tipo-de-salto=alto","name":"Alto","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tipo-de-salto=medio","name":"Médio","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tipo-de-salto=baixo","name":"Baixo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Bico","@type":"SiteNavigationElement","image":[],"children":[{"url":"/botas?filter.category-1=botas&filter.tipo-de-bico=bico-arredondado","name":"Redondo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tipo-de-bico=bico-fino","name":"Fino","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Tamanhos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/botas?filter.category-1=botas&filter.tamanho=33","name":"33","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=34","name":"34","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=35","name":"35","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=36","name":"36","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=37","name":"37","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=38","name":"38","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=39","name":"39","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/botas?filter.category-1=botas&filter.tamanho=40","name":"40","@type":"SiteNavigationElement","image":[],"children":[]}]}]},{"url":"/flats","name":"FLATS","@type":"SiteNavigationElement","image":[],"children":[{"name":"Estilo de Flats","@type":"SiteNavigationElement","image":[],"children":[{"url":"/rasteiras","name":"Rasteiras","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/slide","name":"Slides","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/chinelo","name":"Chinelos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Ocasião","@type":"SiteNavigationElement","image":[],"children":[{"url":"/flats?filter.category-1=flats&filter.ocasiao=trabalho","name":"Para trabalhar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.ocasiao=dia-a-dia","name":"Para dia o dia","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.ocasiao=festa","name":"Para festas","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Bico","@type":"SiteNavigationElement","image":[],"children":[{"url":"/flats?filter.category-1=flats&filter.tipo-de-bico=bico-arredondado","name":"Redondo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tipo-de-bico=bico-quadrado","name":"Quadrado","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Tamanhos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/flats?filter.category-1=flats&filter.tamanho=33","name":"33","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=34","name":"34","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=35","name":"35","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=36","name":"36","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=37","name":"37","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=38","name":"38","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=39","name":"39","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/flats?filter.category-1=flats&filter.tamanho=40","name":"40","@type":"SiteNavigationElement","image":[],"children":[]}]}]},{"url":"/sapatos","name":"SAPATOS","@type":"SiteNavigationElement","image":[],"children":[{"name":"Tipos de Sapatos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/mocassim","name":"Mocassim","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos/scarpin","name":"Scarpin","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos/mule","name":"Mules","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/tamancos","name":"Tamancos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos/sapatilha","name":"Sapatilhas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Ocasião","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sapatos?filter.category-1=sapatos&filter.ocasiao=trabalho","name":"Para trabalhar","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.ocasiao=dia-a-dia","name":"Para o dia a dia","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.ocasiao=festa","name":"Para festas","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Salto","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sapatos?filter.category-1=sapatos&filter.tipo-de-salto=alto","name":"Alto","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tipo-de-salto=medio","name":"Médio","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tipo-de-salto=baixo","name":"Baixo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Bico","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sapatos?filter.category-1=sapatos&filter.tipo-de-bico=bico-arredondado","name":"Redondo","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tipo-de-bico=bico-fino","name":"Fino","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos","name":"VER TUDO","@type":"SiteNavigationElement","image":[],"children":[]}]},{"name":"Tamanhos","@type":"SiteNavigationElement","image":[],"children":[{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=33","name":"33","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=34","name":"34","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=35","name":"35","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=36","name":"36","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=37","name":"37","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=38","name":"38","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=39","name":"39","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/sapatos?filter.category-1=sapatos&filter.tamanho=40","name":"40","@type":"SiteNavigationElement","image":[],"children":[]}]}]},{"url":"/preview-verao-25","name":"Verão 2025","image":[],"children":[]}],"__resolveType":"commerce/loaders/navbar.ts"}
+{
+  "items": [
+    {
+      "url": "/tenis",
+      "name": "TÊNIS",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": [
+        {
+          "name": "Ocasião",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.ocasiao=trabalho",
+              "name": "Para trabalhar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.ocasiao=dia-a-dia",
+              "name": "Para o dia a dia",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.ocasiao=festa",
+              "name": "Para festas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Faixa de preço",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.price=99.99%3A199.99",
+              "name": "100,00 até 200,00",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.price=199.99%3A299.99",
+              "name": "200,00 até 300,00",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Tamanhos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=33",
+              "name": "33",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=34",
+              "name": "34",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=35",
+              "name": "35",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=36",
+              "name": "36",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=37",
+              "name": "37",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=38",
+              "name": "38",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=39",
+              "name": "39",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tenis?filter.category-1=tenis&filter.tamanho=40",
+              "name": "40",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "/sandalias",
+      "name": "SANDÁLIAS",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": [
+        {
+          "name": "Ocasião",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.ocasiao=trabalho",
+              "name": "Para trabalhar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.ocasiao=dia-a-dia",
+              "name": "Para o dia a dia",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.ocasiao=festa",
+              "name": "Para festas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Salto",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tipo-de-salto=alto",
+              "name": "Alto",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tipo-de-salto=medio",
+              "name": "Médio",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tipo-de-salto=baixo",
+              "name": "Baixo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Bico",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tipo-de-bico=bico-arredondado",
+              "name": "Redondo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tipo-de-bico=bico-quadrado",
+              "name": "Quadrado",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tipo-de-bico=bico-fino",
+              "name": "Fino",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Tamanhos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=33",
+              "name": "33",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=34",
+              "name": "34",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=35",
+              "name": "35",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=36",
+              "name": "36",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=37",
+              "name": "37",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=38",
+              "name": "38",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=39",
+              "name": "39",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.tamanho=40",
+              "name": "40",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "/botas",
+      "name": "BOTAS",
+      "@type": "SiteNavigationElement",
+      "children": [
+        {
+          "name": "Ocasião",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/botas?filter.category-1=botas&filter.ocasiao=trabalho",
+              "name": "Para trabalhar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.ocasiao=dia-a-dia",
+              "name": "Para o dia a dia",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.ocasiao=festa",
+              "name": "Para festas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Salto",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/botas?filter.category-1=botas&filter.tipo-de-salto=alto",
+              "name": "Alto",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tipo-de-salto=medio",
+              "name": "Médio",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tipo-de-salto=baixo",
+              "name": "Baixo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Bico",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/botas?filter.category-1=botas&filter.tipo-de-bico=bico-arredondado",
+              "name": "Redondo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tipo-de-bico=bico-fino",
+              "name": "Fino",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Tamanhos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=33",
+              "name": "33",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=34",
+              "name": "34",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=35",
+              "name": "35",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=36",
+              "name": "36",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=37",
+              "name": "37",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=38",
+              "name": "38",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=39",
+              "name": "39",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.tamanho=40",
+              "name": "40",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "/flats",
+      "name": "FLATS",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": [
+        {
+          "name": "Estilo de Flats",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/rasteiras",
+              "name": "Rasteiras",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/slide",
+              "name": "Slides",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/chinelo",
+              "name": "Chinelos",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Ocasião",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/flats?filter.category-1=flats&filter.ocasiao=trabalho",
+              "name": "Para trabalhar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.ocasiao=dia-a-dia",
+              "name": "Para dia o dia",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.ocasiao=festa",
+              "name": "Para festas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Bico",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/flats?filter.category-1=flats&filter.tipo-de-bico=bico-arredondado",
+              "name": "Redondo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tipo-de-bico=bico-quadrado",
+              "name": "Quadrado",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Tamanhos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=33",
+              "name": "33",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=34",
+              "name": "34",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=35",
+              "name": "35",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=36",
+              "name": "36",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=37",
+              "name": "37",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=38",
+              "name": "38",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=39",
+              "name": "39",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/flats?filter.category-1=flats&filter.tamanho=40",
+              "name": "40",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "/sapatos",
+      "name": "SAPATOS",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": [
+        {
+          "name": "Tipos de Sapatos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/mocassim",
+              "name": "Mocassim",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos/scarpin",
+              "name": "Scarpin",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos/mule",
+              "name": "Mules",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/tamancos",
+              "name": "Tamancos",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos/sapatilha",
+              "name": "Sapatilhas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Ocasião",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.ocasiao=trabalho",
+              "name": "Para trabalhar",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.ocasiao=dia-a-dia",
+              "name": "Para o dia a dia",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.ocasiao=festa",
+              "name": "Para festas",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Salto",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tipo-de-salto=alto",
+              "name": "Alto",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tipo-de-salto=medio",
+              "name": "Médio",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tipo-de-salto=baixo",
+              "name": "Baixo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Bico",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tipo-de-bico=bico-arredondado",
+              "name": "Redondo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tipo-de-bico=bico-fino",
+              "name": "Fino",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Tamanhos",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=33",
+              "name": "33",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=34",
+              "name": "34",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=35",
+              "name": "35",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=36",
+              "name": "36",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=37",
+              "name": "37",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=38",
+              "name": "38",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=39",
+              "name": "39",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sapatos?filter.category-1=sapatos&filter.tamanho=40",
+              "name": "40",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "/lancamentos",
+      "name": "INVERNO 25",
+      "image": [],
+      "children": []
+    }
+  ],
+  "__resolveType": "commerce/loaders/navbar.ts"
+}
