@@ -12,8 +12,18 @@
             "__resolveType": "Header - 01"
           },
           {
-            "phone": 555121600741,
-            "__resolveType": "site/sections/Social/WhatsApp.tsx"
+            "__resolveType": "website/flags/multivariate/section.ts",
+            "variants": [
+              {
+                "value": {
+                  "phone": 555121600741,
+                  "__resolveType": "site/sections/Social/WhatsApp.tsx"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              }
+            ]
           },
           {
             "variants": [
