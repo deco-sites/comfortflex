@@ -16,7 +16,8 @@
             "variants": [
               {
                 "value": {
-                  "__resolveType": "site/sections/Social/WhatsApp.tsx"
+                  "__resolveType": "site/sections/Social/WhatsApp.tsx",
+                  "phone": 555121600741
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
