@@ -134,7 +134,8 @@
               },
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
             },
-            "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx"
+            "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx",
+            "buttonText": "."
           },
           {
             "benefits": [
