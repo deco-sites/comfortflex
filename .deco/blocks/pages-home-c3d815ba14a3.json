@@ -28,6 +28,41 @@
           {
             "variants": [
               {
+                "rule": null,
+                "value": {
+                  "images": [
+                    {
+                      "alt": "/s?q=salto&filter.tipo-de-salto=baixo",
+                      "theme": "light",
+                      "action": {
+                        "href": "/s?q=salto&filter.tipo-de-salto=baixo",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/80616c90-f58b-463e-9d59-c3955eb569c3/Saltobaixocomelegancia-MOBILE.webp",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/779a2e0d-e32f-49bf-8f2c-49665386a5fb/Saltobaixocomelegancia-DESKTOP.webp",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
+                      "alt": "/sapatos",
+                      "theme": "light",
+                      "action": {
+                        "href": "/sapatos",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/b546d251-f292-47a4-9f66-d9a26c06ad9b/Sapatos-MOBILE.webp",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/7be03b7b-8ed3-441f-84d5-5a76190021a6/Sapatos-DESKTOP.webp",
+                      "position": "right",
+                      "hiddenText": true
+                    }
+                  ],
+                  "preload": true,
+                  "__resolveType": "site/sections/Images/Carousel.tsx"
+                }
+              },
+              {
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
                 },
@@ -112,26 +147,25 @@
               {
                 "alt": "/sandalias",
                 "href": "/sandalias",
-                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/fea9ffc5-f300-4811-9760-9910292b1bbe/BANNERS-CATEGORIA-SANDALIAS.webp"
+                "srcMobile": "https://data.decoassets.com/comfortflex/5b112cf4-7c4b-424a-9bc3-8ce674f3b0b0/categoria-1.png"
+              },
+              {
+                "alt": "/tenis",
+                "href": "/tenis",
+                "theme": "white",
+                "srcMobile": "https://data.decoassets.com/comfortflex/4a0c89da-7c3d-47cf-b9e6-53f02d0f68ef/categoria-1-copiar-2.png"
               },
               {
                 "alt": "/flats",
                 "href": "/flats",
                 "theme": "white",
-                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/00283484-9e91-41dd-aaf6-07e78259dc4f/BANNERS-CATEGORIA-FLATS.webp"
-              },
-              {
-                "alt": "/sapatos",
-                "href": "/sapatos",
-                "theme": "white",
-                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/ee827901-af4d-4fa0-9977-52fc8c6a39f1/BANNERS-CATEGORIA-SAPATOS.webp"
+                "srcMobile": "https://data.decoassets.com/comfortflex/41dbfd71-a51d-41f1-b088-dc74ca64a55d/categoria-1-copiar.png"
               }
             ],
             "__resolveType": "site/sections/Images/BannerCta.tsx"
           },
           {
             "link": "/black-friday",
-            "title": "VERÃO 2025",
             "banner": "https://data.decoassets.com/comfortflex/d745d24c-8cd6-4c72-a065-7be6afec8de7/GIF-Superleve.gif",
             "layout": {
               "headerfontSize": "Normal"
@@ -144,7 +178,7 @@
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
             },
             "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx",
-            "buttonText": "."
+            "buttonText": "VER COLEÇÃO"
           },
           {
             "benefits": [
