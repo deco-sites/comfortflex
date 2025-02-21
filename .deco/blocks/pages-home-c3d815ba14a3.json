@@ -102,8 +102,8 @@
             "link": "/preview-verao-25",
             "text": "Deixe-se levar pela brisa fresca do mar e mergulhe na essência da nossa coleção Primavera Verão 25, onde a moda encontra a natureza e o bem-estar se torna uma prioridade. Dos tons suaves das areias às tonalidades vibrantes das cores selvagens à beira-mar, cada detalhe inspira uma sensação de paz e tranquilidade. Uma celebração da vida à beira-mar! Junte-se a nós nesta jornada e venha se apaixonar pela moda que respira frescor e transborda vida. Explore nossa coleção e descubra como podemos levar você a um estado de espírito LITORÂNEO.",
             "title": "VERÃO 25",
-            "isMobile": "https://data.decoassets.com/comfortflex/cbd4ce69-bf35-41f7-b5ba-8e6f8b17591c/RP2_9522-copy.jpg",
-            "isDesktop": "https://data.decoassets.com/comfortflex/43c73110-7f56-4696-b702-9b7ea94315f1/RP2_9178-copy.jpg",
+            "isMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/76d802ab-3e92-47f0-92f7-19bb519a1cdd",
+            "isDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/76d802ab-3e92-47f0-92f7-19bb519a1cdd",
             "buttonText": "VER OS PRODUTOS",
             "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx"
           },
@@ -138,9 +138,8 @@
             },
             "products": {
               "props": {
-                "sort": "release:desc",
-                "count": 6,
-                "collection": "144"
+                "collection": "150",
+                "count": 30
               },
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
             },
