@@ -5847,6 +5847,11 @@ details.collapse summary::-webkit-details-marker {
   border-radius: 0.25rem;
 }
 
+.hover\:border-black:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .hover\:border-brand:hover {
   --tw-border-opacity: 1;
   border-color: rgb(188 129 255 / var(--tw-border-opacity));
