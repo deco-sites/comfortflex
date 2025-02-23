@@ -69,15 +69,15 @@
                 "value": {
                   "images": [
                     {
-                      "alt": "/s?q=salto&filter.tipo-de-salto=baixo",
+                      "alt": "/lancamentos",
                       "theme": "light",
                       "action": {
-                        "href": "/s?q=salto&filter.tipo-de-salto=baixo",
+                        "href": "/lancamentos",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/80616c90-f58b-463e-9d59-c3955eb569c3/Saltobaixocomelegancia-MOBILE.webp",
-                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/779a2e0d-e32f-49bf-8f2c-49665386a5fb/Saltobaixocomelegancia-DESKTOP.webp",
+                      "mobile": "https://data.decoassets.com/comfortflex/19f29a7d-69d9-4c18-947d-abcb9bba4818/banner-home-mobile1.png",
+                      "desktop": "https://data.decoassets.com/comfortflex/3329e82f-bdc9-42d5-ab9b-4774345762fa/banner-home-1.png",
                       "position": "right",
                       "hiddenText": true
                     },
