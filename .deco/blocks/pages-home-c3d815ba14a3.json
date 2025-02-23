@@ -133,14 +133,14 @@
             "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
           },
           {
-            "alt": "/preview-verao-25",
-            "link": "/preview-verao-25",
-            "text": "Deixe-se levar pela brisa fresca do mar e mergulhe na essência da nossa coleção Primavera Verão 25, onde a moda encontra a natureza e o bem-estar se torna uma prioridade. Dos tons suaves das areias às tonalidades vibrantes das cores selvagens à beira-mar, cada detalhe inspira uma sensação de paz e tranquilidade. Uma celebração da vida à beira-mar! Junte-se a nós nesta jornada e venha se apaixonar pela moda que respira frescor e transborda vida. Explore nossa coleção e descubra como podemos levar você a um estado de espírito LITORÂNEO.",
-            "title": "VERÃO 25",
-            "isMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/76d802ab-3e92-47f0-92f7-19bb519a1cdd",
-            "isDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/76d802ab-3e92-47f0-92f7-19bb519a1cdd",
-            "buttonText": "VER OS PRODUTOS",
-            "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx"
+            "alt": "/lancamentos",
+            "link": "/lancamentos",
+            "isMobile": "https://data.decoassets.com/comfortflex/7a700b1b-c6e2-4924-a512-f57c503c33e8/banner-colecao.png",
+            "isDesktop": "https://data.decoassets.com/comfortflex/7a700b1b-c6e2-4924-a512-f57c503c33e8/banner-colecao.png",
+            "buttonText": "CONHEÇA A COLEÇÃO",
+            "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx",
+            "text": "A campanha de Inverno 2025 da Comfortflex, Elegance, onde Vanessa Giácomo nos guia por esse universo onde conforto e elegância se encontram, traduzindo a essência de uma mulher moderna e autêntica. Mais do que calçados, Comfortflex é sobre se sentir confiante e pronta para viver o que realmente importa.",
+            "title": "INVERNO 25"
           },
           {
             "banners": [
