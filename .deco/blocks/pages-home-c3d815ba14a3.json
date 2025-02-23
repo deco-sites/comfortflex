@@ -82,15 +82,15 @@
                       "hiddenText": true
                     },
                     {
-                      "alt": "/sapatos",
+                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                       "theme": "light",
                       "action": {
-                        "href": "/sapatos",
+                        "href": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/b546d251-f292-47a4-9f66-d9a26c06ad9b/Sapatos-MOBILE.webp",
-                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/7be03b7b-8ed3-441f-84d5-5a76190021a6/Sapatos-DESKTOP.webp",
+                      "mobile": "https://data.decoassets.com/comfortflex/88dc543c-3d51-43d8-9d3d-7cb3514b2230/banner-home-mobile-2.png",
+                      "desktop": "https://data.decoassets.com/comfortflex/468ac79d-ff55-47e5-9722-dcb48d1c974f/banner-home-2.png",
                       "position": "right",
                       "hiddenText": true
                     }
