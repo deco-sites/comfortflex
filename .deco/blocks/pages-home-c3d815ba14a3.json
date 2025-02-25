@@ -165,7 +165,7 @@
             "__resolveType": "site/sections/Images/BannerCta.tsx"
           },
           {
-            "link": "/black-friday",
+            "link": "/150?map=productClusterIds",
             "banner": "https://data.decoassets.com/comfortflex/d745d24c-8cd6-4c72-a065-7be6afec8de7/GIF-Superleve.gif",
             "layout": {
               "headerfontSize": "Normal"
