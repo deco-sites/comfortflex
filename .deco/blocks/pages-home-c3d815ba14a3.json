@@ -192,7 +192,8 @@
                 "benefitTitle": "1° DEVOLUÇÃO",
                 "benefitImgSrc": "https://www.comfortflex.com.br/image/box.svg",
                 "benefitImgAltText": "1° DEVOLUÇÃO É POR NOSSA CONTA!",
-                "benefitDescription": "É POR NOSSA CONTA!"
+                "benefitDescription": "É POR NOSSA CONTA!",
+                "benefitLink": "/devolucao"
               },
               {
                 "benefitLink": "/quero-revender",
