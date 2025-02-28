@@ -69,6 +69,19 @@
                 "value": {
                   "images": [
                     {
+                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
+                      "theme": "light",
+                      "action": {
+                        "href": "/promocao",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://data.decoassets.com/comfortflex/43443829-aab7-4a63-8bda-7590be5faaf7/Comfortflex---folia-do-consumidor---mob.png",
+                      "desktop": "https://data.decoassets.com/comfortflex/571e502d-aa40-4684-ac32-bbb719e83f03/Comfortflex---folia-do-consumidor---desk.png",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
                       "alt": "/lancamentos",
                       "theme": "light",
                       "action": {
@@ -91,19 +104,6 @@
                       },
                       "mobile": "https://data.decoassets.com/comfortflex/88dc543c-3d51-43d8-9d3d-7cb3514b2230/banner-home-mobile-2.png",
                       "desktop": "https://data.decoassets.com/comfortflex/468ac79d-ff55-47e5-9722-dcb48d1c974f/banner-home-2.png",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
-                      "theme": "light",
-                      "action": {
-                        "href": "/promocao",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://data.decoassets.com/comfortflex/43443829-aab7-4a63-8bda-7590be5faaf7/Comfortflex---folia-do-consumidor---mob.png",
-                      "desktop": "https://data.decoassets.com/comfortflex/571e502d-aa40-4684-ac32-bbb719e83f03/Comfortflex---folia-do-consumidor---desk.png",
                       "position": "right",
                       "hiddenText": true
                     }
