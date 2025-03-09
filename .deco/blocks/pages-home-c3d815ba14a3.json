@@ -72,19 +72,6 @@
                       "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                       "theme": "light",
                       "action": {
-                        "href": "/lancamentos",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://data.decoassets.com/comfortflex/71a2480f-63d0-4677-9fd6-1c4b8b670ce1/ComfortFlex---Dia-da-Mulher---mob-(1).png",
-                      "desktop": "https://data.decoassets.com/comfortflex/cab88047-a8fc-4ad8-a4bd-563ad4a135a0/ComfortFlex---Dia-da-Mulher---desk.png",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
-                      "theme": "light",
-                      "action": {
                         "href": "/promocao",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
