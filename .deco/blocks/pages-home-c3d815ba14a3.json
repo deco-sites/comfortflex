@@ -69,6 +69,19 @@
                 "value": {
                   "images": [
                     {
+                      "alt": "s?q=preto",
+                      "theme": "light",
+                      "action": {
+                        "href": "s?q=preto",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://data.decoassets.com/comfortflex/6660ae68-de6f-4afc-bfbd-5fb7b7b3f8ce/Comfortflex---banner---mob_all-black.png",
+                      "desktop": "https://data.decoassets.com/comfortflex/ee451670-d6fa-49b2-a9b8-2a1eb949eddc/Comfortflex---banner---desk_all-black.jpg",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
                       "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                       "theme": "light",
                       "action": {
