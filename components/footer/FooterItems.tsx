@@ -32,7 +32,12 @@ export default function FooterItems(
                   <ul class={`flex flex-col gap-2 flex-wrap text-sm`}>
                     {section.items?.map((item) => (
                       <li>
-                        <a href={item.href}  class={`block py-1 ${item.href ? 'link link-hover' : ''}`}>
+                        <a
+                          href={item.href}
+                          class={`block py-1 ${
+                            item.href ? "link link-hover" : ""
+                          }`}
+                        >
                           {item.label}
                         </a>
                       </li>
