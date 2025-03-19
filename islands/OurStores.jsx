@@ -15,11 +15,6 @@ let allStores = [];
 
 const digitalStores = [
   {
-    href: "https://www.bedinlojas.com.br/ramarim",
-    src:
-      "https://comfortflex.vtexassets.com/assets/vtex.file-manager-graphql/images/e9c6dd57-0e1d-4970-a7e3-3c07d2f79d8d___c8d91da7241097cf481d9ab91425de23.png",
-  },
-  {
     href:
       "https://www.galvaocalcados.com.br/feminino/calcados/tenis?loja=1034143&categoria=53&brands%5B%5D=RAMARIM",
     src:
