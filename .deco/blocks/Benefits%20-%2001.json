@@ -1,1 +1,31 @@
-{"layout":{"variation":"Simple","headerAlignment":"center"},"benefits":[{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/dc6cafd3-3930-4780-96d4-e7af47eb1323","label":"ATÉ 6X","description":"SEM JUROS!"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/0ebc62ae-7388-472d-8897-f662332892e4","label":"1° DEVOLUÇÃO","description":"É POR NOSSA CONTA!"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/ac632188-4b41-4c6c-9790-ee3d990b5d24","label":"VENDA NA RAMARIM","isBordered":true,"description":"FAÇA PARTE DO NOSSO MARKETPLACE!"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/c4674ad0-39f0-45e3-8383-be3ee0790cfc","label":"PERTO DE VOCÊ","isBordered":true,"description":"ENCONTRE O VENDEDOR NA SUA CIDADE!"}],"__resolveType":"site/sections/Content/Benefits.tsx"}
+{
+  "layout": {
+    "variation": "Simple",
+    "headerAlignment": "center"
+  },
+  "benefits": [
+    {
+      "icon": "https://assets.decocache.com/comfortflex/944a6b66-2436-4a0a-a7be-153d2f711069/1742505372322-dc6cafd3-3930-4780-96d4-e7af47eb1323",
+      "label": "ATÉ 6X",
+      "description": "SEM JUROS!"
+    },
+    {
+      "icon": "https://assets.decocache.com/comfortflex/4fdabbea-92d7-4d73-af88-aed28caabf4b/1742505373679-0ebc62ae-7388-472d-8897-f662332892e4",
+      "label": "1° DEVOLUÇÃO",
+      "description": "É POR NOSSA CONTA!"
+    },
+    {
+      "icon": "https://assets.decocache.com/comfortflex/4d594865-a303-495d-927e-475a1533bcf0/1742505374951-ac632188-4b41-4c6c-9790-ee3d990b5d24",
+      "label": "VENDA NA RAMARIM",
+      "isBordered": true,
+      "description": "FAÇA PARTE DO NOSSO MARKETPLACE!"
+    },
+    {
+      "icon": "https://assets.decocache.com/comfortflex/918b6696-3054-4eff-84d7-8ba308dec904/1742505376301-c4674ad0-39f0-45e3-8383-be3ee0790cfc",
+      "label": "PERTO DE VOCÊ",
+      "isBordered": true,
+      "description": "ENCONTRE O VENDEDOR NA SUA CIDADE!"
+    }
+  ],
+  "__resolveType": "site/sections/Content/Benefits.tsx"
+}

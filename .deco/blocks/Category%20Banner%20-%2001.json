@@ -1,1 +1,14 @@
-{"banners":[{"image":{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96"},"title":"Woman","matcher":"/feminino/*","subtitle":"As"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"}
+{
+  "banners": [
+    {
+      "image": {
+        "mobile": "https://assets.decocache.com/comfortflex/5b2604f0-e7ff-4e09-826c-ad601845c542/1742505467512-91102b71-4832-486a-b683-5f7b06f649af",
+        "desktop": "https://assets.decocache.com/comfortflex/2a831ef5-ea65-4f61-9fc9-8952df098edf/1742505468582-ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
+      },
+      "title": "Woman",
+      "matcher": "/feminino/*",
+      "subtitle": "As"
+    }
+  ],
+  "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+}

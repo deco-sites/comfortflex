@@ -1,1 +1,62 @@
-{"seo":{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/e2602e3d-2a67-47a5-8ae0-3fe3e57007be","title":"Comfortflex |","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/33048ff7-605e-439c-996c-d3bff234850e","jsonLDs":[],"canonical":"https://fashion.deco.site","noIndexing":false,"titleTemplate":"%s | Comfortflex","descriptionTemplate":"%s | Comfortflex"},"theme":{"__resolveType":"Theme"},"global":[{"__resolveType":"analytics/sections/Analytics/DecoAnalytics.tsx"},{"trackingIds":["GTM-5S6CP88"],"__resolveType":"website/sections/Analytics/Analytics.tsx","googleAnalyticsIds":["G-1NKMG9P0L8"],"dangerouslyRunOnMainThread":true}],"routes":[{"__resolveType":"website/loaders/pages.ts"},{"__resolveType":"website/loaders/redirects.ts"},{"__resolveType":"vtex/loaders/proxy.ts","includeSiteMap":[],"extraPathsToProxy":[],"includeScriptsToHead":{"includes":[]}}],"caching":{"directives":[]},"commerce":{"platform":"other"},"platform":"vtex","abTesting":{"replaces":[],"includeScriptsToHead":{"includes":[]}},"__resolveType":"site/apps/site.ts","firstByteThresholdMS":false}
+{
+  "seo": {
+    "type": "website",
+    "image": "https://assets.decocache.com/comfortflex/b3c1cb0a-d725-4251-9495-f2531b996e7e/1742505377572-e2602e3d-2a67-47a5-8ae0-3fe3e57007be",
+    "title": "Comfortflex |",
+    "favicon": "https://assets.decocache.com/comfortflex/5a617b80-d0a7-4117-9d84-a2422c47ba28/1742505378542-33048ff7-605e-439c-996c-d3bff234850e",
+    "jsonLDs": [],
+    "canonical": "https://fashion.deco.site",
+    "noIndexing": false,
+    "titleTemplate": "%s | Comfortflex",
+    "descriptionTemplate": "%s | Comfortflex"
+  },
+  "theme": {
+    "__resolveType": "Theme"
+  },
+  "global": [
+    {
+      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+    },
+    {
+      "trackingIds": [
+        "GTM-5S6CP88"
+      ],
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
+      "googleAnalyticsIds": [
+        "G-1NKMG9P0L8"
+      ],
+      "dangerouslyRunOnMainThread": true
+    }
+  ],
+  "routes": [
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    },
+    {
+      "__resolveType": "website/loaders/redirects.ts"
+    },
+    {
+      "__resolveType": "vtex/loaders/proxy.ts",
+      "includeSiteMap": [],
+      "extraPathsToProxy": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
+    }
+  ],
+  "caching": {
+    "directives": []
+  },
+  "commerce": {
+    "platform": "other"
+  },
+  "platform": "vtex",
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false
+}

@@ -1,1 +1,45 @@
-{"layout":{"gap":{"mobile":"1","desktop":"1"},"cols":{"mobile":"1","desktop":"3"},"flow":{"mobile":"col","desktop":"col"},"rows":{"mobile":"1","desktop":"1"},"placeItems":{"mobile":"center","desktop":"center"}},"children":{"sections":[{"srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/b9287ed2-22f0-4650-bbc5-400485f8d1ef","srcDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/053ef60a-2383-4ab5-9d1a-83b2837d71b0","__resolveType":"site/sections/Images/BannerCta.tsx"},{"srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/147ce2a2-052a-4df3-84f6-b3e5bf213e04","srcDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/d252990e-0670-42d7-a12b-9f135b3e5492","__resolveType":"site/sections/Images/BannerCta.tsx"},{"srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/7e6b95db-89e3-4743-ada0-bfd53d9f1eb5","srcDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2906/9569e0e1-15f8-4e89-b124-11d11b743ea2","__resolveType":"site/sections/Images/BannerCta.tsx"}],"__resolveType":"site/loaders/List/Sections.tsx"},"__resolveType":"site/sections/Layout/Grid.tsx"}
+{
+  "layout": {
+    "gap": {
+      "mobile": "1",
+      "desktop": "1"
+    },
+    "cols": {
+      "mobile": "1",
+      "desktop": "3"
+    },
+    "flow": {
+      "mobile": "col",
+      "desktop": "col"
+    },
+    "rows": {
+      "mobile": "1",
+      "desktop": "1"
+    },
+    "placeItems": {
+      "mobile": "center",
+      "desktop": "center"
+    }
+  },
+  "children": {
+    "sections": [
+      {
+        "srcMobile": "https://assets.decocache.com/comfortflex/e797d823-6e0a-419c-94ca-9a706e140100/1742505379951-b9287ed2-22f0-4650-bbc5-400485f8d1ef",
+        "srcDesktop": "https://assets.decocache.com/comfortflex/67ec1dc5-b36c-40c6-9c0e-fc1f49f874e2/1742505381309-053ef60a-2383-4ab5-9d1a-83b2837d71b0",
+        "__resolveType": "site/sections/Images/BannerCta.tsx"
+      },
+      {
+        "srcMobile": "https://assets.decocache.com/comfortflex/99794f09-b00c-47a7-9457-330fd226701e/1742505382957-147ce2a2-052a-4df3-84f6-b3e5bf213e04",
+        "srcDesktop": "https://assets.decocache.com/comfortflex/3a625b8a-b521-4ba1-bb7e-1b3254d7df89/1742505384378-d252990e-0670-42d7-a12b-9f135b3e5492",
+        "__resolveType": "site/sections/Images/BannerCta.tsx"
+      },
+      {
+        "srcMobile": "https://assets.decocache.com/comfortflex/2e5ec229-7ab4-4cf0-8f30-c2c9624c008e/1742505385659-7e6b95db-89e3-4743-ada0-bfd53d9f1eb5",
+        "srcDesktop": "https://assets.decocache.com/comfortflex/462d66d7-465a-4609-9914-60c629bb512d/1742505386994-9569e0e1-15f8-4e89-b124-11d11b743ea2",
+        "__resolveType": "site/sections/Images/BannerCta.tsx"
+      }
+    ],
+    "__resolveType": "site/loaders/List/Sections.tsx"
+  },
+  "__resolveType": "site/sections/Layout/Grid.tsx"
+}
