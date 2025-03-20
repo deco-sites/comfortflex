@@ -1,1 +1,34 @@
-{"cart":{"freeShippingObjectiveQuantity":600},"logo":{"alt":"Logo de Ramarim","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/7edf1127-ab50-45af-8aef-6fa75456047a"},"alerts":["Use this template to create your store at deco.cx"],"navItems":{"__resolveType":"navbar"},"products":[],"searchbar":{"name":"q","action":"/s","loader":{"data":{"__resolveType":"vtex/loaders/intelligentSearch/suggestions.ts"},"__resolveType":"resolved"},"placeholder":"O que você procura?"},"suggestions":{"products":[],"searches":[]},"__resolveType":"site/sections/Header/Header.tsx","userLoggedText":"Minha Conta","userNotLoggedText":"Entrar"}
+{
+  "cart": {
+    "freeShippingObjectiveQuantity": 600
+  },
+  "logo": {
+    "alt": "Logo de Ramarim",
+    "src": "https://assets.decocache.com/comfortflex/a21b840d-3d1e-4539-8e02-d2e078f8c272/1742505392173-7edf1127-ab50-45af-8aef-6fa75456047a"
+  },
+  "alerts": [
+    "Use this template to create your store at deco.cx"
+  ],
+  "navItems": {
+    "__resolveType": "navbar"
+  },
+  "products": [],
+  "searchbar": {
+    "name": "q",
+    "action": "/s",
+    "loader": {
+      "data": {
+        "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+      },
+      "__resolveType": "resolved"
+    },
+    "placeholder": "O que você procura?"
+  },
+  "suggestions": {
+    "products": [],
+    "searches": []
+  },
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "userLoggedText": "Minha Conta",
+  "userNotLoggedText": "Entrar"
+}

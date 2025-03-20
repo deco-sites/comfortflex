@@ -1,1 +1,65 @@
-{"title":"VENDEDORES COMFORTFLEX","images":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/e39e7890-590c-417d-beff-5f82b1f9a4c6","altText":"test"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/c6e47757-57f0-4aba-88f0-e8fd3e434959","altText":"test"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/f749d998-5c65-424f-9e44-b1d212192027","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/8285ae33-d6bc-4f76-bf10-edcb42e09e8d","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/4cb75cf1-0bf5-4299-a24b-bdf40398c4e8","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/1daf2022-e780-4179-a231-2649050bd708","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/953e5145-63f9-40bf-a7ea-72a964c88108","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/75acf5de-5b29-4f98-b820-b9d07a3dcd52","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/b4066b9b-f153-45a9-b824-4282d2d9ff20","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/c2d0ec02-d14d-4a08-8ce3-bf8f888b75e4","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/0e9688a8-63a3-406e-bd61-1bdaf28f507f","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1ef3c4e3-e024-42cf-8798-02bfdc48102a","altText":"/"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/8d6cc0cb-6e81-4a3a-9ee9-13d1912676a9","altText":"Oscar Calçados"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/10849b70-1e9a-4513-ab0e-64af64c6bb97","altText":"Miramar Modas"}],"layout":{"headerAlignment":"center"},"__resolveType":"site/sections/Content/Logos.tsx"}
+{
+  "title": "VENDEDORES COMFORTFLEX",
+  "images": [
+    {
+      "image": "https://assets.decocache.com/comfortflex/e1992af3-8282-4d61-889a-958d7a375e05/1742505411402-e39e7890-590c-417d-beff-5f82b1f9a4c6",
+      "altText": "test"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/9b134d62-9ddc-4fc0-993d-700cb172b222/1742505412646-c6e47757-57f0-4aba-88f0-e8fd3e434959",
+      "altText": "test"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/4c2019ac-bdd9-4033-89d5-297c6ba02003/1742505413899-f749d998-5c65-424f-9e44-b1d212192027",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/18528d65-0cd8-49c9-a118-7fed540693e6/1742505415039-8285ae33-d6bc-4f76-bf10-edcb42e09e8d",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/99779b1e-8446-494f-9366-0088b5013ba5/1742505416150-4cb75cf1-0bf5-4299-a24b-bdf40398c4e8",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/b46679a8-91e0-49da-a65b-34a99030efec/1742505417662-1daf2022-e780-4179-a231-2649050bd708",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/00c1b988-2074-494b-b782-b90876e1e01a/1742505419274-953e5145-63f9-40bf-a7ea-72a964c88108",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/22f22834-e38f-426d-9017-d5706cd9e6c3/1742505420476-75acf5de-5b29-4f98-b820-b9d07a3dcd52",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/a4d7eea7-c1ff-4bd7-8336-085803c10f46/1742505422036-b4066b9b-f153-45a9-b824-4282d2d9ff20",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/15098a37-c342-41fe-85ed-63534676dc5e/1742505423232-c2d0ec02-d14d-4a08-8ce3-bf8f888b75e4",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/1e662d47-f6a1-4030-b6d3-1bdde00866fb/1742505424531-0e9688a8-63a3-406e-bd61-1bdaf28f507f",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/582d284b-7c75-43c0-b1ca-a516c0f20eff/1742505425536-1ef3c4e3-e024-42cf-8798-02bfdc48102a",
+      "altText": "/"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/25e55200-de35-4f4d-a7f4-3f6470680ba5/1742505426989-8d6cc0cb-6e81-4a3a-9ee9-13d1912676a9",
+      "altText": "Oscar Calçados"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/cc359b30-7bcd-48ca-a8a5-abb92cc23058/1742505428532-10849b70-1e9a-4513-ab0e-64af64c6bb97",
+      "altText": "Miramar Modas"
+    }
+  ],
+  "layout": {
+    "headerAlignment": "center"
+  },
+  "__resolveType": "site/sections/Content/Logos.tsx"
+}
