@@ -69,17 +69,17 @@
                 "value": {
                   "images": [
                     {
-                      "alt": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias",
                       "theme": "light",
                       "action": {
-                        "href": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias",
                         "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
+                        "title": "LEVEZA & CONFORTO",
+                        "href": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/7534e149-0436-4068-b6d7-51468d0e9030/Comfortflex---banner---mob_1.png",
                       "desktop": "https://assets.decocache.com/comfortflex/f7c5104b-feaa-41c0-9981-c44ba6f190c1/Comfortflex---banner---desk_1.png",
                       "position": "right",
-                      "hiddenText": true
+                      "hiddenText": true,
+                      "alt": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias"
                     },
                     {
                       "alt": "s?q=preto",
