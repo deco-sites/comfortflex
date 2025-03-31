@@ -222,13 +222,6 @@
                 "benefitLink": "/devolucao"
               },
               {
-                "benefitLink": "/quero-revender",
-                "benefitTitle": "VENDA NA COMFORTFLEX",
-                "benefitImgSrc": "https://www.comfortflex.com.br/image/store.svg",
-                "benefitImgAltText": "VENDA NA COMFORTFLEX, FAÇA PARTE DO NOSSO MARKETPLACE!",
-                "benefitDescription": "FAÇA PARTE DO NOSSO MARKETPLACE!"
-              },
-              {
                 "benefitLink": "/nossas-lojas",
                 "benefitTitle": "PERTO DE VOCÊ",
                 "benefitImgSrc": "https://www.comfortflex.com.br/image/pin.svg",
