@@ -71,15 +71,25 @@
                     {
                       "theme": "light",
                       "action": {
+                        "href": "/botas"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/726a8d46-49b2-474d-9ee6-4c6aa5ce892a/Comfortflex---banner---mob_lancamento-(2)-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/1474230d-f655-49d8-8e34-b35683043b6d/Comfortflex---banner---desk_lancamento-(1).png",
+                      "position": "left",
+                      "alt": "/botas"
+                    },
+                    {
+                      "alt": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias",
+                      "theme": "light",
+                      "action": {
+                        "href": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias",
                         "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO",
-                        "href": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias"
+                        "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/7534e149-0436-4068-b6d7-51468d0e9030/Comfortflex---banner---mob_1.png",
                       "desktop": "https://assets.decocache.com/comfortflex/f7c5104b-feaa-41c0-9981-c44ba6f190c1/Comfortflex---banner---desk_1.png",
                       "position": "right",
-                      "hiddenText": true,
-                      "alt": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias"
+                      "hiddenText": true
                     },
                     {
                       "alt": "s?q=preto",
@@ -95,16 +105,16 @@
                       "hiddenText": true
                     },
                     {
-                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                       "theme": "light",
+                      "position": "right",
+                      "desktop": "https://data.decoassets.com/comfortflex/468ac79d-ff55-47e5-9722-dcb48d1c974f/banner-home-2.png",
+                      "mobile": "https://data.decoassets.com/comfortflex/88dc543c-3d51-43d8-9d3d-7cb3514b2230/banner-home-mobile-2.png",
+                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                       "action": {
                         "href": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://data.decoassets.com/comfortflex/88dc543c-3d51-43d8-9d3d-7cb3514b2230/banner-home-mobile-2.png",
-                      "desktop": "https://data.decoassets.com/comfortflex/468ac79d-ff55-47e5-9722-dcb48d1c974f/banner-home-2.png",
-                      "position": "right",
                       "hiddenText": true
                     }
                   ],
