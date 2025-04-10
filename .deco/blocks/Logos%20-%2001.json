@@ -10,10 +10,6 @@
       "altText": "test"
     },
     {
-      "image": "https://assets.decocache.com/comfortflex/4c2019ac-bdd9-4033-89d5-297c6ba02003/1742505413899-f749d998-5c65-424f-9e44-b1d212192027",
-      "altText": "/"
-    },
-    {
       "image": "https://assets.decocache.com/comfortflex/18528d65-0cd8-49c9-a118-7fed540693e6/1742505415039-8285ae33-d6bc-4f76-bf10-edcb42e09e8d",
       "altText": "/"
     },
@@ -26,15 +22,7 @@
       "altText": "/"
     },
     {
-      "image": "https://assets.decocache.com/comfortflex/00c1b988-2074-494b-b782-b90876e1e01a/1742505419274-953e5145-63f9-40bf-a7ea-72a964c88108",
-      "altText": "/"
-    },
-    {
       "image": "https://assets.decocache.com/comfortflex/22f22834-e38f-426d-9017-d5706cd9e6c3/1742505420476-75acf5de-5b29-4f98-b820-b9d07a3dcd52",
-      "altText": "/"
-    },
-    {
-      "image": "https://assets.decocache.com/comfortflex/a4d7eea7-c1ff-4bd7-8336-085803c10f46/1742505422036-b4066b9b-f153-45a9-b824-4282d2d9ff20",
       "altText": "/"
     },
     {
@@ -46,16 +34,20 @@
       "altText": "/"
     },
     {
-      "image": "https://assets.decocache.com/comfortflex/582d284b-7c75-43c0-b1ca-a516c0f20eff/1742505425536-1ef3c4e3-e024-42cf-8798-02bfdc48102a",
-      "altText": "/"
-    },
-    {
-      "image": "https://assets.decocache.com/comfortflex/25e55200-de35-4f4d-a7f4-3f6470680ba5/1742505426989-8d6cc0cb-6e81-4a3a-9ee9-13d1912676a9",
-      "altText": "Oscar Calçados"
-    },
-    {
       "image": "https://assets.decocache.com/comfortflex/cc359b30-7bcd-48ca-a8a5-abb92cc23058/1742505428532-10849b70-1e9a-4513-ab0e-64af64c6bb97",
       "altText": "Miramar Modas"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/5002ddb4-4ae8-4f2f-8b29-765b0f1204b6/Dope.jpg",
+      "altText": "Dopé Calçados"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/da9f587b-004f-4713-b900-b6d05301ecb3/sipel-magazine.png",
+      "altText": "Sipel Magazine"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/39d9877c-1f9f-4fbc-a04b-5f340326aac8/tida.jpg",
+      "altText": "Tida Calçados"
     }
   ],
   "layout": {

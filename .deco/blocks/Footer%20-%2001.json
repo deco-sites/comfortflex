@@ -60,16 +60,8 @@
           "label": "Área do Lojista"
         },
         {
-          "href": "/quero-revender",
-          "label": "Quero Revender"
-        },
-        {
           "href": "/nossas-lojas",
           "label": "Onde Encontrar"
-        },
-        {
-          "href": "https://gruporamarim.com.br/catalogo/Catalogo_Ramarim_Verao24_Completo.pdf",
-          "label": "Catálogo"
         }
       ],
       "label": "Institucional",
