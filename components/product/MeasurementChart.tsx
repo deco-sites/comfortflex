@@ -24,7 +24,7 @@ export default function MeasurementChart() {
           onClose={closeModalHandler}
         >
           <div class="w-full md:w-auto absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] bg-base-100">
-            <img src="https://ramarim.vtexassets.com/arquivos/Tabela%20de%20Medidas%20-%20Marketplace_Ramarim.png" />
+            <img src="https://assets.decocache.com/comfortflex/33b344dc-32f9-4022-acd3-67ee819605f3/Screenshot_204.png" />
           </div>
         </Modal>
       </div>
