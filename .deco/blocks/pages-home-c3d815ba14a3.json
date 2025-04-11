@@ -76,7 +76,8 @@
                       "mobile": "https://assets.decocache.com/comfortflex/eec4f829-9c74-46d4-bdff-90f1fa5d48b2/Comfortflex---banner---mob.png",
                       "desktop": "https://assets.decocache.com/comfortflex/cb2b3c4a-5a4a-4415-96e1-21f54ae688c0/Comfortflex---banner---desk.png",
                       "alt": "/lancamentos",
-                      "position": "left"
+                      "position": "right",
+                      "hiddenText": true
                     },
                     {
                       "alt": "s?q=preto",
