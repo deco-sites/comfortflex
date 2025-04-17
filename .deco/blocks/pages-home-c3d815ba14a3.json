@@ -80,6 +80,17 @@
                       "hiddenText": true
                     },
                     {
+                      "alt": "/lancamentos?sort=orders%3Adesc",
+                      "theme": "light",
+                      "action": {
+                        "href": "/lancamentos?sort=orders%3Adesc"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/414ed0ba-887c-4164-910e-ef7d03fbdb86/Comfortflex---banner---mob1.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/dd7d2d6f-0b71-49e0-b574-9bf88d21adbe/Comfortflex---banner---desk1.png",
+                      "hiddenText": true,
+                      "position": "right"
+                    },
+                    {
                       "alt": "s?q=preto",
                       "theme": "light",
                       "action": {
@@ -93,15 +104,15 @@
                       "position": "right"
                     },
                     {
-                      "alt": "/s?q=tamanco",
                       "theme": "light",
+                      "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
+                      "mobile": "https://assets.decocache.com/comfortflex/2d40c4c1-05d2-492c-a8cc-b95b92240189/Comfortflex---banner---mob_2-(1).png",
+                      "alt": "/s?q=tamanco",
                       "action": {
                         "href": "/s?q=tamanco",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/2d40c4c1-05d2-492c-a8cc-b95b92240189/Comfortflex---banner---mob_2-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
                       "hiddenText": true,
                       "position": "right"
                     },
