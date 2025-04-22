@@ -71,59 +71,35 @@
                     {
                       "theme": "light",
                       "action": {
-                        "href": "/lancamentos"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/eec4f829-9c74-46d4-bdff-90f1fa5d48b2/Comfortflex---banner---mob.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/cb2b3c4a-5a4a-4415-96e1-21f54ae688c0/Comfortflex---banner---desk.png",
-                      "alt": "/lancamentos",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/lancamentos?sort=orders%3Adesc",
-                      "theme": "light",
-                      "action": {
                         "href": "/lancamentos?sort=orders%3Adesc"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/414ed0ba-887c-4164-910e-ef7d03fbdb86/Comfortflex---banner---mob1.png",
                       "desktop": "https://assets.decocache.com/comfortflex/dd7d2d6f-0b71-49e0-b574-9bf88d21adbe/Comfortflex---banner---desk1.png",
-                      "hiddenText": true,
-                      "position": "right"
+                      "alt": "/lancamentos?sort=orders%3Adesc",
+                      "position": "right",
+                      "hiddenText": true
                     },
                     {
-                      "alt": "s?q=preto",
-                      "theme": "light",
-                      "action": {
-                        "href": "s?q=preto",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/d87daa92-754d-4e0b-a1d1-bb9d3c98a4f4/Comfortflex---banner---mob_all-black-(2)-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/e4cf953f-c3f8-4751-a27e-52a58d1de8cf/Comfortflex---banner---desk_all-black-(1).png",
-                      "hiddenText": true,
-                      "position": "right"
-                    },
-                    {
-                      "theme": "light",
-                      "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
-                      "mobile": "https://assets.decocache.com/comfortflex/2d40c4c1-05d2-492c-a8cc-b95b92240189/Comfortflex---banner---mob_2-(1).png",
                       "alt": "/s?q=tamanco",
+                      "theme": "light",
                       "action": {
                         "href": "/s?q=tamanco",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
+                      "mobile": "https://assets.decocache.com/comfortflex/2d40c4c1-05d2-492c-a8cc-b95b92240189/Comfortflex---banner---mob_2-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
                       "hiddenText": true,
                       "position": "right"
                     },
                     {
-                      "theme": "light",
-                      "desktop": "https://assets.decocache.com/comfortflex/1474230d-f655-49d8-8e34-b35683043b6d/Comfortflex---banner---desk_lancamento-(1).png",
-                      "mobile": "https://assets.decocache.com/comfortflex/726a8d46-49b2-474d-9ee6-4c6aa5ce892a/Comfortflex---banner---mob_lancamento-(2)-(1).png",
                       "alt": "/botas",
+                      "theme": "light",
                       "action": {
                         "href": "/botas"
                       },
+                      "mobile": "https://assets.decocache.com/comfortflex/726a8d46-49b2-474d-9ee6-4c6aa5ce892a/Comfortflex---banner---mob_lancamento-(2)-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/1474230d-f655-49d8-8e34-b35683043b6d/Comfortflex---banner---desk_lancamento-(1).png",
                       "hiddenText": true
                     }
                   ],
