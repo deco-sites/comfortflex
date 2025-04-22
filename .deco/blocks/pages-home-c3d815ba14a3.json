@@ -80,6 +80,19 @@
                       "hiddenText": true
                     },
                     {
+                      "alt": "/promocao?sort=discount%3Adesc",
+                      "theme": "light",
+                      "action": {
+                        "href": "/promocao?sort=discount%3Adesc",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/d5171c1f-f096-4c89-a815-86637134256f/Comfortflex---banner---mob_2-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/b83cd048-f185-4a02-aff3-7df795bb2907/Comfortflex---banner---desk_2-(1).png",
+                      "hiddenText": true,
+                      "position": "right"
+                    },
+                    {
                       "alt": "/s?q=tamanco",
                       "theme": "light",
                       "action": {
