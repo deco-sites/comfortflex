@@ -71,24 +71,24 @@
                     {
                       "theme": "light",
                       "action": {
-                        "href": "/lancamentos?sort=orders%3Adesc"
+                        "href": "/lancamentos?sort=",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/414ed0ba-887c-4164-910e-ef7d03fbdb86/Comfortflex---banner---mob1.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/dd7d2d6f-0b71-49e0-b574-9bf88d21adbe/Comfortflex---banner---desk1.png",
-                      "alt": "/lancamentos?sort=orders%3Adesc",
+                      "mobile": "https://assets.decocache.com/comfortflex/63e6db87-cfec-43ba-906e-bbcd30617c8f/banner2_640x800.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/734324c8-0985-4a1e-9dce-c8dc684b0d4c/banner2_1920x700.png",
+                      "alt": "/lancamentos?sort=",
                       "position": "right",
                       "hiddenText": true
                     },
                     {
-                      "alt": "/promocao?sort=discount%3Adesc",
+                      "alt": "/botas",
                       "theme": "light",
                       "action": {
-                        "href": "/promocao?sort=discount%3Adesc",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
+                        "href": "/botas"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/d5171c1f-f096-4c89-a815-86637134256f/Comfortflex---banner---mob_2-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/b83cd048-f185-4a02-aff3-7df795bb2907/Comfortflex---banner---desk_2-(1).png",
+                      "mobile": "https://assets.decocache.com/comfortflex/bf51339a-bab9-4b81-b637-b5b38b911e53/banner1_640x800.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/a9c623f3-e99e-410f-9d8d-de9d73de89ff/banner1_1920x700_comfortflex.png",
                       "hiddenText": true,
                       "position": "right"
                     },
@@ -104,16 +104,6 @@
                       "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
                       "hiddenText": true,
                       "position": "right"
-                    },
-                    {
-                      "alt": "/botas",
-                      "theme": "light",
-                      "action": {
-                        "href": "/botas"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/726a8d46-49b2-474d-9ee6-4c6aa5ce892a/Comfortflex---banner---mob_lancamento-(2)-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/1474230d-f655-49d8-8e34-b35683043b6d/Comfortflex---banner---desk_lancamento-(1).png",
-                      "hiddenText": true
                     }
                   ],
                   "preload": true,
