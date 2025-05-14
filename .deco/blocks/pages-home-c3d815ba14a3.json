@@ -182,14 +182,17 @@
               "headerfontSize": "Normal"
             },
             "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "collection": "150",
-                "count": 30
-              },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+                "sort": "price:desc",
+                "fuzzy": "automatic",
+                "query": "/mocassim",
+                "count": 5
+              }
             },
             "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx",
-            "buttonText": "VER COLEÇÃO"
+            "buttonText": "VER COLEÇÃO",
+            "title": "MOCASSIM"
           },
           {
             "benefits": [
