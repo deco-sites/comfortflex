@@ -116,31 +116,30 @@
           {
             "tabs": [
               {
-                "title": "sandálias",
+                "title": "Tênis",
                 "products": {
                   "props": {
-                    "sort": "release:desc",
+                    "sort": "price:desc",
                     "count": 10,
                     "fuzzy": "automatic",
-                    "query": "sandália,"
+                    "query": "tenis"
                   },
                   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
                 }
               },
               {
-                "title": "flats",
+                "title": "Sandálias",
                 "products": {
                   "props": {
-                    "sort": "release:desc",
+                    "sort": "price:desc",
                     "count": 10,
                     "fuzzy": "automatic",
-                    "query": "flat, rasteira. chinelo, slide"
+                    "query": "sandalias"
                   },
                   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
                 }
               }
             ],
-            "title": "VERÃO 25",
             "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
           },
           {
