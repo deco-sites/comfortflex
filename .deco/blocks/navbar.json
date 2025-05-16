@@ -584,7 +584,6 @@
       "image": [],
       "children": [
         {
-          "name": "Estilo de Flats",
           "@type": "SiteNavigationElement",
           "image": [],
           "children": [
@@ -616,7 +615,8 @@
               "image": [],
               "children": []
             }
-          ]
+          ],
+          "name": "Estilo"
         },
         {
           "name": "Ocasião",
