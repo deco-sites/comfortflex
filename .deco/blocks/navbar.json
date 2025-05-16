@@ -384,10 +384,10 @@
           "children": [
             {
               "url": "/botas?filter.category-1=botas&filter.category-2=cano-curto",
-              "name": "/sandalias?filter.category-1=sandalias&filter.category-2=sandalia-rasteira",
               "@type": "SiteNavigationElement",
               "image": [],
-              "children": []
+              "children": [],
+              "name": "Cano Curto"
             },
             {
               "url": "/botas?filter.category-1=botas&filter.category-2=cano-longo",
