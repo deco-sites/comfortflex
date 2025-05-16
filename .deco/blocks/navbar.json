@@ -7,6 +7,27 @@
       "image": [],
       "children": [
         {
+          "name": "ESTILO",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/tenis?filter.category-2=casual",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": [],
+              "name": "Casual"
+            },
+            {
+              "url": "/tenis",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "Ocasião",
           "@type": "SiteNavigationElement",
           "image": [],
