@@ -167,6 +167,13 @@
           "image": [],
           "children": [
             {
+              "url": "/s?q=tamancos",
+              "name": "Tamanco",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
               "url": "/sandalias?filter.category-1=sandalias&filter.category-2=sandalia-anabela",
               "name": "Sandália Anabela",
               "@type": "SiteNavigationElement",
@@ -766,13 +773,6 @@
             {
               "url": "/s?q=mule",
               "name": "Mules",
-              "@type": "SiteNavigationElement",
-              "image": [],
-              "children": []
-            },
-            {
-              "url": "/s?q=tamancos",
-              "name": "Tamancos",
               "@type": "SiteNavigationElement",
               "image": [],
               "children": []
