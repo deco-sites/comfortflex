@@ -764,7 +764,7 @@
               "children": []
             },
             {
-              "url": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+              "url": "/s?q=mule",
               "name": "Mules",
               "@type": "SiteNavigationElement",
               "image": [],
