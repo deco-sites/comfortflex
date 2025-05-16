@@ -9,7 +9,6 @@
         {
           "name": "ESTILO",
           "@type": "SiteNavigationElement",
-          "image": [],
           "children": [
             {
               "url": "/tenis?filter.category-2=casual",
@@ -25,7 +24,8 @@
               "image": [],
               "children": []
             }
-          ]
+          ],
+          "image": null
         },
         {
           "name": "Ocasião",
