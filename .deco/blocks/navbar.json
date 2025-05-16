@@ -771,7 +771,7 @@
               "children": []
             },
             {
-              "url": "/tamancos",
+              "url": "/s?q=tamancos",
               "name": "Tamancos",
               "@type": "SiteNavigationElement",
               "image": [],
