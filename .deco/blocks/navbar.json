@@ -750,21 +750,21 @@
           "image": [],
           "children": [
             {
-              "url": "/mocassim",
+              "url": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
               "name": "Mocassim",
               "@type": "SiteNavigationElement",
               "image": [],
               "children": []
             },
             {
-              "url": "/sapatos/scarpin",
+              "url": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
               "name": "Scarpin",
               "@type": "SiteNavigationElement",
               "image": [],
               "children": []
             },
             {
-              "url": "/sapatos/mule",
+              "url": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
               "name": "Mules",
               "@type": "SiteNavigationElement",
               "image": [],
@@ -778,7 +778,7 @@
               "children": []
             },
             {
-              "url": "/sapatos/sapatilha",
+              "url": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
               "name": "Sapatilhas",
               "@type": "SiteNavigationElement",
               "image": [],
