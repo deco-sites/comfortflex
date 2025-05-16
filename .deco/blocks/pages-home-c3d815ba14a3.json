@@ -71,51 +71,39 @@
                     {
                       "theme": "light",
                       "action": {
+                        "href": "/lancamentos?sort=",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/63e6db87-cfec-43ba-906e-bbcd30617c8f/banner2_640x800.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/734324c8-0985-4a1e-9dce-c8dc684b0d4c/banner2_1920x700.png",
+                      "alt": "/lancamentos?sort=",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
+                      "alt": "/botas",
+                      "theme": "light",
+                      "action": {
                         "href": "/botas"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/726a8d46-49b2-474d-9ee6-4c6aa5ce892a/Comfortflex---banner---mob_lancamento-(2)-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/1474230d-f655-49d8-8e34-b35683043b6d/Comfortflex---banner---desk_lancamento-(1).png",
-                      "alt": "/botas",
-                      "hiddenText": true
+                      "mobile": "https://assets.decocache.com/comfortflex/bf51339a-bab9-4b81-b637-b5b38b911e53/banner1_640x800.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/a9c623f3-e99e-410f-9d8d-de9d73de89ff/banner1_1920x700_comfortflex.png",
+                      "hiddenText": true,
+                      "position": "right"
                     },
                     {
-                      "alt": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias",
+                      "alt": "/s?q=tamanco",
                       "theme": "light",
                       "action": {
-                        "href": "lancamentos?filter.productClusterIds=148&filter.category-1=sandalias",
+                        "href": "/s?q=tamanco",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/7534e149-0436-4068-b6d7-51468d0e9030/Comfortflex---banner---mob_1.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/f7c5104b-feaa-41c0-9981-c44ba6f190c1/Comfortflex---banner---desk_1.png",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "s?q=preto",
-                      "theme": "light",
-                      "action": {
-                        "href": "s?q=preto",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/d87daa92-754d-4e0b-a1d1-bb9d3c98a4f4/Comfortflex---banner---mob_all-black-(2)-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/e4cf953f-c3f8-4751-a27e-52a58d1de8cf/Comfortflex---banner---desk_all-black-(1).png",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "theme": "light",
-                      "position": "right",
-                      "desktop": "https://data.decoassets.com/comfortflex/468ac79d-ff55-47e5-9722-dcb48d1c974f/banner-home-2.png",
-                      "mobile": "https://data.decoassets.com/comfortflex/88dc543c-3d51-43d8-9d3d-7cb3514b2230/banner-home-mobile-2.png",
-                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
-                      "action": {
-                        "href": "/lancamentos?filter.productClusterIds=148&filter.category-1=tenis",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "hiddenText": true
+                      "mobile": "https://assets.decocache.com/comfortflex/2d40c4c1-05d2-492c-a8cc-b95b92240189/Comfortflex---banner---mob_2-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
+                      "hiddenText": true,
+                      "position": "right"
                     }
                   ],
                   "preload": true,
@@ -128,31 +116,30 @@
           {
             "tabs": [
               {
-                "title": "sandálias",
+                "title": "Tênis",
                 "products": {
                   "props": {
-                    "sort": "release:desc",
+                    "sort": "price:desc",
                     "count": 10,
                     "fuzzy": "automatic",
-                    "query": "sandália,"
+                    "query": "tenis"
                   },
                   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
                 }
               },
               {
-                "title": "flats",
+                "title": "Sandálias",
                 "products": {
                   "props": {
-                    "sort": "release:desc",
+                    "sort": "price:desc",
                     "count": 10,
                     "fuzzy": "automatic",
-                    "query": "flat, rasteira. chinelo, slide"
+                    "query": "sandalias"
                   },
                   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
                 }
               }
             ],
-            "title": "VERÃO 25",
             "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
           },
           {
@@ -188,20 +175,23 @@
             "__resolveType": "site/sections/Images/BannerCta.tsx"
           },
           {
-            "link": "/150?map=productClusterIds",
-            "banner": "https://data.decoassets.com/comfortflex/d745d24c-8cd6-4c72-a065-7be6afec8de7/GIF-Superleve.gif",
+            "link": "/s?q=+2561332-",
+            "banner": "https://assets.decocache.com/comfortflex/3b37383c-a64d-4692-a357-5a9c1126ede8/Ramarim22nov_0136.jpg",
             "layout": {
               "headerfontSize": "Normal"
             },
             "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "collection": "150",
-                "count": 30
-              },
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+                "sort": "price:desc",
+                "fuzzy": "automatic",
+                "query": "/mocassim",
+                "count": 5
+              }
             },
             "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx",
-            "buttonText": "VER COLEÇÃO"
+            "buttonText": "VER COLEÇÃO",
+            "title": "MOCASSIM"
           },
           {
             "benefits": [
