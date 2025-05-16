@@ -750,7 +750,7 @@
           "image": [],
           "children": [
             {
-              "url": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
+              "url": "/s?q=mocassim",
               "name": "Mocassim",
               "@type": "SiteNavigationElement",
               "image": [],
