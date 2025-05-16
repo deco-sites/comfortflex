@@ -162,6 +162,48 @@
       "image": [],
       "children": [
         {
+          "name": "ESTILO",
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.category-2=sandalia-anabela",
+              "name": "Sandália Anabela",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.category-2=sandalia-papete",
+              "name": "Sandália Papete",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.category-2=sandalia-de-salto",
+              "name": "Sandália de Salto",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias?filter.category-1=sandalias&filter.category-2=sandalia-rasteira",
+              "name": "Sandália Rasteira",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/sandalias",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "Ocasião",
           "@type": "SiteNavigationElement",
           "image": [],
@@ -337,6 +379,41 @@
       "@type": "SiteNavigationElement",
       "children": [
         {
+          "@type": "SiteNavigationElement",
+          "image": [],
+          "children": [
+            {
+              "url": "/botas?filter.category-1=botas&filter.category-2=cano-curto",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": [],
+              "name": "Cano Curto"
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.category-2=cano-longo",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": [],
+              "name": "Cano Longo"
+            },
+            {
+              "url": "/botas?filter.category-1=botas&filter.category-2=coturno",
+              "name": "Coturno",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            },
+            {
+              "url": "/botas",
+              "name": "VER TUDO",
+              "@type": "SiteNavigationElement",
+              "image": [],
+              "children": []
+            }
+          ],
+          "name": "ESTILO"
+        },
+        {
           "name": "Ocasião",
           "@type": "SiteNavigationElement",
           "image": [],
@@ -497,11 +574,12 @@
             }
           ]
         }
-      ]
+      ],
+      "image": null
     },
     {
       "url": "/flats",
-      "name": "FLATS",
+      "name": "FLATFORM",
       "@type": "SiteNavigationElement",
       "image": [],
       "children": [
@@ -668,7 +746,6 @@
       "image": [],
       "children": [
         {
-          "name": "Tipos de Sapatos",
           "@type": "SiteNavigationElement",
           "image": [],
           "children": [
@@ -714,7 +791,8 @@
               "image": [],
               "children": []
             }
-          ]
+          ],
+          "name": "ESTILO"
         },
         {
           "name": "Ocasião",
