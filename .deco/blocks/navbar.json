@@ -578,7 +578,7 @@
       "image": null
     },
     {
-      "url": "/flats",
+      "url": "/flatform",
       "name": "FLATFORM",
       "@type": "SiteNavigationElement",
       "image": [],
@@ -595,14 +595,14 @@
               "children": []
             },
             {
-              "url": "/slide",
+              "url": "/s?q=slide",
               "name": "Slides",
               "@type": "SiteNavigationElement",
               "image": [],
               "children": []
             },
             {
-              "url": "/chinelo",
+              "url": "/s?q=chinelos",
               "name": "Chinelos",
               "@type": "SiteNavigationElement",
               "image": [],
