@@ -71,15 +71,28 @@
                     {
                       "theme": "light",
                       "action": {
+                        "href": "/s?q=tamanco",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/aec63ecd-5ee8-4305-a6c9-26b25f7ced90/Comfortflex---banner---mob-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/2a18cf3c-0a17-4e23-98c3-5dd6529b8b20/Comfortflex---banner---desk-(1).png",
+                      "alt": "/lancamentos",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
+                      "alt": "/lancamentos?sort=",
+                      "theme": "light",
+                      "action": {
                         "href": "/lancamentos?sort=",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/63e6db87-cfec-43ba-906e-bbcd30617c8f/banner2_640x800.png",
                       "desktop": "https://assets.decocache.com/comfortflex/734324c8-0985-4a1e-9dce-c8dc684b0d4c/banner2_1920x700.png",
-                      "alt": "/lancamentos?sort=",
-                      "position": "right",
-                      "hiddenText": true
+                      "hiddenText": true,
+                      "position": "right"
                     },
                     {
                       "alt": "/botas",
@@ -89,19 +102,6 @@
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/bf51339a-bab9-4b81-b637-b5b38b911e53/banner1_640x800.png",
                       "desktop": "https://assets.decocache.com/comfortflex/a9c623f3-e99e-410f-9d8d-de9d73de89ff/banner1_1920x700_comfortflex.png",
-                      "hiddenText": true,
-                      "position": "right"
-                    },
-                    {
-                      "alt": "/s?q=tamanco",
-                      "theme": "light",
-                      "action": {
-                        "href": "/s?q=tamanco",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/2d40c4c1-05d2-492c-a8cc-b95b92240189/Comfortflex---banner---mob_2-(1).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/ca7af6c0-c328-4bdd-af64-22270f3e9bc1/Comfortflex---banner---desk_2-(1).png",
                       "hiddenText": true,
                       "position": "right"
                     }
