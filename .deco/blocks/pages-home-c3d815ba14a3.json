@@ -71,7 +71,7 @@
                     {
                       "theme": "light",
                       "action": {
-                        "href": "/s?q=tamanco",
+                        "href": "/sapatos",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
@@ -85,7 +85,7 @@
                       "alt": "/lancamentos",
                       "theme": "light",
                       "action": {
-                        "href": "/botas"
+                        "href": "/lancamentos"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/5181b7c3-0d1f-4e71-b640-fe5d6ab528ae/banner-mobile-namorados-comfort.png",
                       "desktop": "https://assets.decocache.com/comfortflex/da78b866-6e6a-4781-864f-508175032668/banner-namorados-comfortflex.png",
