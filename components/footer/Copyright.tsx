@@ -15,7 +15,7 @@ export default function Copyright(props: Props) {
           width="246"
           height="44"
           class="h-[44px]"
-          src="https://ramarim.vteximg.com.br/arquivos/grupoRamarim.png"
+          src="https://assets.decocache.com/comfortflex/99927b7d-2063-417e-bea1-8e549048d11e/4.png"
           alt="Descrição da imagem"
         />
         <p class="text-center text-xs md:text-sm md:text-start md:m-0">
