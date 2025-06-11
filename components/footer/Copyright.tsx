@@ -11,11 +11,11 @@ export default function Copyright(props: Props) {
   return (
     <div>
       <div class="lg:container flex flex-col items-center justify-center gap-5 mx-4 my-7 md:flex-row md:mx-auto">
-        <Image
-          width="246"
-          height="44"
-          class="h-[44px]"
-          src="https://assets.decocache.com/comfortflex/99927b7d-2063-417e-bea1-8e549048d11e/4.png"
+      <Image
+          loading="lazy"
+          fetchPriority="low"
+          class="max-w-[350px]"
+          src="https://assets.decocache.com/ramarim/7e015d46-3d84-47b7-a2ab-5ec291b4d636/1.png"
           alt="Descrição da imagem"
         />
         <p class="text-center text-xs md:text-sm md:text-start md:m-0">
