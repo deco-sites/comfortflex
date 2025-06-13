@@ -71,26 +71,13 @@
                     {
                       "theme": "light",
                       "action": {
-                        "href": "/sapatos",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/f27204e2-6e2a-4b80-8c28-c396fca4f018/Comfortflex---banner---mob-(3).png",
-                      "desktop": "https://assets.decocache.com/comfortflex/d921c1ad-32a8-4e89-9875-c25b3dcc5544/Comfortflex---banner---desk-(3).png",
-                      "alt": "/sapatos",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/lancamentos",
-                      "theme": "light",
-                      "action": {
                         "href": "/lancamentos"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/5181b7c3-0d1f-4e71-b640-fe5d6ab528ae/banner-mobile-namorados-comfort.png",
                       "desktop": "https://assets.decocache.com/comfortflex/da78b866-6e6a-4781-864f-508175032668/banner-namorados-comfortflex.png",
-                      "hiddenText": true,
-                      "position": "right"
+                      "alt": "/lancamentos",
+                      "position": "right",
+                      "hiddenText": true
                     },
                     {
                       "alt": "/lancamentos?sort=",
