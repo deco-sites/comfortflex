@@ -73,22 +73,22 @@
                       "action": {
                         "href": "/lancamentos"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/5181b7c3-0d1f-4e71-b640-fe5d6ab528ae/banner-mobile-namorados-comfort.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/da78b866-6e6a-4781-864f-508175032668/banner-namorados-comfortflex.png",
+                      "mobile": "https://assets.decocache.com/comfortflex/359595df-289b-445f-a80a-76636d37d7a0/Comfortflex---banner---mob_1-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/b8b56290-1934-48ce-8f14-aa218af112cd/Comfortflex---banner---desk_1-(1).png",
                       "alt": "/lancamentos",
                       "position": "right",
                       "hiddenText": true
                     },
                     {
-                      "alt": "/lancamentos?sort=",
+                      "alt": "/lancamentos?filter.productClusterIds=148&filter.category-1=botas",
                       "theme": "light",
                       "action": {
-                        "href": "/lancamentos?sort=",
+                        "href": "/lancamentos?filter.productClusterIds=148&filter.category-1=botas",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/63e6db87-cfec-43ba-906e-bbcd30617c8f/banner2_640x800.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/734324c8-0985-4a1e-9dce-c8dc684b0d4c/banner2_1920x700.png",
+                      "mobile": "https://assets.decocache.com/comfortflex/a7a7fcb9-b2d3-4784-9082-86d9c50d0c12/Comfortflex---banner---mob_2-(2).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/03220100-0fcc-4196-b8a2-4ab00c61033e/Comfortflex---banner---desk_2-(2).png",
                       "hiddenText": true,
                       "position": "right"
                     }
