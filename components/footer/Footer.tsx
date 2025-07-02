@@ -12,7 +12,7 @@ import Newsletter from "$store/islands/Newsletter.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import Copyright from "$store/components/footer/Copyright.tsx";
-
+import WiddeScript from "$store/islands/WiddeScript.tsx";
 export type Item = {
   label: string;
   href: string;
@@ -275,6 +275,7 @@ function Footer({
 
   return (
     <footer class="w-full flex flex-col gap-15">
+      <WiddeScript />
       <div>
         <div class="flex flex-col">
           <div class="flex flex-col md:justify-between md:flex-wrap lg:flex-nowrap">
