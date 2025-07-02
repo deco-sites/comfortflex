@@ -12,7 +12,6 @@ import Newsletter from "$store/islands/Newsletter.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import Copyright from "$store/components/footer/Copyright.tsx";
-
 export type Item = {
   label: string;
   href: string;
