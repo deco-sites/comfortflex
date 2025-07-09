@@ -137,22 +137,22 @@
     {
       "items": [
         {
-          "label": "(51) 3565-8100 | (51) 4000-1846"
+          "label": "Clique Aqui para abrir o formulário de atendimento (SAC)",
+          "href": "https://formsui.directtalk.com.br/1.0/index.html?id=6fb259e0-e3ac-412c-8e0f-5f9760db17cd&DepartmentId=96f57731-ddaa-4d32-a6bd-6b6872ad7328&ChannelId=2"
+        },
+        {
+          "label": "Atendimento por telefone: (51) 3565-8100 | (51) 4000-1846"
         },
         {
           "href": "https://wa.link/g6ewnl",
-          "label": "Whatsapp: (55) 5121-600741"
-        },
-        {
-          "href": "mailto:sac@comfortflex.com.br",
-          "label": "sac@comfortflex.com.br"
+          "label": "Atendimento via Whatsapp: (55) 5121-600741"
         },
         {
           "href": "/",
           "label": "Segunda à sexta-feira: 8h às 11h / 13:30h às 17h"
         }
       ],
-      "label": "Atendimento"
+      "label": "Serviço de Atendimento ao Consumidor "
     }
   ],
   "copyright": {
