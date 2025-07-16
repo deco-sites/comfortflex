@@ -30,6 +30,7 @@ import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $SellersSelector from "./islands/SellersSelector.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
+import * as $WiddeScript from "./islands/WiddeScript.tsx";
 import * as $WishlistButton from "./islands/WishlistButton.tsx";
 import * as $utils_Map from "./islands/utils/Map.js";
 import type { Manifest } from "$fresh/server.ts";
@@ -66,6 +67,7 @@ const manifest = {
     "./islands/SellersSelector.tsx": $SellersSelector,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,
+    "./islands/WiddeScript.tsx": $WiddeScript,
     "./islands/WishlistButton.tsx": $WishlistButton,
     "./islands/utils/Map.js": $utils_Map,
   },

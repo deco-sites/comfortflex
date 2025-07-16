@@ -208,8 +208,8 @@
           {
             "alt": "/promocao",
             "href": "/promocao",
-            "srcMobile": "https://data.decoassets.com/comfortflex/1884288d-5f3e-445e-92f6-22dd744e9fbf/Comf_Banner_Site_Nova_Colecao_V2_Outlet-mob.webp",
-            "srcDesktop": "https://assets.decocache.com/comfortflex/1893d00e-ccb4-4a3c-9eff-aaac82ecb340/1742505465975-9d7c04e9-6779-4174-a3b7-1094f8e6dc8d",
+            "srcMobile": "https://assets.decocache.com/comfortflex/398ee4e7-bee0-4579-adeb-996231fb59a1/ComfortFlex_banner_mob_3.png",
+            "srcDesktop": "https://assets.decocache.com/comfortflex/3a5e0519-8ecc-4fd1-9ad7-72a22de303c4/ComfortFlex_banner_desk_3.png",
             "__resolveType": "site/sections/Images/Infocard.tsx"
           },
           {
