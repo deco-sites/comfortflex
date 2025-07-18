@@ -48,6 +48,14 @@
     {
       "image": "https://assets.decocache.com/comfortflex/39d9877c-1f9f-4fbc-a04b-5f340326aac8/tida.jpg",
       "altText": "Tida Calçados"
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/c3e7008f-e7a4-4e84-9ce4-7e7ae7cb7943/1729721126_nova_logo_donna_dos_ps_2.webp",
+      "altText": "Donna Dos Pés "
+    },
+    {
+      "image": "https://assets.decocache.com/comfortflex/4097508a-36b9-4a85-ad8a-892d98b2c77f/LOGOTIPO-CEU-AZUL_page-0001.jpg",
+      "altText": "Céu Azul "
     }
   ],
   "layout": {
