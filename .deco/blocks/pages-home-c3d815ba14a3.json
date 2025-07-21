@@ -71,7 +71,7 @@
                     {
                       "theme": "light",
                       "action": {
-                        "href": "/lancamentos?filter.productClusterIds=148&filter.category-1=botas",
+                        "href": "/promocao",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
@@ -85,7 +85,7 @@
                       "alt": "/s?q=+2547305&filter.category-1=sandalias",
                       "theme": "light",
                       "action": {
-                        "href": "/lancamentos"
+                        "href": "/s?q=+2547305&filter.category-1=sandalias"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/b759159a-1e0d-4e22-929a-c711a5f3dc04/ComfortFlex_banner_mob_2.png",
                       "desktop": "https://assets.decocache.com/comfortflex/0a6672f4-097a-40c1-b758-b8a4420fc67b/ComfortFlex_banner_desk_2.png",
@@ -97,7 +97,10 @@
                       "position": "left",
                       "desktop": "https://assets.decocache.com/comfortflex/b8b56290-1934-48ce-8f14-aa218af112cd/Comfortflex---banner---desk_1-(1).png",
                       "mobile": "https://assets.decocache.com/comfortflex/359595df-289b-445f-a80a-76636d37d7a0/Comfortflex---banner---mob_1-(1).png",
-                      "alt": "/s?q=Slingback"
+                      "alt": "/s?q=Slingback",
+                      "action": {
+                        "href": "/s?q=Slingback"
+                      }
                     }
                   ],
                   "preload": true,
