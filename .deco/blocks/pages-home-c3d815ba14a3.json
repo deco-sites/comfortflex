@@ -85,20 +85,24 @@
                       "alt": "/sapatos",
                       "theme": "light",
                       "action": {
-                        "href": "/sapatos"
+                        "href": "/sapatos",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/8337d41a-1b38-4a24-b01a-c1e164a1507a/2-v.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/65615283-b634-48d3-aa77-13bb5f58234a/2-h.png"
+                      "desktop": "https://assets.decocache.com/comfortflex/65615283-b634-48d3-aa77-13bb5f58234a/2-h.png",
+                      "position": "right",
+                      "hiddenText": true
                     },
                     {
                       "theme": "light",
-                      "position": "right",
                       "desktop": "https://assets.decocache.com/comfortflex/0a6672f4-097a-40c1-b758-b8a4420fc67b/ComfortFlex_banner_desk_2.png",
                       "mobile": "https://assets.decocache.com/comfortflex/b759159a-1e0d-4e22-929a-c711a5f3dc04/ComfortFlex_banner_mob_2.png",
                       "alt": "/s?q=+2547305&filter.category-1=sandalias",
                       "action": {
                         "href": "/s?q=+2547305&filter.category-1=sandalias"
                       },
+                      "position": "right",
                       "hiddenText": true
                     }
                   ],
