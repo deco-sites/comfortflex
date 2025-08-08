@@ -75,7 +75,7 @@
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/9d303a87-29f4-4c3d-aed8-7065ed769388/1-v.png",
+                      "mobile": "https://assets.decocache.com/comfortflex/bd5bdcd1-88e8-4cee-a5af-e04adfbfcaae/1-v.png",
                       "desktop": "https://assets.decocache.com/comfortflex/be42cc0d-2e59-496b-b091-cd5757bd48f5/1-h.png",
                       "alt": "/promocao",
                       "position": "right",
@@ -219,8 +219,6 @@
             "__resolveType": "site/sections/Content/Benefits.tsx"
           },
           {
-            "alt": "/promocao",
-            "href": "/promocao",
             "srcMobile": "https://assets.decocache.com/comfortflex/398ee4e7-bee0-4579-adeb-996231fb59a1/ComfortFlex_banner_mob_3.png",
             "srcDesktop": "https://assets.decocache.com/comfortflex/3a5e0519-8ecc-4fd1-9ad7-72a22de303c4/ComfortFlex_banner_desk_3.png",
             "__resolveType": "site/sections/Images/Infocard.tsx"
@@ -228,25 +226,12 @@
           {
             "tabs": [
               {
-                "title": "BOTAS COM ATÉ 50% OFF",
+                "title": "Até 50% off",
                 "products": {
                   "props": {
                     "sort": "discount:desc",
                     "count": 10,
-                    "fuzzy": "automatic",
-                    "query": "BOTAS"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              },
-              {
-                "title": "TÊNIS",
-                "products": {
-                  "props": {
-                    "sort": "release:desc",
-                    "count": 10,
-                    "fuzzy": "automatic",
-                    "query": "tenis"
+                    "collection": "151"
                   },
                   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
                 }
