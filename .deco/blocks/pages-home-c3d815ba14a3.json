@@ -71,24 +71,24 @@
                     {
                       "theme": "light",
                       "action": {
-                        "href": "/sapatos",
+                        "href": "/lancamentos",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/8337d41a-1b38-4a24-b01a-c1e164a1507a/2-v.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/65615283-b634-48d3-aa77-13bb5f58234a/2-h.png",
-                      "alt": "/sapatos",
+                      "mobile": "https://assets.decocache.com/comfortflex/d81a6147-a533-4612-93c0-a6d1db6416dd/lanc-comf-v.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/f3eecd24-f09a-4f8f-8e06-39da3a9e8025/lanc-comf-h.png",
+                      "alt": "/lancamentos",
                       "position": "right",
                       "hiddenText": true
                     },
                     {
-                      "alt": "/s?q=+2547305&filter.category-1=sandalias",
+                      "alt": "/tenis?filter.category-1=tenis&filter.tecnologia=air-flex",
                       "theme": "light",
                       "action": {
-                        "href": "/s?q=+2547305&filter.category-1=sandalias"
+                        "href": "/tenis?filter.category-1=tenis&filter.tecnologia=air-flex"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/b759159a-1e0d-4e22-929a-c711a5f3dc04/ComfortFlex_banner_mob_2.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/0a6672f4-097a-40c1-b758-b8a4420fc67b/ComfortFlex_banner_desk_2.png",
+                      "mobile": "https://assets.decocache.com/comfortflex/28240b71-501d-4359-a7d6-d00254fd5d7e/comf-v.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/3a961a9b-ad88-4914-90f9-a1e75e66e557/comf-h.webp",
                       "position": "right",
                       "hiddenText": true
                     }
@@ -103,25 +103,12 @@
           {
             "tabs": [
               {
-                "title": "Tênis",
+                "title": "Descubra o novo jeito de caminhar",
                 "products": {
                   "props": {
-                    "sort": "price:desc",
+                    "sort": "release:desc",
                     "count": 10,
-                    "fuzzy": "automatic",
-                    "query": "tenis"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              },
-              {
-                "title": "Sandálias",
-                "products": {
-                  "props": {
-                    "sort": "price:desc",
-                    "count": 10,
-                    "fuzzy": "automatic",
-                    "query": "sandalias"
+                    "collection": "148"
                   },
                   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
                 }
@@ -132,53 +119,52 @@
           {
             "alt": "/lancamentos",
             "link": "/lancamentos",
-            "isMobile": "https://data.decoassets.com/comfortflex/7a700b1b-c6e2-4924-a512-f57c503c33e8/banner-colecao.png",
-            "isDesktop": "https://data.decoassets.com/comfortflex/7a700b1b-c6e2-4924-a512-f57c503c33e8/banner-colecao.png",
+            "isMobile": "https://assets.decocache.com/comfortflex/231f1c19-3910-4757-80f4-fbc601555ec2/1047-x-836.png",
+            "isDesktop": "https://assets.decocache.com/comfortflex/b9035725-fe43-4e9c-bb0e-48d6c6dd5815/1668-x-1332.png",
             "buttonText": "CONHEÇA A COLEÇÃO",
             "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx",
-            "text": " Inspirada na combinação única de sofisticação e bem-estar, a coleção Outono/Inverno 2025 da Comfortflex acompanha cada momento da vida com confiança e leveza, provando que a beleza está nos detalhes. Vanessa nos conduz por esse universo, onde o clássico e o novo se encontram, traduzindo a essência da mulher moderna e autêntica.  Comfortflex! Bem-estar em todos os momentos! ",
-            "title": "INVERNO 25"
+            "title": "VERÃO 26",
+            "text": "Mais do que uma coleção, o verão 2026 da Comfortflex é um convite para viver intensamente essa temporada. Cada modelo foi pensado para acompanhar suas histórias, do sol na pele aos encontros inesquecíveis. Essa campanha celebra o bem-estar, porque, quando a gente se sente bem, tudo flui… e aí não tem mais volta.  Comfortflex vira caminho, vira estilo de vida"
           },
           {
             "banners": [
               {
                 "alt": "/sandalias",
                 "href": "/sandalias",
-                "srcMobile": "https://data.decoassets.com/comfortflex/5b112cf4-7c4b-424a-9bc3-8ce674f3b0b0/categoria-1.png"
+                "srcMobile": "https://assets.decocache.com/comfortflex/36875b9f-dbec-4bf8-aa92-f62e633cff4e/flats.png"
               },
               {
                 "alt": "/tenis",
                 "href": "/tenis",
                 "theme": "white",
-                "srcMobile": "https://data.decoassets.com/comfortflex/4a0c89da-7c3d-47cf-b9e6-53f02d0f68ef/categoria-1-copiar-2.png"
+                "srcMobile": "https://assets.decocache.com/comfortflex/7acbf448-b442-486e-a6a9-3d317e0e0400/tenis.png"
               },
               {
                 "alt": "/flats",
                 "href": "/flats",
                 "theme": "white",
-                "srcMobile": "https://data.decoassets.com/comfortflex/41dbfd71-a51d-41f1-b088-dc74ca64a55d/categoria-1-copiar.png"
+                "srcMobile": "https://assets.decocache.com/comfortflex/87a9f9c3-6efc-4c9f-b0e9-2d98e6b67b9a/sandalias.png"
               }
             ],
             "__resolveType": "site/sections/Images/BannerCta.tsx"
           },
           {
             "link": "/s?q=+2561332-",
-            "banner": "https://assets.decocache.com/comfortflex/3b37383c-a64d-4692-a357-5a9c1126ede8/Ramarim22nov_0136.jpg",
             "layout": {
-              "headerfontSize": "Normal"
+              "headerfontSize": "Large"
             },
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "sort": "price:desc",
-                "fuzzy": "automatic",
-                "query": "/mocassim",
-                "count": 5
+                "count": 6,
+                "query": "2543404"
               }
             },
             "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx",
-            "buttonText": "VER COLEÇÃO",
-            "title": "MOCASSIM"
+            "buttonText": "Escolha sua leveza",
+            "title": "Tecnologia Super Leve",
+            "banner": "https://assets.decocache.com/comfortflex/504b45ae-c925-4094-a55e-64a7b23fd2fc/comf_56.jpg",
+            "description": "Leveza que acompanha seus passos"
           },
           {
             "benefits": [
