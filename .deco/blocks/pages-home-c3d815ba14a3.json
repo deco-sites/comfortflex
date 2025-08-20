@@ -129,7 +129,7 @@
           {
             "banners": [
               {
-                "alt": "/sandalias",
+                "alt": "/flatform",
                 "href": "/sandalias",
                 "srcMobile": "https://assets.decocache.com/comfortflex/36875b9f-dbec-4bf8-aa92-f62e633cff4e/flats.png"
               },
@@ -140,8 +140,8 @@
                 "srcMobile": "https://assets.decocache.com/comfortflex/7acbf448-b442-486e-a6a9-3d317e0e0400/tenis.png"
               },
               {
-                "alt": "/flats",
-                "href": "/flats",
+                "alt": "/sandalias",
+                "href": "/sandalias",
                 "theme": "white",
                 "srcMobile": "https://assets.decocache.com/comfortflex/87a9f9c3-6efc-4c9f-b0e9-2d98e6b67b9a/sandalias.png"
               }
