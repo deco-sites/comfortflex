@@ -118,13 +118,13 @@
           },
           {
             "alt": "/lancamentos",
-            "link": "/lancamentos",
+            "link": "/lancamentos?filter.productClusterIds=148&filter.category-1=flatform",
             "isMobile": "https://assets.decocache.com/comfortflex/231f1c19-3910-4757-80f4-fbc601555ec2/1047-x-836.png",
             "isDesktop": "https://assets.decocache.com/comfortflex/b9035725-fe43-4e9c-bb0e-48d6c6dd5815/1668-x-1332.png",
             "buttonText": "CONHEÇA A COLEÇÃO",
             "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx",
             "title": "VERÃO 26",
-            "text": "Mais do que uma coleção, o verão 2026 da Comfortflex é um convite para viver intensamente essa temporada. Cada modelo foi pensado para acompanhar suas histórias, do sol na pele aos encontros inesquecíveis. Essa campanha celebra o bem-estar, porque, quando a gente se sente bem, tudo flui… e aí não tem mais volta.  Comfortflex vira caminho, vira estilo de vida"
+            "text": "Mais do que uma coleção, o verão 2026 da Comfortflex é um convite para viver intensamente essa temporada. Cada modelo foi pensado para acompanhar suas histórias, do sol na pele aos encontros inesquecíveis. Essa campanha celebra o bem-estar, porque, quando a gente se sente bem, tudo flui… e aí não tem mais volta.  Comfortflex vira caminho, vira estilo de vida!"
           },
           {
             "banners": [
