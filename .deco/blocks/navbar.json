@@ -962,6 +962,55 @@
       "name": "VERÃO 26",
       "image": [],
       "children": []
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "image": null,
+              "name": "Ajuste Perfeito",
+              "url": "/ajusteperfeito"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Bolha de ar",
+              "url": "/Bolhadear"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Super Flexível",
+              "url": "/superflexível"
+            },
+            {
+              "children": [],
+              "image": null,
+              "url": "/superleve",
+              "name": "Super leve"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": " Total Care",
+              "url": " /totalcare"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Ultramacio",
+              "url": "/ultramacio"
+            }
+          ],
+          "image": null,
+          "name": "ESTILO"
+        }
+      ],
+      "name": "Tecnologias",
+      "url": "/tecnologias",
+      "image": null
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
