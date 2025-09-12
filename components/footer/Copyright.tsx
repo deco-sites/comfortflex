@@ -11,7 +11,7 @@ export default function Copyright(props: Props) {
   return (
     <div>
       <div class="lg:container flex flex-col items-center justify-center gap-5 mx-4 my-7 md:flex-row md:mx-auto">
-      <Image
+        <Image
           loading="lazy"
           fetchPriority="low"
           class="max-w-[350px]"

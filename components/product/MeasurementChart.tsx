@@ -1,6 +1,5 @@
-
 import Image from "apps/website/components/Image.tsx";
-import {ImageWidget} from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 import { signal } from "@preact/signals";
 import Modal from "$store/components/ui/Modal.tsx";
@@ -9,10 +8,10 @@ const openModal = signal(false);
 const activeTab = signal<"chart" | "guide">("chart");
 
 interface Props {
-  sizeTable: ImageWidget
-  sizeTableHowTo: ImageWidget
+  sizeTable: ImageWidget;
+  sizeTableHowTo: ImageWidget;
 }
-export default function MeasurementChart({sizeTable, sizeTableHowTo}: Props) {
+export default function MeasurementChart({ sizeTable, sizeTableHowTo }: Props) {
   const value = openModal.value;
 
   const openModalHandler = () => openModal.value = true;
@@ -42,13 +41,21 @@ export default function MeasurementChart({sizeTable, sizeTableHowTo}: Props) {
             {/* Cabeçalho com abas */}
             <div class="flex border-b border-[#BC81FF] text-sm/4">
               <button
-                class={`flex-1 px-3 py-2 font-light rounded-t-lg ${activeTab.value === "chart" ? "bg-brand text-white" : "text-[#353535]"}`}
+                class={`flex-1 px-3 py-2 font-light rounded-t-lg ${
+                  activeTab.value === "chart"
+                    ? "bg-brand text-white"
+                    : "text-[#353535]"
+                }`}
                 onClick={() => switchTab("chart")}
               >
                 TABELA DE MEDIDAS
               </button>
               <button
-                class={`flex-1 px-3 py-2 font-light rounded-t-lg ${activeTab.value === "guide" ? "bg-brand text-white" : "text-[#353535]"}`}
+                class={`flex-1 px-3 py-2 font-light rounded-t-lg ${
+                  activeTab.value === "guide"
+                    ? "bg-brand text-white"
+                    : "text-[#353535]"
+                }`}
                 onClick={() => switchTab("guide")}
               >
                 COMO SE MEDIR
@@ -57,24 +64,30 @@ export default function MeasurementChart({sizeTable, sizeTableHowTo}: Props) {
 
             {/* Conteúdo das abas */}
             <div class="flex items-center justify-center">
-              {activeTab.value === "chart" ? (
-                <div>
-                  <Image
-                      src={sizeTable ? sizeTable.src : 'https://assets.decocache.com/comfortflex/5f4d1b8d-f276-4cda-b20c-6310c87648a3/size-table-comfort.png'}
-                      alt={'Medição Pé'}
-                      class="h-full w-auto" />
-                </div>
-              ) : (
-                <div>
+              {activeTab.value === "chart"
+                ? (
+                  <div>
                     <Image
-                      src={sizeTableHowTo ? sizeTableHowTo.src : 'https://assets.decocache.com/comfortflex/52aa5177-e06a-46e0-a59f-b3e259b11d68/size-table-guide-comfort.png'}
-                      alt={'Medição Pé'}
-                      class="h-full w-auto" />
-                </div>
-                
-              )}
+                      src={sizeTable
+                        ? sizeTable.src
+                        : "https://assets.decocache.com/comfortflex/5f4d1b8d-f276-4cda-b20c-6310c87648a3/size-table-comfort.png"}
+                      alt={"Medição Pé"}
+                      class="h-full w-auto"
+                    />
+                  </div>
+                )
+                : (
+                  <div>
+                    <Image
+                      src={sizeTableHowTo
+                        ? sizeTableHowTo.src
+                        : "https://assets.decocache.com/comfortflex/52aa5177-e06a-46e0-a59f-b3e259b11d68/size-table-guide-comfort.png"}
+                      alt={"Medição Pé"}
+                      class="h-full w-auto"
+                    />
+                  </div>
+                )}
             </div>
-
           </div>
         </Modal>
       </div>

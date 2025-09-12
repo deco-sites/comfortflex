@@ -15,5 +15,5 @@ export default function WiddeScript() {
     }
   }, []);
 
-  return null; 
+  return null;
 }

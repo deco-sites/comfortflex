@@ -15,11 +15,13 @@ export default function FixedShippingSimulation({
   const [zipCode, setZipCode] = useState(null);
   const [displayPopup, setDisplayPopup] = useState(false);
 
+  // Função para formatar o CEP enquanto o usuário digita
   const handleZipCode = (event) => {
     let input = event.target;
     input.value = zipCodeMask(input.value);
   };
 
+  // Função para submeter o formulário do CEP
   const submitHandler = (event) => {
     event.preventDefault();
     const input = event.target.querySelector("input");
@@ -30,20 +32,29 @@ export default function FixedShippingSimulation({
     }
   };
 
+  // Hook para recuperar o CEP do localStorage ao carregar o componente
   useLayoutEffect(() => {
     const zipCode = localStorage.getItem("zipCode");
     if (zipCode) setZipCode(zipCode);
     else setZipCode("");
   }, []);
 
+  // Classes CSS baseadas no contexto (header ou body)
   const classContent = context === "header"
     ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2"
     : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2";
 
+  // Não renderizar nada enquanto o CEP está sendo carregado
   if (zipCode === null) return null;
+
   return (
     <>
-      <div class={classContent}>
+      {
+        /*
+        COMENTÁRIO: Substituição da simulação de frete pela mensagem promocional
+        Código original comentado abaixo:
+
+        <div class={classContent}>
         {zipCode
           ? (
             <>
@@ -80,7 +91,23 @@ export default function FixedShippingSimulation({
             </>
           )}
       </div>
-      <Modal
+      */
+      }
+
+      {/* NOVO: Mensagem promocional com o cupom VANESSA10 */}
+      <div class={classContent}>
+        <span class="text-sm text-black text-center">
+          Use o cupom <strong class="font-bold">VANESSA10</strong> e ganhe{" "}
+          <strong class="font-bold">10% OFF</strong> na sua primeira compra!
+        </span>
+      </div>
+
+      {
+        /*
+        COMENTÁRIO: Modal original para inserção do CEP - mantido comentado
+        caso precise ser reutilizado no futuro
+
+        <Modal
         loading="lazy"
         open={displayPopup}
         onClose={() => setDisplayPopup(false)}
@@ -116,6 +143,8 @@ export default function FixedShippingSimulation({
           </div>
         </div>
       </Modal>
+      */
+      }
     </>
   );
 }
