@@ -71,13 +71,24 @@
                     {
                       "theme": "light",
                       "action": {
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/9849e67f-855c-4048-976e-957d03905b3e/18.jpg",
+                      "desktop": "https://assets.decocache.com/comfortflex/2e73cbdf-7eac-42b4-9bca-c0fbdae6f76a/15.jpg",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
+                      "alt": "/promocao?sort=discount%3Adesc",
+                      "theme": "light",
+                      "action": {
                         "href": "/promocao?sort=discount%3Adesc",
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/4f651b42-7c34-451d-a9a3-da9441a8bbca/banners_v--copia-2.png",
                       "desktop": "https://assets.decocache.com/comfortflex/7b455604-9b17-4d74-9c7a-cb5732dcff8b/banners_v--copia-3.png",
-                      "alt": "/promocao?sort=discount%3Adesc",
                       "position": "right",
                       "hiddenText": true
                     },

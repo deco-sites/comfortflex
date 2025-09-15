@@ -1,0 +1,80 @@
+{
+  "name": "Live Ecommerce",
+  "path": "/live-ecommerce",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "jsonLD": {
+        "sort": "price:desc",
+        "count": 12,
+        "fuzzy": "automatic",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "selectedFacets": []
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+        "banners": [
+          {
+            "image": {
+              "desktop": "https://assets.decocache.com/comfortflex/8e9d3a15-03cb-4127-8f14-0dab828402f3/Banner-Site-Pre-Venda.png",
+              "mobile": "https://assets.decocache.com/comfortflex/8e9d3a15-03cb-4127-8f14-0dab828402f3/Banner-Site-Pre-Venda.png"
+            },
+            "matcher": "/live-ecommerce"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "sort": "",
+        "count": 12,
+        "fuzzy": "automatic",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "152"
+          }
+        ]
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 4
+        },
+        "variant": "aside",
+        "pagination": "show-more"
+      },
+      "cardLayout": {
+        "__resolveType": "Product Card Layout - 01"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Content/TextSeo.tsx",
+      "section": [
+        {
+          "text": "<h1>Sandalias</h1>\n<p>Encontre as sandálias de uma das maiores empresas calçadistas do mercado brasileiro.</p>",
+          "matcher": "/sandalias"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 01"
+    },
+    {
+      "__resolveType": "site/sections/Social/WhatsApp.tsx",
+      "phone": 5135658111
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
