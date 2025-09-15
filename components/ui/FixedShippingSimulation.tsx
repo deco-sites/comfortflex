@@ -1,49 +1,58 @@
-import { useLayoutEffect, useState } from "preact/hooks";
-import Icon from "$store/components/ui/Icon.tsx";
-import Modal from "$store/components/ui/Modal.tsx";
+// import { useLayoutEffect, useState } from "preact/hooks";
+// import Icon from "$store/components/ui/Icon.tsx";
+// import Modal from "$store/components/ui/Modal.tsx";
 
-const zipCodeMask = (value: string) => {
-  if (!value) return "";
-  value = value.replace(/\D/g, "");
-  value = value.replace(/(\d{5})(\d)/, "$1-$2");
-  return value;
-};
+// const zipCodeMask = (value: string) => {
+//   if (!value) return "";
+//   value = value.replace(/\D/g, "");
+//   value = value.replace(/(\d{5})(\d)/, "$1-$2");
+//   return value;
+// };
 
-export default function FixedShippingSimulation({
-  context = "body",
-}) {
-  const [zipCode, setZipCode] = useState(null);
-  const [displayPopup, setDisplayPopup] = useState(false);
+export default function FixedShippingSimulation({ context = "body" }) {
+  // const [zipCode, setZipCode] = useState(null);
+  // const [displayPopup, setDisplayPopup] = useState(false);
 
-  const handleZipCode = (event) => {
-    let input = event.target;
-    input.value = zipCodeMask(input.value);
-  };
+  // // Função para formatar o CEP enquanto o usuário digita
+  // const handleZipCode = (event) => {
+  //   let input = event.target;
+  //   input.value = zipCodeMask(input.value);
+  // };
 
-  const submitHandler = (event) => {
-    event.preventDefault();
-    const input = event.target.querySelector("input");
-    const enteredZipCode = input.value;
-    if (enteredZipCode.length === 9) {
-      localStorage.setItem("zipCode", enteredZipCode);
-      window.location.reload();
-    }
-  };
+  // // Função para submeter o formulário do CEP
+  // const submitHandler = (event) => {
+  //   event.preventDefault();
+  //   const input = event.target.querySelector("input");
+  //   const enteredZipCode = input.value;
+  //   if (enteredZipCode.length === 9) {
+  //     localStorage.setItem("zipCode", enteredZipCode);
+  //     window.location.reload();
+  //   }
+  // };
 
-  useLayoutEffect(() => {
-    const zipCode = localStorage.getItem("zipCode");
-    if (zipCode) setZipCode(zipCode);
-    else setZipCode("");
-  }, []);
+  // // Hook para recuperar o CEP do localStorage ao carregar o componente
+  // useLayoutEffect(() => {
+  //   const zipCode = localStorage.getItem("zipCode");
+  //   if (zipCode) setZipCode(zipCode);
+  //   else setZipCode("");
+  // }, []);
 
-  const classContent = context === "header"
-    ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2"
-    : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2";
+  // Classes CSS baseadas no contexto (header ou body)
+  const classContent =
+    context === "header"
+      ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2"
+      : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2";
 
-  if (zipCode === null) return null;
+  // // Não renderizar nada enquanto o CEP está sendo carregado
+  // if (zipCode === null) return null;
+
   return (
     <>
-      <div class={classContent}>
+      {/*
+        COMENTÁRIO: Substituição da simulação de frete pela mensagem promocional
+        Código original comentado abaixo:
+
+        <div class={classContent}>
         {zipCode
           ? (
             <>
@@ -80,7 +89,21 @@ export default function FixedShippingSimulation({
             </>
           )}
       </div>
-      <Modal
+      */}
+
+      {/* NOVO: Mensagem promocional com o cupom VANESSA10 */}
+      <div class={classContent}>
+        <span class="text-sm text-black text-center">
+          Use o cupom <strong class="font-bold">VANESSA10</strong> e ganhe{" "}
+          <strong class="font-bold">10% OFF</strong> na sua primeira compra!
+        </span>
+      </div>
+
+      {/*
+        COMENTÁRIO: Modal original para inserção do CEP - mantido comentado
+        caso precise ser reutilizado no futuro
+
+        <Modal
         loading="lazy"
         open={displayPopup}
         onClose={() => setDisplayPopup(false)}
@@ -116,6 +139,7 @@ export default function FixedShippingSimulation({
           </div>
         </div>
       </Modal>
+      */}
     </>
   );
 }
