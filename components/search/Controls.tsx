@@ -71,7 +71,7 @@ function SearchControls(
         </>
       }
     >
-      <div style="height: 144px"></div>
+      {/* <div style="height: 144px"></div> */}
       <div
         class="border-b border-[#D1D1D1] mb-4 sm:mb-7 w-full bg-white fixed z-30 sm:pt-5"
         style="top:90px"

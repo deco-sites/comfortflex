@@ -3855,8 +3855,8 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[-50px\] {
   margin-top: -50px;
 }
-.mt-\[104px\] {
-  margin-top: 104px;
+.mt-\[110px\] {
+  margin-top: 110px;
 }
 .mt-\[50px\] {
   margin-top: 50px;
@@ -6267,10 +6267,6 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .sm\:mt-\[114px\] {
-    margin-top: 114px;
   }
 
   .sm\:block {
