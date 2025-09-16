@@ -6269,6 +6269,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 2rem;
   }
 
+  .sm\:mt-\[114px\] {
+    margin-top: 114px;
+  }
+
   .sm\:block {
     display: block;
   }
