@@ -38,17 +38,17 @@ export default function FixedShippingSimulation({ context = "body" }) {
   // }, []);
 
   // Classes CSS baseadas no contexto (header ou body)
-  const classContent =
-    context === "header"
-      ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2"
-      : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2";
+  const classContent = context === "header"
+    ? "flex flex-row items-center justify-center gap-2 sm:gap-3 bg-[#f3f3f3] p-1 sm:py-2"
+    : "container flex flex-col sm:flex-row items-center justify-center gap-3 border-b border-gray-300 py-2";
 
   // // Não renderizar nada enquanto o CEP está sendo carregado
   // if (zipCode === null) return null;
 
   return (
     <>
-      {/*
+      {
+        /*
         COMENTÁRIO: Substituição da simulação de frete pela mensagem promocional
         Código original comentado abaixo:
 
@@ -89,7 +89,8 @@ export default function FixedShippingSimulation({ context = "body" }) {
             </>
           )}
       </div>
-      */}
+      */
+      }
 
       {/* NOVO: Mensagem promocional com o cupom VANESSA10 */}
       <div class={classContent}>
@@ -99,7 +100,8 @@ export default function FixedShippingSimulation({ context = "body" }) {
         </span>
       </div>
 
-      {/*
+      {
+        /*
         COMENTÁRIO: Modal original para inserção do CEP - mantido comentado
         caso precise ser reutilizado no futuro
 
@@ -139,7 +141,8 @@ export default function FixedShippingSimulation({ context = "body" }) {
           </div>
         </div>
       </Modal>
-      */}
+      */
+      }
     </>
   );
 }
