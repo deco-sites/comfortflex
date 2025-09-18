@@ -16,19 +16,29 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": [
-          {
-            "image": {
-              "desktop": "https://assets.decocache.com/comfortflex/b395a502-82e3-463b-80cc-342dc637e827/banner_Prancheta-1-copia.jpg",
-              "mobile": "https://assets.decocache.com/comfortflex/365c4d32-e4bd-4d5c-b1a1-49029ab09e38/banner-04.jpg"
-            },
-            "matcher": "/live-ecommerce"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+              "banners": [
+                {
+                  "image": {
+                    "desktop": "https://assets.decocache.com/comfortflex/b395a502-82e3-463b-80cc-342dc637e827/banner_Prancheta-1-copia.jpg",
+                    "mobile": "https://assets.decocache.com/comfortflex/365c4d32-e4bd-4d5c-b1a1-49029ab09e38/banner-04.jpg"
+                  },
+                  "matcher": "/live-ecommerce"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
