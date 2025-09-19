@@ -73,26 +73,13 @@
                       "action": {
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO",
-                        "href": "/live-ecommerce"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/30ba466f-a1dc-43bc-80c6-94f126116fd6/comfort-v.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/4b99ada6-af9d-4fba-8c36-82e0a5faa75c/comfort-h.png",
-                      "position": "right",
-                      "hiddenText": true,
-                      "alt": "/live-ecommerce"
-                    },
-                    {
-                      "alt": "/lancamentos",
-                      "theme": "light",
-                      "action": {
-                        "href": "/lancamentos",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
+                        "href": "/lancamentos"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/d81a6147-a533-4612-93c0-a6d1db6416dd/lanc-comf-v.png",
                       "desktop": "https://assets.decocache.com/comfortflex/f3eecd24-f09a-4f8f-8e06-39da3a9e8025/lanc-comf-h.png",
                       "position": "right",
-                      "hiddenText": true
+                      "hiddenText": true,
+                      "alt": "/lancamentos"
                     },
                     {
                       "alt": "/tenis?filter.category-1=tenis&filter.tecnologia=air-flex",
