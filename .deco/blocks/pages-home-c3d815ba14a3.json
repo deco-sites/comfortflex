@@ -73,22 +73,24 @@
                       "action": {
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO",
-                        "href": "/lancamentos"
+                        "href": "/flatform"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/2c4212e0-21e1-4960-887d-4417056992bc/ultramacio_Prancheta-1-copia.jpg",
+                      "desktop": "https://assets.decocache.com/comfortflex/2d83b90f-a3ef-4cc6-a731-21bc2789415d/ultramacio_Prancheta-1.jpg",
+                      "position": "right",
+                      "hiddenText": true,
+                      "alt": "/flatform"
+                    },
+                    {
+                      "alt": "/lancamentos",
+                      "theme": "light",
+                      "action": {
+                        "href": "/lancamentos",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/d81a6147-a533-4612-93c0-a6d1db6416dd/lanc-comf-v.png",
                       "desktop": "https://assets.decocache.com/comfortflex/f3eecd24-f09a-4f8f-8e06-39da3a9e8025/lanc-comf-h.png",
-                      "position": "right",
-                      "hiddenText": true,
-                      "alt": "/lancamentos"
-                    },
-                    {
-                      "alt": "/tenis?filter.category-1=tenis&filter.tecnologia=air-flex",
-                      "theme": "light",
-                      "action": {
-                        "href": "/tenis?filter.category-1=tenis&filter.tecnologia=air-flex"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/28240b71-501d-4359-a7d6-d00254fd5d7e/comf-v.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/3a961a9b-ad88-4914-90f9-a1e75e66e557/comf-h.webp",
                       "position": "right",
                       "hiddenText": true
                     }
