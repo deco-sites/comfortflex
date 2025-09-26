@@ -73,13 +73,26 @@
                       "action": {
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO",
-                        "href": "/flatform"
+                        "href": "/s?q=couro"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/a3da29e7-d659-4cb8-9d00-1626e5479d67/couro-comfortflex_Prancheta-1-copia.jpg",
+                      "desktop": "https://assets.decocache.com/comfortflex/2e993f56-1e39-4618-b269-37d1df35afc1/couro-comfortflex_Prancheta-1.jpg",
+                      "position": "right",
+                      "hiddenText": true,
+                      "alt": "/s?q=couro"
+                    },
+                    {
+                      "alt": "/flatform",
+                      "theme": "light",
+                      "action": {
+                        "href": "/flatform",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/2c4212e0-21e1-4960-887d-4417056992bc/ultramacio_Prancheta-1-copia.jpg",
                       "desktop": "https://assets.decocache.com/comfortflex/2d83b90f-a3ef-4cc6-a731-21bc2789415d/ultramacio_Prancheta-1.jpg",
                       "position": "right",
-                      "hiddenText": true,
-                      "alt": "/flatform"
+                      "hiddenText": true
                     },
                     {
                       "alt": "/lancamentos",
