@@ -223,7 +223,8 @@
             "srcMobile": "https://assets.decocache.com/comfortflex/398ee4e7-bee0-4579-adeb-996231fb59a1/ComfortFlex_banner_mob_3.png",
             "srcDesktop": "https://assets.decocache.com/comfortflex/3a5e0519-8ecc-4fd1-9ad7-72a22de303c4/ComfortFlex_banner_desk_3.png",
             "__resolveType": "site/sections/Images/Infocard.tsx",
-            "alt": "/promocao"
+            "alt": "/promocao",
+            "href": "/promocao"
           },
           {
             "tabs": [
