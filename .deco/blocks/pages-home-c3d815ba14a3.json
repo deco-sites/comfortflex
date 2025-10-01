@@ -82,6 +82,19 @@
                       "alt": "/s?q=couro"
                     },
                     {
+                      "alt": "/lancamentos",
+                      "theme": "light",
+                      "action": {
+                        "href": "/lancamentos",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/a8e2f20e-af7a-442d-8bbc-a2013b5932de/outubro-rosa-comfortflex_Prancheta-1-copia.jpg",
+                      "desktop": "https://assets.decocache.com/comfortflex/c048a144-ef52-4118-8a80-5bdc16bf2e30/outubro-rosa-comfortflex_Prancheta-1.jpg",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
                       "alt": "/flatform",
                       "theme": "light",
                       "action": {
