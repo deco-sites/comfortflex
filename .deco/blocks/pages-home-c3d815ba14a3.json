@@ -73,13 +73,26 @@
                       "action": {
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO",
-                        "href": "/s?q=couro"
+                        "href": "/lancamentos"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/23cdc434-4099-47a7-9b75-f5647bc41369/banner-v-save.jpg",
+                      "desktop": "https://assets.decocache.com/comfortflex/5088af33-3f8b-4352-8ed6-e0af424bd42a/banner-h-save.jpg",
+                      "position": "right",
+                      "hiddenText": true,
+                      "alt": "/lancamentos"
+                    },
+                    {
+                      "alt": "/s?q=couro",
+                      "theme": "light",
+                      "action": {
+                        "href": "/s?q=couro",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/a3da29e7-d659-4cb8-9d00-1626e5479d67/couro-comfortflex_Prancheta-1-copia.jpg",
                       "desktop": "https://assets.decocache.com/comfortflex/2e993f56-1e39-4618-b269-37d1df35afc1/couro-comfortflex_Prancheta-1.jpg",
                       "position": "right",
-                      "hiddenText": true,
-                      "alt": "/s?q=couro"
+                      "hiddenText": true
                     },
                     {
                       "alt": "/lancamentos",
@@ -103,19 +116,6 @@
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/2c4212e0-21e1-4960-887d-4417056992bc/ultramacio_Prancheta-1-copia.jpg",
                       "desktop": "https://assets.decocache.com/comfortflex/2d83b90f-a3ef-4cc6-a731-21bc2789415d/ultramacio_Prancheta-1.jpg",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/lancamentos",
-                      "theme": "light",
-                      "action": {
-                        "href": "/lancamentos",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/d81a6147-a533-4612-93c0-a6d1db6416dd/lanc-comf-v.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/f3eecd24-f09a-4f8f-8e06-39da3a9e8025/lanc-comf-h.png",
                       "position": "right",
                       "hiddenText": true
                     }
