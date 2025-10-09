@@ -73,13 +73,26 @@
                       "action": {
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO",
-                        "href": "/lancamentos"
+                        "href": "/promocao?sort=discount%3Adesc"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/de8dad9b-69d6-430c-9395-ae8e68a96860/Banner-site-mobile-(1).png",
+                      "desktop": "https://assets.decocache.com/comfortflex/9c01878d-415c-48fb-b843-3080e574ec6c/Banner-site-(1).png",
+                      "position": "right",
+                      "hiddenText": true,
+                      "alt": "/promocao?sort=discount%3Adesc"
+                    },
+                    {
+                      "alt": "/lancamentos",
+                      "theme": "light",
+                      "action": {
+                        "href": "/lancamentos",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/23cdc434-4099-47a7-9b75-f5647bc41369/banner-v-save.jpg",
                       "desktop": "https://assets.decocache.com/comfortflex/5088af33-3f8b-4352-8ed6-e0af424bd42a/banner-h-save.jpg",
                       "position": "right",
-                      "hiddenText": true,
-                      "alt": "/lancamentos"
+                      "hiddenText": true
                     },
                     {
                       "alt": "/s?q=couro",
@@ -104,18 +117,6 @@
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/a8e2f20e-af7a-442d-8bbc-a2013b5932de/outubro-rosa-comfortflex_Prancheta-1-copia.jpg",
                       "desktop": "https://assets.decocache.com/comfortflex/c048a144-ef52-4118-8a80-5bdc16bf2e30/outubro-rosa-comfortflex_Prancheta-1.jpg",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/flatform",
-                      "theme": "light",
-                      "action": {
-                        "href": "/flatform",
-                        "label": "Quero ver"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/2c4212e0-21e1-4960-887d-4417056992bc/ultramacio_Prancheta-1-copia.jpg",
-                      "desktop": "https://assets.decocache.com/comfortflex/2d83b90f-a3ef-4cc6-a731-21bc2789415d/ultramacio_Prancheta-1.jpg",
                       "position": "right",
                       "hiddenText": true
                     }
