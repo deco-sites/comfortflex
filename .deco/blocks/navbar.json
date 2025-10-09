@@ -965,7 +965,7 @@
     },
     {
       "children": [],
-      "url": "/promocao",
+      "url": "/promocao?sort=discount%3Adesc",
       "image": [],
       "name": "OUTLET"
     }
