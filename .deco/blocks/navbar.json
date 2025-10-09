@@ -586,7 +586,7 @@
     },
     {
       "url": "/flatform",
-      "name": "FLATFORM",
+      "name": "FLAT",
       "@type": "SiteNavigationElement",
       "image": [],
       "children": [
@@ -962,6 +962,12 @@
       "name": "VERÃO 26",
       "image": [],
       "children": []
+    },
+    {
+      "children": [],
+      "url": "/promocao",
+      "image": [],
+      "name": "OUTLET"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"

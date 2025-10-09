@@ -133,7 +133,7 @@
                 "title": "Descubra o novo jeito de caminhar",
                 "products": {
                   "props": {
-                    "sort": "release:desc",
+                    "sort": "orders:desc",
                     "count": 10,
                     "collection": "148"
                   },
