@@ -95,6 +95,19 @@
                       "hiddenText": true
                     },
                     {
+                      "alt": "/lancamentos",
+                      "theme": "light",
+                      "action": {
+                        "href": "/lancamentos",
+                        "label": "Quero ver",
+                        "title": "LEVEZA & CONFORTO"
+                      },
+                      "mobile": "https://assets.decocache.com/comfortflex/d81a6147-a533-4612-93c0-a6d1db6416dd/lanc-comf-v.png",
+                      "desktop": "https://assets.decocache.com/comfortflex/f3eecd24-f09a-4f8f-8e06-39da3a9e8025/lanc-comf-h.png",
+                      "position": "right",
+                      "hiddenText": true
+                    },
+                    {
                       "alt": "/s?q=couro",
                       "theme": "light",
                       "action": {
@@ -104,19 +117,6 @@
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/a3da29e7-d659-4cb8-9d00-1626e5479d67/couro-comfortflex_Prancheta-1-copia.jpg",
                       "desktop": "https://assets.decocache.com/comfortflex/2e993f56-1e39-4618-b269-37d1df35afc1/couro-comfortflex_Prancheta-1.jpg",
-                      "position": "right",
-                      "hiddenText": true
-                    },
-                    {
-                      "alt": "/lancamentos",
-                      "theme": "light",
-                      "action": {
-                        "href": "/lancamentos",
-                        "label": "Quero ver",
-                        "title": "LEVEZA & CONFORTO"
-                      },
-                      "mobile": "https://assets.decocache.com/comfortflex/a8e2f20e-af7a-442d-8bbc-a2013b5932de/outubro-rosa-comfortflex_Prancheta-1-copia.jpg",
-                      "desktop": "https://assets.decocache.com/comfortflex/c048a144-ef52-4118-8a80-5bdc16bf2e30/outubro-rosa-comfortflex_Prancheta-1.jpg",
                       "position": "right",
                       "hiddenText": true
                     }
