@@ -137,15 +137,16 @@
     {
       "items": [
         {
-          "label": "Clique Aqui para abrir o formulário de atendimento (SAC) ",
+          "label": "Dúvidas sobre o seu pedido",
+          "href": "https://formsui.directtalk.com.br/1.0/index.html?id=8306ddd5-465a-4539-84a3-9c42d2d5a8a9&DepartmentId=96f57731-ddaa-4d32-a6bd-6b6872ad7328&ChannelId=2"
+        },
+        {
+          "label": "Abrir formulário de SAC ",
           "href": "https://formsui.directtalk.com.br/1.0/index.html?id=6fb259e0-e3ac-412c-8e0f-5f9760db17cd&DepartmentId=96f57731-ddaa-4d32-a6bd-6b6872ad7328&ChannelId=2"
         },
         {
-          "label": "Atendimento por telefone: (51) 3565-8100 | (51) 4000-1846"
-        },
-        {
           "href": "https://wa.link/g6ewnl",
-          "label": "Atendimento via Whatsapp: (51) 5121-600741"
+          "label": "Atendimento via WhatsApp: (51) 2160-0741"
         },
         {
           "href": "/",
