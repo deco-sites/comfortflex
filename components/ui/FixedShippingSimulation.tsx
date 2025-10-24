@@ -96,7 +96,7 @@ export default function FixedShippingSimulation({ context = "body" }) {
       <div class={classContent}>
         <span class="text-sm text-black text-center">
           Use o cupom <strong class="font-bold">VANESSA10</strong> e ganhe{" "}
-          <strong class="font-bold">10% OFF</strong> na sua primeira compra!
+          <strong class="font-bold">10% OFF</strong> no pagamento via Pix na sua primeira compra!
         </span>
       </div>
 
