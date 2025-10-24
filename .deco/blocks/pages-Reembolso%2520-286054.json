@@ -1,0 +1,22 @@
+{
+  "name": "Reembolso ",
+  "path": "/reembolso",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "content": [
+        {
+          "text": "\nPara solicitar um reembolso, entre em contato com a loja responsável pelo seu pedido.\n\n**Confira as orientações gerais**:\n\n‎ \n**Formas de Reembolso**\n\n1. **Pix**:\nO reembolso será devolvido para a mesma conta em que o pagamento foi feito.\n\n\n1. **Cartão de Crédito**:\nO valor poderá ser restituído por meio de estorno diretamente no cartão de crédito utilizado na compra.\n‎ \nPrazos\nO reembolso será processado em até 10 dias úteis após a conclusão do processo de devolução e análise do produto pelo seller responsável.\nNo caso de estorno no cartão de crédito, o prazo para que o valor apareça na fatura pode ser de até 60 dias, conforme as regras da administradora do cartão.\n\n‎ \n**Condições Gerais**\n\n1. O reembolso será efetuado exclusivamente em nome do titular da compra, na conta corrente ou cartão de crédito vinculados ao CPF/CNPJ informado na nota fiscal.\n\n1. Não realizamos reembolso para terceiros.\n\n1. O valor restituído corresponderá ao valor efetivamente pago pelo produto devolvido, incluindo o valor do frete, quando aplicável.\n\n1. Em caso de compras realizadas com diferentes sellers em um mesmo pedido, cada seller será responsável pela análise e processamento do reembolso referente aos seus produtos.\n"
+        }
+      ],
+      "__resolveType": "site/sections/Institucional/Institucional.tsx",
+      "title": "Reembolso"
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

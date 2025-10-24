@@ -91,6 +91,10 @@
           "label": "Devolução/Cancelamento"
         },
         {
+          "href": "/reembolso",
+          "label": "Reembolso "
+        },
+        {
           "href": "/politicas-de-privacidade",
           "label": "Políticas de Privacidade"
         }
