@@ -585,8 +585,8 @@
       "image": null
     },
     {
-      "url": "/flatform",
-      "name": "FLAT",
+      "url": "/flats",
+      "name": "FLATS",
       "@type": "SiteNavigationElement",
       "image": [],
       "children": [
@@ -595,7 +595,7 @@
           "image": [],
           "children": [
             {
-              "url": "/rasteiras",
+              "url": "/s?q=RASTEIRA&filter.category-2=rasteira",
               "name": "Rasteiras",
               "@type": "SiteNavigationElement",
               "image": [],
@@ -965,7 +965,7 @@
     },
     {
       "children": [],
-      "url": "/promocao?sort=discount%3Adesc",
+      "url": "/promocao?sort=",
       "image": [],
       "name": "OUTLET"
     }
