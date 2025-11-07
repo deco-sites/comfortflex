@@ -73,13 +73,13 @@
                       "action": {
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO",
-                        "href": "/promocao?sort=discount%3Adesc"
+                        "href": "/promocao?sort="
                       },
                       "mobile": "https://assets.decocache.com/comfortflex/de8dad9b-69d6-430c-9395-ae8e68a96860/Banner-site-mobile-(1).png",
                       "desktop": "https://assets.decocache.com/comfortflex/9c01878d-415c-48fb-b843-3080e574ec6c/Banner-site-(1).png",
                       "position": "right",
                       "hiddenText": true,
-                      "alt": "/promocao?sort=discount%3Adesc"
+                      "alt": "/promocao?sort="
                     },
                     {
                       "alt": "/lancamentos",
