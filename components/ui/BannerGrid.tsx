@@ -92,17 +92,17 @@ const DEFAULT_PROPS: Props = {
       alt: "a",
       href: "a",
       srcMobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/82727553-f670-4e7c-b9c2-9452aed1955f",
+        "https://decoims.com/comfortflex/ff28ad44-63cb-49b8-a71e-8f6c14531386/f2033f011d1e64c6.jpg",
       srcDesktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
+        "https://decoims.com/comfortflex/9c36db01-6afb-4eed-b1ed-da8f756dec78/1c059717e8f34f42.jpg",
     },
     {
       alt: "a",
       href: "a",
       srcMobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c5c6bdf6-5555-488c-8b14-719e4158dea6",
+        "https://decoims.com/comfortflex/0e95cb57-a957-4432-a390-afa595ce9855/eff3c3bfc5ada040.jpg",
       srcDesktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3e2b7824-d75c-4704-8d32-621bfc9b20cf",
+        "https://decoims.com/comfortflex/63b63e17-9939-4ee9-997d-c0b3e7da2111/6a52ba3304762f4a.jpg",
     },
   ],
   borderRadius: {

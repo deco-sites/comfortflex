@@ -15,7 +15,7 @@
   },
   "global": [
     {
-      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+      "__resolveType": "website/sections/Analytics/Analytics.tsx"
     },
     {
       "trackingIds": [

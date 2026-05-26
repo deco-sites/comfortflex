@@ -79,9 +79,9 @@ const DEFAULT_PROPS: Props = {
   "banners": [
     {
       "srcMobile":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b531631b-8523-4feb-ac37-5112873abad2",
+        "https://decoims.com/comfortflex/4d5b1277-fb21-46d2-8780-b035050abca7/b00140565292e994.jpg",
       "srcDesktop":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b531631b-8523-4feb-ac37-5112873abad2",
+        "https://decoims.com/comfortflex/4d5b1277-fb21-46d2-8780-b035050abca7/b00140565292e994.jpg",
       "alt": "Fashion",
       "href": "/",
     },
@@ -89,23 +89,23 @@ const DEFAULT_PROPS: Props = {
       "alt": "Fashion",
       "href": "/",
       "srcMobile":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1125d938-89ff-4aae-a354-63d4241394a6",
+        "https://decoims.com/comfortflex/c9633af5-9a23-46d7-aeb4-977b97cb7709/5a74f902da0bc031.jpg",
       "srcDesktop":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1125d938-89ff-4aae-a354-63d4241394a6",
+        "https://decoims.com/comfortflex/c9633af5-9a23-46d7-aeb4-977b97cb7709/5a74f902da0bc031.jpg",
     },
     {
       "srcMobile":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/dd1e2acb-ff80-49f9-8f56-1deac3b7a42d",
+        "https://decoims.com/comfortflex/9846862a-25d3-47aa-909d-afa1385dfa48/22f0a68a97a32230.jpg",
       "srcDesktop":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/dd1e2acb-ff80-49f9-8f56-1deac3b7a42d",
+        "https://decoims.com/comfortflex/9846862a-25d3-47aa-909d-afa1385dfa48/22f0a68a97a32230.jpg",
       "href": "/",
       "alt": "Fashion",
     },
     {
       "srcMobile":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/0b85ba2d-48b1-4f5b-b619-7f4a7f50b455",
+        "https://decoims.com/comfortflex/0f00b3cb-8001-48af-8fea-3d4b293448e2/aa22385caef90351.jpg",
       "srcDesktop":
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/0b85ba2d-48b1-4f5b-b619-7f4a7f50b455",
+        "https://decoims.com/comfortflex/0f00b3cb-8001-48af-8fea-3d4b293448e2/aa22385caef90351.jpg",
       "alt": "Fashion",
       "href": "/",
     },

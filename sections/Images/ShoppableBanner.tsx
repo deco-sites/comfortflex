@@ -40,7 +40,7 @@ const DEFAULT_PROPS: Props = {
   pins: [],
   image: {
     mobile:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/cac2dc1c-48ac-4274-ad42-4016b0bbe947",
+      "https://decoims.com/comfortflex/60fe42ef-32e7-480c-8e46-17a711b9f959/a380f0d1a4132f3a.jpg",
     altText: "Fashion",
   },
 };

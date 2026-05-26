@@ -18,7 +18,7 @@ function GlobalTags() {
       {/* FavIcon */}
       <link
         rel="shortcut icon"
-        href="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4102/27e07532-9bed-4b33-97a9-01a1542a8e63"
+        href="https://decoims.com/comfortflex/9a522340-acd6-4207-910d-687d10d2ca41/480d4411b28bea1c.svg"
       />
 
       <meta

@@ -45,9 +45,9 @@ const DEFAULT_PROPS = {
         subTitle: "Visit our site and start building now:",
       },
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
+        "https://decoims.com/comfortflex/3f17e2e6-7161-40e9-b352-cc2f9dfbb635/dd87b915ed919639.png",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b",
+        "https://decoims.com/comfortflex/f3f1642c-f943-4871-a44b-06d2e5ea0fb3/97d2f82acd1f0b12.png",
     },
     {
       alt: "/feminino",
@@ -58,9 +58,9 @@ const DEFAULT_PROPS = {
         subTitle: "Visit our site and start building now:",
       },
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+        "https://decoims.com/comfortflex/c341a19f-b728-4f96-a6f6-643cc4e01ebf/ebcfb275befb6c80.png",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9",
+        "https://decoims.com/comfortflex/626fc380-00d0-4386-be4e-5b0c425633cf/7e87dcb3feea5988.webp",
     },
     {
       alt: "/feminino",
@@ -71,9 +71,9 @@ const DEFAULT_PROPS = {
         subTitle: "Visit our site and start building now:",
       },
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+        "https://decoims.com/comfortflex/7ebcab72-3612-4b1f-bb10-2707df933214/871bbc4185512656.png",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d",
+        "https://decoims.com/comfortflex/57e833e0-5778-42ce-b52c-737e23118949/9978392daf7b4d48.png",
     },
   ],
   preload: true,
