@@ -11,7 +11,7 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import { usePartialSection } from "@deco/deco/hooks";
+import { useSection } from "@deco/deco/hooks";
 /** @titleBy title */
 interface Tab {
   title: string;
@@ -57,10 +57,9 @@ function TabbedProductShelf(
               class={`text-base uppercase block h-9 px-5 rounded-3xl ${
                 index === ti ? "bg-brand text-white" : "bg-white text-brand"
               }`}
-              {...usePartialSection({
-                id: sectionId,
-                props: { tabIndex: index },
-              })}
+              hx-get={useSection({ props: { tabIndex: index } })}
+              hx-swap="outerHTML"
+              hx-target="closest section"
             >
               {tab.title}
             </button>
