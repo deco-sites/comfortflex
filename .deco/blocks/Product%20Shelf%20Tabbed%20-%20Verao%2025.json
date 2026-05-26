@@ -1,0 +1,30 @@
+{
+  "tabs": [
+    {
+      "title": "sandálias",
+      "products": {
+        "props": {
+          "sort": "release:desc",
+          "count": 10,
+          "fuzzy": "automatic",
+          "query": "sandália,"
+        },
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      }
+    },
+    {
+      "title": "flats",
+      "products": {
+        "props": {
+          "sort": "release:desc",
+          "count": 10,
+          "fuzzy": "automatic",
+          "query": "flat, rasteira. chinelo, slide"
+        },
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      }
+    }
+  ],
+  "title": "VERÃO 25",
+  "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+}

@@ -1,0 +1,29 @@
+{
+  "tabs": [
+    {
+      "title": "BOTAS COM ATÉ 50% OFF",
+      "products": {
+        "props": {
+          "sort": "discount:desc",
+          "count": 10,
+          "fuzzy": "automatic",
+          "query": "BOTAS"
+        },
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      }
+    },
+    {
+      "title": "TÊNIS",
+      "products": {
+        "props": {
+          "sort": "release:desc",
+          "count": 10,
+          "fuzzy": "automatic",
+          "query": "tenis"
+        },
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+      }
+    }
+  ],
+  "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+}

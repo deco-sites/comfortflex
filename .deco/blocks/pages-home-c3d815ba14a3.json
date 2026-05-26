@@ -116,20 +116,7 @@
             "__resolveType": "website/flags/multivariate/section.ts"
           },
           {
-            "tabs": [
-              {
-                "title": "Descubra o novo jeito de caminhar",
-                "products": {
-                  "props": {
-                    "sort": "orders:desc",
-                    "count": 10,
-                    "collection": "148"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              }
-            ],
-            "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+            "__resolveType": "Product Shelf Tabbed - Lancamentos"
           },
           {
             "alt": "/lancamentos",
@@ -215,20 +202,7 @@
             "href": "/promocao"
           },
           {
-            "tabs": [
-              {
-                "title": "Até 50% off",
-                "products": {
-                  "props": {
-                    "sort": "discount:desc",
-                    "count": 10,
-                    "collection": "151"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              }
-            ],
-            "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+            "__resolveType": "Product Shelf Tabbed - Promocao"
           },
           {
             "__resolveType": "Logos - 01"

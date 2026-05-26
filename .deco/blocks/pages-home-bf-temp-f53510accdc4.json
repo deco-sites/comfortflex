@@ -72,34 +72,7 @@
       "__resolveType": "site/sections/Content/TimerCount.tsx"
     },
     {
-      "tabs": [
-        {
-          "title": "sandálias",
-          "products": {
-            "props": {
-              "sort": "release:desc",
-              "count": 10,
-              "fuzzy": "automatic",
-              "query": "sandália,"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
-        },
-        {
-          "title": "flats",
-          "products": {
-            "props": {
-              "sort": "release:desc",
-              "count": 10,
-              "fuzzy": "automatic",
-              "query": "flat, rasteira. chinelo, slide"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
-        }
-      ],
-      "title": "VERÃO 25",
-      "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+      "__resolveType": "Product Shelf Tabbed - Verao 25"
     },
     {
       "alt": "/preview-verao-25",
@@ -179,33 +152,7 @@
       "__resolveType": "site/sections/Images/CuponsList.tsx"
     },
     {
-      "tabs": [
-        {
-          "title": "BOTAS COM ATÉ 50% OFF",
-          "products": {
-            "props": {
-              "sort": "discount:desc",
-              "count": 10,
-              "fuzzy": "automatic",
-              "query": "BOTAS"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
-        },
-        {
-          "title": "TÊNIS",
-          "products": {
-            "props": {
-              "sort": "release:desc",
-              "count": 10,
-              "fuzzy": "automatic",
-              "query": "tenis"
-            },
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-          }
-        }
-      ],
-      "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+      "__resolveType": "Product Shelf Tabbed - BF Ofertas"
     },
     {
       "__resolveType": "Logos - 01"
