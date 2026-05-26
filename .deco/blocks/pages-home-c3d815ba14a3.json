@@ -39,8 +39,8 @@
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/80616c90-f58b-463e-9d59-c3955eb569c3/Saltobaixocomelegancia-MOBILE.webp",
-                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/779a2e0d-e32f-49bf-8f2c-49665386a5fb/Saltobaixocomelegancia-DESKTOP.webp",
+                      "mobile": "https://decoims.com/comfortflex/b8683dd3-1b32-412c-aa28-f3d034d18c06/378197170d1ad455.webp",
+                      "desktop": "https://decoims.com/comfortflex/fa6e8d4d-0dfd-4ce5-9d0c-315a38790d01/78baeaece48464ca.webp",
                       "position": "right",
                       "hiddenText": true
                     },
@@ -52,8 +52,8 @@
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/b546d251-f292-47a4-9f66-d9a26c06ad9b/Sapatos-MOBILE.webp",
-                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/comfortflex/7be03b7b-8ed3-441f-84d5-5a76190021a6/Sapatos-DESKTOP.webp",
+                      "mobile": "https://decoims.com/comfortflex/f36ae1c0-7fc6-4a50-a086-a6f505add2dd/2c1476aebaaeef92.webp",
+                      "desktop": "https://decoims.com/comfortflex/cf4060ec-2366-419b-8289-24030f562458/da37d72ec33496cb.webp",
                       "position": "right",
                       "hiddenText": true
                     }
@@ -116,20 +116,7 @@
             "__resolveType": "website/flags/multivariate/section.ts"
           },
           {
-            "tabs": [
-              {
-                "title": "Descubra o novo jeito de caminhar",
-                "products": {
-                  "props": {
-                    "sort": "orders:desc",
-                    "count": 10,
-                    "collection": "148"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              }
-            ],
-            "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+            "__resolveType": "Product Shelf Tabbed - Lancamentos"
           },
           {
             "alt": "/lancamentos",
@@ -215,20 +202,7 @@
             "href": "/promocao"
           },
           {
-            "tabs": [
-              {
-                "title": "Até 50% off",
-                "products": {
-                  "props": {
-                    "sort": "discount:desc",
-                    "count": 10,
-                    "collection": "151"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              }
-            ],
-            "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+            "__resolveType": "Product Shelf Tabbed - Promocao"
           },
           {
             "__resolveType": "Logos - 01"

@@ -15,9 +15,6 @@
   },
   "global": [
     {
-      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
-    },
-    {
       "trackingIds": [
         "GTM-5S6CP88"
       ],

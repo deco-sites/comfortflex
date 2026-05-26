@@ -53,13 +53,13 @@ export const Preview = (props: Props) => {
                 "@type": "ImageObject",
                 "alternateName": "test",
                 "url":
-                  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9e0a819-6a75-47af-84fe-90b44fecda5f",
+                  "https://decoims.com/comfortflex/e2896488-633e-4841-b9be-d351cbed972b/380c8442e74382c3.png",
               },
               {
                 "@type": "ImageObject",
                 "alternateName": "test",
                 "url":
-                  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9e0a819-6a75-47af-84fe-90b44fecda5f",
+                  "https://decoims.com/comfortflex/e2896488-633e-4841-b9be-d351cbed972b/380c8442e74382c3.png",
               },
             ],
             "offers": {
