@@ -70,7 +70,7 @@ export default function MeasurementChart({ sizeTable, sizeTableHowTo }: Props) {
                     <Image
                       src={sizeTable
                         ? sizeTable.src
-                        : "https://assets.decocache.com/comfortflex/5f4d1b8d-f276-4cda-b20c-6310c87648a3/size-table-comfort.png"}
+                        : "https://decoims.com/comfortflex/9504bec4-5ad8-4036-b34b-20a923da7a7f/size-table-comfort.png"}
                       alt={"Medição Pé"}
                       class="h-full w-auto"
                     />
@@ -81,7 +81,7 @@ export default function MeasurementChart({ sizeTable, sizeTableHowTo }: Props) {
                     <Image
                       src={sizeTableHowTo
                         ? sizeTableHowTo.src
-                        : "https://assets.decocache.com/comfortflex/52aa5177-e06a-46e0-a59f-b3e259b11d68/size-table-guide-comfort.png"}
+                        : "https://decoims.com/comfortflex/8b75580f-8e15-4ff7-a906-654655f00f0d/size-table-guide-comfort.png"}
                       alt={"Medição Pé"}
                       class="h-full w-auto"
                     />
