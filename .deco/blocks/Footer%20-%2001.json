@@ -1,6 +1,6 @@
 {
   "logo": {
-    "image": "https://assets.decocache.com/comfortflex/710b79a6-8c8a-4256-9677-b835b4adff6e/1-(2).png",
+    "image": "https://decoims.com/comfortflex/1dd5cb24-ea5c-4230-900f-510e381cb629/1-(2).png",
     "description": "O estilo pensado para você"
   },
   "layout": {
@@ -163,7 +163,7 @@
   "copyright": {
     "institucional_text": "Lorem ipsum"
   },
-  "poweredBy": "https://assets.decocache.com/comfortflex/a54b5989-bea3-4b95-b89c-a4186de61582/1742505368278-4a852f9c-3e04-45dd-a171-5fa110dc2883",
+  "poweredBy": "https://decoims.com/comfortflex/be511e18-a0ab-492c-b7bd-f5b5f85e2bd5/1742505368278-4a852f9c-3e04-45dd-a171-5fa110dc2883.jpg",
   "extraLinks": [
     {
       "href": "http://www.google.com",
@@ -190,7 +190,7 @@
   "backToTheTop": {
     "text": "Voltar ao topo"
   },
-  "waveCommerce": "https://assets.decocache.com/comfortflex/6c7c8c8a-1a84-43b0-b4c9-ac085ab19396/1742505369679-32da3e15-a490-4a66-af0d-d25b5efebb00",
+  "waveCommerce": "https://decoims.com/comfortflex/73740b62-c492-4046-8d77-ce981be3893d/1742505369679-32da3e15-a490-4a66-af0d-d25b5efebb00.jpg",
   "__resolveType": "site/sections/Footer/Footer.tsx",
   "regionOptions": {
     "currency": [

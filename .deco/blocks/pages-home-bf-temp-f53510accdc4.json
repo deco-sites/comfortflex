@@ -79,8 +79,8 @@
       "link": "/preview-verao-25",
       "text": "Deixe-se levar pela brisa fresca do mar e mergulhe na essência da nossa coleção Primavera Verão 25, onde a moda encontra a natureza e o bem-estar se torna uma prioridade. Dos tons suaves das areias às tonalidades vibrantes das cores selvagens à beira-mar, cada detalhe inspira uma sensação de paz e tranquilidade. Uma celebração da vida à beira-mar! Junte-se a nós nesta jornada e venha se apaixonar pela moda que respira frescor e transborda vida. Explore nossa coleção e descubra como podemos levar você a um estado de espírito LITORÂNEO.",
       "title": "VERÃO 25",
-      "isMobile": "https://assets.decocache.com/comfortflex/f785e4b8-a5a1-4514-8fb4-37d341b0467d/1742505475738-abb9f472-0fb4-43c0-97d6-f0fd736b5588",
-      "isDesktop": "https://assets.decocache.com/comfortflex/15aad9e4-4c3d-4a99-b7a7-b2d13aa2f983/1742505478425-76d802ab-3e92-47f0-92f7-19bb519a1cdd",
+      "isMobile": "https://decoims.com/comfortflex/e4589c3e-34ea-442d-9ce3-fe7eb268aba5/1742505475738-abb9f472-0fb4-43c0-97d6-f0fd736b5588.jpg",
+      "isDesktop": "https://decoims.com/comfortflex/b6760b78-35eb-4af0-853b-d1ab274ba636/1742505478425-76d802ab-3e92-47f0-92f7-19bb519a1cdd.jpg",
       "buttonText": "VER OS PRODUTOS",
       "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx"
     },
@@ -106,7 +106,7 @@
     {
       "link": "https://www.comfortflex.com.br/s?q=24&filter.tecnologia=flex-wave&filter.tecnologia=air-flex&filter.tecnologia=flow-2-0&filter.tecnologia=dry-comfy&filter.tecnologia=super-fit&filter.tecnologia=comfortflow&filter.tecnologia=soft-day&filter.tecnologia=total-care",
       "title": "FLATS",
-      "banner": "https://assets.decocache.com/comfortflex/efe7a4d8-1f4f-46eb-bb29-248836a76f9d/1742505481653-bbd952da-9853-40c5-8443-1ba055448546",
+      "banner": "https://decoims.com/comfortflex/9815d3f6-3d0f-4545-a241-4b0fc5c827d2/1742505481653-bbd952da-9853-40c5-8443-1ba055448546.jpg",
       "products": {
         "props": {
           "sort": "release:desc",
@@ -121,8 +121,8 @@
     },
     {
       "href": "/outlet",
-      "srcMobile": "https://assets.decocache.com/comfortflex/83552f6f-dfdd-4693-938d-4e0f7e31af26/1742505483906-2335288e-6fdf-4c93-b1fe-043613a68301",
-      "srcDesktop": "https://assets.decocache.com/comfortflex/1893d00e-ccb4-4a3c-9eff-aaac82ecb340/1742505465975-9d7c04e9-6779-4174-a3b7-1094f8e6dc8d",
+      "srcMobile": "https://decoims.com/comfortflex/18227e93-8d92-443e-babf-228ea73cad9a/1742505483906-2335288e-6fdf-4c93-b1fe-043613a68301.jpg",
+      "srcDesktop": "https://decoims.com/comfortflex/51fa6c59-280e-48f6-b190-994ac91af5d6/1742505465975-9d7c04e9-6779-4174-a3b7-1094f8e6dc8d.jpg",
       "__resolveType": "site/sections/Images/Infocard.tsx"
     },
     {

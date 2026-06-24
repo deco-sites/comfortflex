@@ -75,8 +75,8 @@
                         "title": "LEVEZA & CONFORTO",
                         "href": "/promocao?sort="
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/6e862936-1b84-4156-a798-1be7f5ce4bf8/Anuncios-Black-02.jpg",
-                      "desktop": "https://assets.decocache.com/comfortflex/1829e698-3897-488e-bf9e-0d650458c6e8/Anuncios-Black-01.jpg",
+                      "mobile": "https://decoims.com/comfortflex/35946834-f353-41d2-a1d7-5540fcec0b56/Anuncios-Black-02.jpg",
+                      "desktop": "https://decoims.com/comfortflex/c5badbd9-ab9b-485c-8023-6b99c22d307f/Anuncios-Black-01.jpg",
                       "position": "right",
                       "hiddenText": true,
                       "alt": "/promocao?sort="
@@ -89,8 +89,8 @@
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/d81a6147-a533-4612-93c0-a6d1db6416dd/lanc-comf-v.png",
-                      "desktop": "https://assets.decocache.com/comfortflex/f3eecd24-f09a-4f8f-8e06-39da3a9e8025/lanc-comf-h.png",
+                      "mobile": "https://decoims.com/comfortflex/d7c5a4a5-b7da-45ce-85da-0ca0947d77ca/lanc-comf-v.png",
+                      "desktop": "https://decoims.com/comfortflex/ecff211d-9fb6-4b49-ad13-730190434281/lanc-comf-h.png",
                       "position": "right",
                       "hiddenText": true
                     },
@@ -102,8 +102,8 @@
                         "label": "Quero ver",
                         "title": "LEVEZA & CONFORTO"
                       },
-                      "mobile": "https://assets.decocache.com/comfortflex/a3da29e7-d659-4cb8-9d00-1626e5479d67/couro-comfortflex_Prancheta-1-copia.jpg",
-                      "desktop": "https://assets.decocache.com/comfortflex/2e993f56-1e39-4618-b269-37d1df35afc1/couro-comfortflex_Prancheta-1.jpg",
+                      "mobile": "https://decoims.com/comfortflex/a83949ad-6178-4a61-9dd0-be9760e05be5/couro-comfortflex_Prancheta-1-copia.jpg",
+                      "desktop": "https://decoims.com/comfortflex/9ee1467e-ad86-4887-927d-4635323e0d57/couro-comfortflex_Prancheta-1.jpg",
                       "position": "right",
                       "hiddenText": true
                     }
@@ -121,8 +121,8 @@
           {
             "alt": "/lancamentos",
             "link": "/lancamentos?filter.productClusterIds=148&filter.category-1=flatform",
-            "isMobile": "https://assets.decocache.com/comfortflex/231f1c19-3910-4757-80f4-fbc601555ec2/1047-x-836.png",
-            "isDesktop": "https://assets.decocache.com/comfortflex/b9035725-fe43-4e9c-bb0e-48d6c6dd5815/1668-x-1332.png",
+            "isMobile": "https://decoims.com/comfortflex/2bb5661d-6fe9-427a-9f43-97b27bddbb1d/1047-x-836.png",
+            "isDesktop": "https://decoims.com/comfortflex/d1322ee3-69f6-4ca4-b580-0aaf89c95e6f/1668-x-1332.png",
             "buttonText": "CONHEÇA A COLEÇÃO",
             "__resolveType": "site/sections/Images/ImageTextButtonComponent.tsx",
             "title": "VERÃO 26",
@@ -133,19 +133,19 @@
               {
                 "alt": "/flatform",
                 "href": "/sandalias",
-                "srcMobile": "https://assets.decocache.com/comfortflex/36875b9f-dbec-4bf8-aa92-f62e633cff4e/flats.png"
+                "srcMobile": "https://decoims.com/comfortflex/df680d9f-8b55-4339-a714-da5f53969a69/flats.png"
               },
               {
                 "alt": "/tenis",
                 "href": "/tenis",
                 "theme": "white",
-                "srcMobile": "https://assets.decocache.com/comfortflex/7acbf448-b442-486e-a6a9-3d317e0e0400/tenis.png"
+                "srcMobile": "https://decoims.com/comfortflex/19d8a828-a66b-44d6-8b91-4a3f6d8b680a/tenis.png"
               },
               {
                 "alt": "/sandalias",
                 "href": "/sandalias",
                 "theme": "white",
-                "srcMobile": "https://assets.decocache.com/comfortflex/87a9f9c3-6efc-4c9f-b0e9-2d98e6b67b9a/sandalias.png"
+                "srcMobile": "https://decoims.com/comfortflex/25c147ff-0805-4057-9807-c0fdd908676e/sandalias.png"
               }
             ],
             "__resolveType": "site/sections/Images/BannerCta.tsx"
@@ -166,14 +166,14 @@
             "__resolveType": "site/sections/Product/ProductShelfWithBanner.tsx",
             "buttonText": "Escolha sua leveza",
             "title": "Tecnologia Super Leve",
-            "banner": "https://assets.decocache.com/comfortflex/504b45ae-c925-4094-a55e-64a7b23fd2fc/comf_56.jpg",
+            "banner": "https://decoims.com/comfortflex/3b9ddc36-a6c7-4335-966a-c5277940dd79/comf_56.jpg",
             "description": "Leveza que acompanha seus passos"
           },
           {
             "benefits": [
               {
                 "benefitTitle": "ATÉ 6X",
-                "benefitImgSrc": "https://data.decoassets.com/comfortflex/5d26ee96-2d0a-46bf-bcba-624d63cc1d5c/credit_card-(1).png",
+                "benefitImgSrc": "https://decoims.com/comfortflex/7a32958e-9da4-4cc7-9744-a0d75bab00ec/credit_card-(1).png",
                 "benefitImgAltText": "ATÉ 6X SEM JUROS!",
                 "benefitDescription": "SEM JUROS!"
               },
@@ -195,8 +195,8 @@
             "__resolveType": "site/sections/Content/Benefits.tsx"
           },
           {
-            "srcMobile": "https://assets.decocache.com/comfortflex/398ee4e7-bee0-4579-adeb-996231fb59a1/ComfortFlex_banner_mob_3.png",
-            "srcDesktop": "https://assets.decocache.com/comfortflex/3a5e0519-8ecc-4fd1-9ad7-72a22de303c4/ComfortFlex_banner_desk_3.png",
+            "srcMobile": "https://decoims.com/comfortflex/70a8ebe0-3895-4d88-842d-4014d1c2cf49/ComfortFlex_banner_mob_3.png",
+            "srcDesktop": "https://decoims.com/comfortflex/7bb484f7-e489-4484-a808-7413c29a60bf/ComfortFlex_banner_desk_3.png",
             "__resolveType": "site/sections/Images/Infocard.tsx",
             "alt": "/promocao",
             "href": "/promocao"

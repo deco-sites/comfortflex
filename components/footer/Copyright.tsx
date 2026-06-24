@@ -15,7 +15,7 @@ export default function Copyright(props: Props) {
           loading="lazy"
           fetchPriority="low"
           class="max-w-[350px]"
-          src="https://assets.decocache.com/ramarim/7e015d46-3d84-47b7-a2ab-5ec291b4d636/1.png"
+          src="https://decoims.com/comfortflex/593d8f7f-0c94-482f-a555-3a91fe123820/1.png"
           alt="Descrição da imagem"
         />
         <p class="text-center text-xs md:text-sm md:text-start md:m-0">
